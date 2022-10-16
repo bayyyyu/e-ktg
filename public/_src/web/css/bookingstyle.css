@@ -1,0 +1,889 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*-- main-section --*/ 
+body{
+    font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background:#ffffff;
+	margin: 0;
+}
+
+.logo-top h2 {
+    font-size: 2.4em;
+    color: #fff;
+    text-align: center;
+}
+.logo-bottom {
+    margin-top: 8.5%;
+}
+.head {
+    width: 48%;
+    margin: 5em auto;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+.logo {
+    width: 45%;
+    float: right;
+    background: url(../images/pic3.jpg) no-repeat;
+    padding: 2em 0;
+}
+/*-- agileinfo --*/
+.logo-top img {
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: right;
+    width: 42%;
+    margin-left: 26%;
+}
+.login {
+    width: 100%;
+    padding: 0 0 4% 0;
+	background:#fff;
+}
+.login input[type="text"], .login input[type="password"], .login input[type="email"] {
+    margin: 0;
+    border: none;
+    -webkit-appearance: none;
+	outline: none;
+    width: 100%;
+    background: #fff;
+    color: #4B4B4B;
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #a9a9a9;
+	    box-sizing: border-box;
+}
+span i {
+    color: #fff;
+    position: absolute;
+    background: #284da5;
+    padding: 6px 8px;
+}
+.ic1{
+    top: 18px;
+    right: 32px;
+}
+.ic2 {
+    top: 69px;
+    right: 32px;
+}
+.ic3 {
+    top: 7%;
+    right: 8%;
+}
+.ic4 {
+    top: 27%;
+    right: 8%;
+}
+/*-- agile --*/
+
+.ic5 {
+    top: 47%;
+    right: 8%;
+}
+.login-top {
+    padding: 0px 20px;
+    margin-top: 3%;
+    position: relative;
+}
+.login-bottom ul{
+	padding:0;
+	float:right;
+}
+.login-bottom ul li{
+	display:inline-block;
+	vertical-align: middle;
+	margin-left: 3px;
+}
+.login-bottom ul li p{
+	color:#898a8e;
+	font-size:15px;
+}
+.login-bottom {
+    text-align: center;
+    transform: translateY(-50%);
+}
+.login-bottom .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 2px;
+    transition: .5s;
+    color: #D7D0BE;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2),
+	0 1px 0 rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+}
+.login-bottom .link span {
+	display: block;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*-- agileits-w3layouts --*/
+
+.login-bottom .link:hover {
+    color: white;
+    transform: translateX(0px) rotate(360deg);
+}
+.login-bottom .link.google-plus {
+	background-color: tomato;
+	color: white;
+}
+.login-bottom .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+.login-bottom .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+.login-bottom ul li span:hover{
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.login-bottom ul li span.fb{
+	background-position:0px 0px;
+}
+.login-bottom ul li span.twit{
+	background-position:-34px 0px;
+}
+.login-bottom ul li span.google{
+	background-position:-68px 0px;
+}
+.bottom-w3l {
+    margin-top: 4em;
+}
+.submit input[type="submit"] {
+    font-size: 13px;
+    color: #284da5;
+    background: #fff;
+    border: 2px solid #284da5;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    padding: 7px 19px;
+}
+.submit input[type="submit"]:hover{
+	background:#284da5;
+	color:#fff;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+/* radios and checkboxes */
+.row1{
+	outline:none;
+	padding: 20px;
+	overflow: auto;
+	height: 200px;
+}
+.sky-form.col.col-4 ul {
+	padding: 0;
+	list-style: none;
+}
+.sky-form h4{
+	margin-top: 10px;
+	background: #ECECEC;
+	padding: 10px 20px;
+	color: #333333;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	font-size:16px;
+}
+.sky-form  {
+	margin-bottom: 20px;
+}
+.sky-form .label {
+	display: block;
+	margin-bottom: 6px;
+	line-height: 19px;
+}
+.sky-form .label.col {
+	margin: 0;
+	padding-top: 10px;
+}
+
+.sky-form .input,
+.sky-form .select,
+.sky-form .textarea,
+.sky-form .radio,
+.sky-form .checkbox,
+.sky-form .toggle,
+.sky-form .button {
+	position: relative;
+	display: block;
+}
+/* selects */
+.sky-form .select i {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 1px;
+	height: 11px;
+	background: #fff;
+	box-shadow: 0 0 0 12px #fff;
+}
+.sky-form .select i:after,
+.sky-form .select i:before {
+	content: '';
+	position: absolute;
+	right: 0;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+/*-- wthree --*/
+.sky-form .select i:after {
+	bottom: 0;
+	border-top: 4px solid #404040;
+}
+.sky-form .select i:before {
+	top: 0;
+	border-bottom: 4px solid #404040;
+}
+.sky-form .select-multiple select {
+	height: auto;
+}
+/* radios and checkboxes */
+.sky-form .radio {
+	outline:none;
+	border:none;
+	margin-bottom: 7px;
+	padding-left: 22px;
+	font-size: 16px;
+	line-height: 27px;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 0;
+}
+.sky-form .radio:last-child,
+.sky-form .checkbox:last-child {
+	margin-bottom: 0;
+}
+.sky-form .radio input,
+.sky-form .checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+.sky-form .radio i{
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+}
+.sky-form .radio i {
+	border-radius: 50%;
+}
+.sky-form .radio input + i:after{
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+.sky-form .radio input + i:after {
+    content: '';
+    top: 3px;
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+.sky-form .checkbox input + i:after {
+	content: '';
+	top: 3px;
+	left: 2px;
+	width: 10px;
+	height: 7px;
+	background: url(../images/tick.png) no-repeat;
+	text-align: center;
+}
+.sky-form .radio input:checked + i:after,
+.sky-form .checkbox input:checked + i:after {
+	opacity: 1;
+}
+.sky-form .inline-group {
+	margin: 0 -30px -4px 0;
+}
+.sky-form .inline-group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.sky-form .inline-group .radio{
+	float: left;
+	margin-right: 30px;
+}
+.sky-form .inline-group .radio:last-child{
+	margin-bottom: 4px;
+}
+/* icons */
+
+.sky-form [class^="icon-"] {
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+/* normal state */
+.sky-form .input input,
+.sky-form .select select,
+.sky-form .textarea textarea,
+.sky-form .radio i,
+.sky-form .checkbox i,
+.sky-form .toggle i,
+.sky-form .icon-append,
+.sky-form .icon-prepend {
+	border-color: #fff;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+.sky-form .toggle i:before {
+	background-color: #fff;	
+}
+/* hover state */
+.sky-form .input:hover input,
+.sky-form .select:hover select,
+.sky-form .textarea:hover textarea,
+.sky-form .radio:hover i,
+.sky-form .checkbox:hover i,
+.sky-form .toggle:hover i {
+	border-color: #fff;
+}
+.sky-form .button:hover {
+	opacity: 1;
+}
+/* focus state */
+.sky-form .input input:focus,
+.sky-form .select select:focus,
+.sky-form .textarea textarea:focus,
+.sky-form .radio input:focus + i,
+.sky-form .checkbox input:focus + i,
+.sky-form .toggle input:focus + i {
+	border-color: #fff;
+}
+/* checked state */
+.sky-form .radio input + i:after {
+	background-color: #fff;	
+}
+.sky-form .checkbox input + i:after {
+	color: #fff;
+}
+.sky-form .radio input:checked + i,
+.sky-form .checkbox input:checked + i,
+.sky-form .toggle input:checked + i {
+	border-color: #fff;
+}
+/* error state */
+.sky-form .state-error input,
+.sky-form .state-error select,
+.sky-form .state-error textarea,
+.sky-form .radio.state-error i,
+.sky-form .checkbox.state-error i,
+.sky-form .toggle.state-error i {
+	background: #fff;
+}
+/* success state */
+.sky-form .state-success input,
+.sky-form .state-success select,
+.sky-form .state-success textarea,
+.sky-form .radio.state-success i,
+.sky-form .checkbox.state-success i,
+.sky-form .toggle.state-success i {
+	background: #fff;
+}
+/* disabled state */
+.sky-form .input.state-disabled input,
+.sky-form .select.state-disabled,
+.sky-form .textarea.state-disabled,
+.sky-form .radio.state-disabled,
+.sky-form .checkbox.state-disabled,
+.sky-form .toggle.state-disabled,
+.sky-form .button.state-disabled {
+	cursor: default;
+	opacity: 0.5;
+}
+.sky-form .input.state-disabled:hover input,
+.sky-form .select.state-disabled:hover select,
+.sky-form .textarea.state-disabled:hover textarea,
+.sky-form .radio.state-disabled:hover i,
+.sky-form .checkbox.state-disabled:hover i,
+.sky-form .toggle.state-disabled:hover i {
+	border-color: #e5e5e5;
+}
+.sky-form {
+    margin-left: 16%;
+}
+/******** SAP ************/
+.sap_tabs{
+	clear:both;
+}
+.tab_box{
+	background:#fd926d;
+	padding: 2em;
+}
+.top1{
+	margin-top: 2%;
+}
+.resp-tabs-list {
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+}
+.resp-tab-item {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 1px 0px 8px 0px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin: 0;
+    background: #ed1c24;
+    padding: 15px 45px;
+}
+/*-- wthree --*/
+.resp-tab-active {
+    text-shadow: none;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    background: #1cc7d0;
+    padding: 15px 47px;
+}
+.resp-tabs-container {
+	padding: 0px;
+	background-color: #fff;
+	clear: left;
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+.resp-tab-item label{
+	margin-right:8px;
+}
+/*-- //main-section --*/ 
+.agileinfo h2,.agileits h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    word-spacing: 7px;
+    text-align: center;
+    margin: 20px 0;
+}
+/* hotel booking form */
+.agileits_grid {
+    margin-bottom: 14px;
+}
+.w3layouts_main_grid h5, .agileits_grid h5,.agileinfo_grid h5{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    margin: .8em 0 .4em;
+}
+.nam {
+    float: left;
+    width: 48%;
+}
+.w3layouts_main_grid input[type="text"] {
+    outline: none;
+    width: 100%;
+    background: #fff;
+    color: #4B4B4B;
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #a9a9a9;
+	    box-sizing: border-box;
+}
+.nam1 {
+    float: left;
+    width: 48%;
+    margin-left: 4%;
+}
+.w3layouts_main_grid input[type="email"] {
+    outline: none;
+    width: 100%;
+    background: #fff;
+    color: #4B4B4B;
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #a9a9a9;
+	    box-sizing: border-box;
+}
+.agileits_main_grid.w3_agileits_main_grid, .agileinfo_main_grid {
+    width: 48%;
+    float: left;
+    margin-bottom: 12px;
+}
+.fromtop {
+    margin-top: 10px;
+}
+.held {
+    margin-right: 4%;
+}
+#category {
+    outline: none;
+    width: 97%;
+    background: #fff;
+    color: #4B4B4B;
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #a9a9a9;
+}
+.agileits_w3layouts_main_gridl {
+    float: left;
+    width: 67%;
+    margin-right: 4%;
+}
+.agileits_w3layouts_main_gridl input[type="text"], .agileits_w3layouts_main_gridr input[type="time"] {
+    width: 100% !important;
+}
+.agileits_w3layouts_main_gridr {
+    float: left;
+    width: 29%;
+}
+.agileits_w3layouts_main_gridr input[type="time"] {
+    padding: 4px !important;
+}
+#category1 {
+    outline: none;
+    width: 100%;
+    background: #fff;
+    color: #4B4B4B;
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #a9a9a9;
+	    box-sizing: border-box;
+}
+.w3_main_grid {
+    margin: 2em 0 0;
+}
+.w3_main_grid_right {
+    width: 30%;
+}
+.w3_main_grid_right input[type="submit"] {
+    outline: none;
+    padding: 12px 50px;
+    font-size: 14px;
+    color: #fff;
+    background: #999;
+    background: #1cc7d0;
+    border: none;
+    cursor: pointer;
+}
+/* hotel booking form */
+
+/* cab booking form */
+.wthreelable {
+    width: 25%;
+    float: left;
+}
+.wthreeinput {
+    width: 75%;
+    float: left;
+}
+.wthreelable label {
+    font-size: 15px;
+    font-weight: 100;
+}
+span.colon {
+    float: right;
+    margin-right: 15px;
+    font-weight: bold;
+}
+input.top {
+    margin-bottom: 15px;
+}
+.agileinfow3ls {
+    padding: 15px 0;
+}
+.aitsphonew3ls, .agileinfodeparture, .agileinforeturn, .w3lsjourneyaits {
+    padding: 25px 0 0;
+}
+.aitsphonew3ls .wthreeinput, .agileinfodeparture .wthreeinput, .agileinforeturn .wthreeinput, .w3lsjourneyaits .wthreeinput {
+    margin-top: -15px;
+}
+input.agilecode, input.wthreeland, input.agileinfomobile, input.date, .w3lsjourneyaits-input select {
+    width: 22%;
+    padding: 13px;
+    margin: 5px 0;
+    border: 1px solid #9e9e9e;
+    outline: none;
+    background: transparent;
+    color: #000;
+    /* text-align: center; */
+}
+label.aitsnumber {
+    margin: 0 5px 0 10px;
+}
+input.wthreeland, input.agileinfomobile, .w3lsjourneyaits-input select {
+    width: 31%;
+}
+input.agileinfomobile {
+    width: 72%;
+}
+.aitsphonew3ls-input h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 21%;
+    float: left;
+    margin-top: 30px;
+}
+input.date {
+    width: 62%;
+}
+textarea {
+    height: 100px;
+    padding: 5px 0 10px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #000;
+    border: 1px solid #9e9e9e;
+    letter-spacing: 0.5px;
+	    box-sizing: border-box;
+}
+.w3lsjourneyaits {
+    padding-bottom: 0;
+}
+.aitssubmitw3ls {
+    margin-top: 20px;
+}
+.aitssubmitw3ls input[type="submit"] {
+    padding: 12px 50px;
+    border: none;
+    outline: none;
+    background: #999;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    background: #1cc7d0;
+}
+/* cab booking form */
+
+/* train booking form */
+.wthree_grid h5, .agileinfo_main_grid h5, .agileinfo_main_grid1 h5 {
+    margin: 5px 0px;
+}
+#category2 {
+    outline: none;
+    width: 100%;
+    background: #fff;
+    color: #4B4B4B;
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #a9a9a9;
+	    box-sizing: border-box;
+}
+.agileits_w3layouts_main_grid1 input[type="text"] {
+    width: 100%;
+    padding: 14px;
+}
+.agileits_w3layouts_grid.mim {
+    margin-bottom: 10px;
+}
+/* train booking form */
+
+
+/*--Responsive-start-here--*/
+@media(max-width:1920px){
+}
+@media(max-width:1680px){
+}
+@media(max-width:1600px){
+}
+@media(max-width:1440px){
+.head {
+    width: 54%;
+}
+}
+@media(max-width:1366px){
+.head {
+    width: 57%;
+}
+}
+@media(max-width:1280px){
+.head {
+    width: 61%;
+}
+}
+@media(max-width:1080px){
+.head {
+    width: 71%;
+}
+}
+@media(max-width:1024px){
+.head {
+    width: 76%;
+}
+}
+@media(max-width:991px){
+.head {
+    width: 79%;
+}
+}
+@media(max-width:900px){
+.head {
+    width: 85%;
+}	
+}
+@media(max-width:800px){
+.head {
+    width: 96%;
+}
+}
+@media(max-width:768px){
+.head {
+    margin: 3em auto;
+}
+.resp-tabs-list {
+    padding: 0 20px;
+}
+.resp-tab-item,.resp-tab-active {
+    padding: 10px 38px;
+}
+}
+@media(max-width:736px){
+.resp-tab-item,.resp-tab-active {
+    padding: 10px 34px;
+}
+}
+@media(max-width:667px){
+.resp-tab-item,.resp-tab-active {
+    padding: 10px 23px;
+}
+}
+@media(max-width:640px){
+.resp-tab-item,.resp-tab-active {
+   font-size: 21px;
+}
+}
+@media(max-width:600px){
+.resp-tab-item,.resp-tab-active {
+   font-size: 19px;
+}
+}
+@media(max-width:568px){
+.resp-tab-item,.resp-tab-active {
+    padding: 10px 20px;
+}
+input.agilecode {
+    width: 50%;
+}
+input.wthreeland {
+    width: 50%;
+}
+.w3lsjourneyaits-input select {
+    width: 100%;
+}
+}
+@media(max-width:480px){
+.resp-tab-item,.resp-tab-active {
+    padding: 10px 12px;
+	font-size: 16px;
+}
+}
+@media(max-width:414px){
+.agileinfo h2, .agileits h3 {
+   font-size: 20px;
+}
+.agileits_main_grid.w3_agileits_main_grid, .agileinfo_main_grid {
+    width: 100%;
+    float: left;
+    margin-bottom: 12px;
+}
+#category {
+    width: 100%;
+}
+.nam {
+    float: left;
+    width: 100%;
+}
+.nam1 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 14px;
+}
+}
+@media(max-width:384px){
+.resp-tab-item, .resp-tab-active {
+    padding: 10px 8px;
+    font-size: 16px;
+}
+}
+@media(max-width:375px){
+}
+@media(max-width:320px){
+.wthreelable {
+    width: 34%;
+    float: left;
+}
+.wthreeinput {
+    width: 66%;
+    float: left;
+}
+.resp-tab-item, .resp-tab-active {
+    padding: 8px 8px;
+    font-size: 12px;
+}
+.head {
+    margin: 2em auto;
+}
+}
+/*--Responsive-end-here--*/

@@ -1,0 +1,245 @@
+
+/* the default font in our template*/
+@font: 'Lato', sans-serif;
+
+/* default color skin */
+@skin-color: #f27935;
+
+/* default color skin with opacity */
+@skin-color-transparent: rgba(242, 121, 53, 0.9);
+
+/* text color 1 (some titles)*/
+@color1: #222222; 
+
+/* text color 2 (some text paragraphcs)*/
+@color2: #999999;
+
+/* white color*/
+@white: #ffffff;
+
+/* black color*/
+@black: #000000;
+
+/* ul reset margin and padding*/
+.ul-reset {
+    margin: 0;
+    padding: 0;
+}
+
+/* default style for paragraphs in this template*/
+.paragraph {
+    font-size: 13px;
+    color: @color2;
+    font-family: @font;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 10px;
+}
+
+/* default style for anchors in this template*/
+.anchor {
+    display: inline-block;
+    text-decoration: none;
+    .transition;
+}
+
+/* default style for hading1 in this template*/
+.heading1 {
+    color: @color1;
+    font-size: 30px;
+    font-family: @font;
+    font-weight: 900;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+
+/* default style for hading2 in this template*/
+.heading2 {
+    color: @color1;
+    font-size: 15px;
+    font-family: @font;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+/* variable for radius corners*/
+.radius(@radius) { 
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+/* variable for radius corners*/
+.radius-bottom-left(@radius) { 
+    -webkit-border-bottom-left-radius: @radius;
+    -moz-border-bottom-left-radius: @radius;
+    -o-border-bottom-left-radius: @radius;
+    border-bottom-left-radius: @radius;
+}
+
+/* variable for radius corners*/
+.radius-bottom-right(@radius) { 
+    -webkit-border-bottom-right-radius: @radius;
+    -moz-border-bottom-right-radius: @radius;
+    -o-border-bottom-right-radius: @radius;
+    border-bottom-right-radius: @radius;
+}
+
+/* variable for radius corners*/
+.radius-top-left(@radius) {
+    -webkit-border-top-left-radius: @radius;
+    -moz-border-top-left-radius: @radius;
+    -o-border-top-left-radius: @radius;
+    border-top-left-radius: @radius;
+}
+
+/* variable for radius corners*/
+.radius-top-right(@radius) { 
+    -webkit-border-top-right-radius: @radius;
+    -moz-border-top-right-radius: @radius;
+    -o-border-top-right-radius: @radius;
+    border-top-right-radius: @radius;
+}
+
+/* variable for transitions*/
+.transition { 
+    transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -webkit-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+}
+
+/* variable for transitions*/
+.transition2 { 
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+/* variable for transitions*/
+.transition3 { 
+    transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+/* variable for tranform grow elem scale*/
+.grow-transform(@scale) { 
+    transform: scale(@scale);
+    -webkit-transform: scale(@scale);
+    -moz-transform: scale(@scale);
+    -o-transform: scale(@scale);
+}
+
+/* no shadow  variable*/
+.no-shadow {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+/* box shadow  variable*/
+.box-shadow(@val) {
+    box-shadow: @val;
+    -webkit-box-shadow: @val;
+    -moz-box-shadow: @val;
+    -o-box-shadow: @val;
+}
+
+/* animation duration  variable*/
+.animation-hover {
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-name: hovertrans;
+    -moz-animation-name: hovertrans;
+    -ms-animation-name: hovertrans;
+    -o-animation-name: hovertrans;
+    animation-name: hovertrans;
+}
+
+/* animate transform variable*/
+.animate-transform {
+    @-webkit-keyframes hovertrans {
+        0% { .grow-transform(0); }    
+        50% { .grow-transform(1.07); }
+        100% { .grow-transform(1); }
+    }
+    @-moz-keyframes hovertrans {
+        0% { .grow-transform(0); }    
+        50% { .grow-transform(1.07); }
+        100% { .grow-transform(1); }
+    }
+    @-o-keyframes hovertrans {
+        0% { .grow-transform(0); }    
+        50% { .grow-transform(1.07); }
+        100% { .grow-transform(1); }
+    }
+    @keyframes hovertrans {
+        0% { .grow-transform(0); }    
+        50% { .grow-transform(1.07); }
+        100% { .grow-transform(1); }
+    }
+}
+
+/* animate transform rotate variable*/
+.rotate(@rotate) {
+    -webkit-transform: rotate(@rotate);
+    -moz-transform: rotate(@rotate);
+    -ms-transform: rotate(@rotate);
+    -o-transform: rotate(@rotate);
+    transform: rotate(@rotate);
+}
+
+/* animate transform rotate x variable*/
+.rotateX(@rotate) {
+    -webkit-transform: rotateX(@rotate);
+    -moz-transform: rotateX(@rotate);
+    -ms-transform: rotateX(@rotate);
+    -o-transform: rotateX(@rotate);
+    transform: rotateX(@rotate);
+}
+
+/* animate transform rotate Y variable*/
+.rotateY(@rotate) {
+    -webkit-transform: rotateY(@rotate);
+    -moz-transform: rotateY(@rotate);
+    -ms-transform: rotateY(@rotate);
+    -o-transform: rotateY(@rotate);
+    transform: rotateY(@rotate);
+}
+
+/* animate transform rotate Y variable*/
+.trans-origin {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+/* background size cover*/
+.back-cover {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.trans-delay(@delay) {
+    -webkit-transition-delay: @delay;
+    -o-transition-delay: @delay;
+    -moz-transition-delay: @delay;
+   transition-delay: @delay;
+}
