@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12 mt-5">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header bg-dark">
                        Edit Data Admin
                     </div>
                     <div class="card-body">

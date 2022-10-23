@@ -41,10 +41,12 @@
                                         <label for="" class="control-label">Link Jadesta</label>
                                         <input type="text" class="form-control" name="link_jadesta" value="{{$desa_wisata->link_jadesta}}">
                                 </div>
+                        
                             <div class="form-group">
                                     <label for="" class="control-label">Deskripsi Singkat</label>
                                     <textarea name="deskripsi" id="deskripsi" class="form-control" value="{{$desa_wisata->deskripsi}}"></textarea> 
                             </div>
+                            <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="" class="control-label">Foto 1</label>
@@ -69,6 +71,7 @@
                                         <input type="file" class="form-control" name="foto_4" accept=".jpg">
                                     </div>
                                 </div>
+                            </div>
                             <br>
                            
                         <div class="btn-group float-right">

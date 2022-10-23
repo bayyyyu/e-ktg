@@ -8,7 +8,7 @@
                     <div class="card-header bg-dark">
                        Tambah Data Pengelola
                        <div class="card-tools">
-                            <a href="{{url('backend/DesaWisata')}}" type="button" class="btn btn-tool">
+                            <a href="{{url('backend/admin')}}" type="button" class="btn btn-tool">
                             <i class="fas fa-sign-out-alt"></i> 
                             </a>
                         </div>

@@ -9,6 +9,10 @@ class BackendController extends Controller
     {
         return view('backend.dashboard');
     }
+    function showProfil()
+    {
+        return view('backend.profil');
+    }
 
     // function showDesaWisata()
     // {

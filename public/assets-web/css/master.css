@@ -2297,3 +2297,11 @@ uncomment this part if you haven't added this code anywhere else
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
+
+
+
+.navbar-nav li a.actives {
+  border-bottom: 1px solid black;
+  height: 3px;
+}

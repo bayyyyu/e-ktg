@@ -28,8 +28,8 @@
                     <div class="card-body">
                         <table class="table table-striped table-bordered table-datatable">
                             <thead class="bg-dark">
-                                <th>No</th>
-                                <th>Aksi</th>
+                                <th width="10">No</th>
+                                <th width="50">Aksi</th>
                                 <th>Nama Desa Wisata</th>
                                 <th>Deskripsi Singkat</th>
                             </thead>
@@ -39,8 +39,8 @@
                                     <td>{{$loop->iteration}}</td>
                                     <td>
                                         <div class="btn-group">
-                                            <a href="{{url('backend/DesaWisata', $desa_wisata->id)}}" class="btn btn-dark"><i class="fa fa-info"></i> Detail</a>
-                                            <a href="{{url('backend/DesaWisata', $desa_wisata->id)}}/edit" class="btn btn-warning"><i class="fas fa-edit"></i> Edit</a>
+                                            <a href="{{url('backend/DesaWisata', $desa_wisata->id)}}" class="btn btn-dark"><i class="fa fa-info"></i></a>
+                                            <a href="{{url('backend/DesaWisata', $desa_wisata->id)}}/edit" class="btn btn-warning"><i class="fas fa-edit"></i></a>
                                             @include('backend.template.utils.delete', ['url'=> url('backend/DesaWisata', $desa_wisata->id)])
                                         </div>  
                                     </td>

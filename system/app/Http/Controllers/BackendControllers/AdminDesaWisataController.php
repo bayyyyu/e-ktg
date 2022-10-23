@@ -7,7 +7,7 @@ use App\Models\DesaWisata;
 class AdminDesaWisataController extends Controller
 {
     function index()
-    {
+    {   
         $data['list_desa_wisata']= DesaWisata::all();
         return view('backend.DesaWisata.index', $data);
     }

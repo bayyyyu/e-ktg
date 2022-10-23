@@ -63,16 +63,57 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="AtraksiWisata" class="nav-link">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link  {{request()->is('backend/WisataBahari') ? 'active' : ''}} {{request()->is('backend/WisataBudaya') ? 'active' : ''}}  {{request()->is('backend/WisataKuliner') ? 'active' : ''}}
+                                         {{request()->is('backend/WisataRimba') ? 'active' : ''}}  {{request()->is('backend/WisataKota') ? 'active' : ''}}
+                                          {{request()->is('backend/WisataReligi') ? 'active' : ''}}">
               <i class="nav-icon fas fa-hiking"></i>
               <p>
                 Atraksi Wisata
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="WisataBahari" class="nav-link {{request()->is('backend/WisataBahari') ? 'active' : ''}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Wisata Bahari</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="WisataBudaya" class="nav-link {{request()->is('backend/WisataBudaya') ? 'active' : ''}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Wisata Budaya</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="WisataKuliner" class="nav-link {{request()->is('backend/WisataKuliner') ? 'active' : ''}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Wisata Kuliner</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="WisataRimba" class="nav-link {{request()->is('backend/WisataRimba') ? 'active' : ''}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Wisata Rimba</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="WisataKota" class="nav-link {{request()->is('backend/WisataKota') ? 'active' : ''}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Wisata Kota</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="WisataReligi" class="nav-link {{request()->is('backend/WisataReligi') ? 'active' : ''}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Wisata Religi</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a href="KalenderWisata" class="nav-link">
+            <a href="KalenderWisata" class="nav-link ">
               <i class="nav-icon fas fa-calendar-alt"></i>
               <p>
                 Kalender Wisata

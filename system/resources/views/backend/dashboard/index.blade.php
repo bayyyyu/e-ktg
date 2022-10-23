@@ -34,7 +34,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-3">
+          {{-- <div class="col-md-3">
             <div class="small-box bg-gradient-warning">
               <div class="inner ml-3">
                 <h3>44</h3>
@@ -61,7 +61,7 @@
                 More info <i class="fas fa-arrow-circle-right"></i>
               </a>
             </div>
-          </div>
+          </div> --}}
         </div>
       </div>
     </section>

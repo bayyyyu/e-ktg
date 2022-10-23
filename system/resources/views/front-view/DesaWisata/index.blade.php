@@ -59,13 +59,12 @@
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
-          <li class="dropdown"><a href="#home" class="dropdown-toggle page-scroll" data-toggle="dropdown">Desa Wisata</a>
-          </li>
-          <li><a class="page-scroll" href="{{url('atraksiWisata')}}">Atraksi Wisata</a></li>
+          <li><a class="page-scroll actives" href="#home" data-toggle="dropdown">Desa Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
           <li><a class="page-scroll" href="">Kalender Wisata</a></li>
           <li><a class="page-scroll" href="">Peta Wisata</a></li>
           <li><a class="page-scroll" href="">Info & Kontak</a></li>
-		  <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
+		      <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
@@ -105,7 +104,7 @@
       			data-paddingtop="[10,10,10,10]"
       			data-paddingright="[0,0,0,0]"
       			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">A POWERFUL TOUR FROM</div>
+      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">DESA WISATA</div>
 
       		<!-- LAYER NR. 2 -->
       		<div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-2"
@@ -123,7 +122,7 @@
       			data-paddingtop="[10,10,10,10]"
       			data-paddingright="[0,0,0,0]"
       			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:10px;">E-KTG</div>
+      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:5px;"></div>
 
 
       		<!-- LAYER NR. 3 -->
@@ -141,8 +140,9 @@
       			data-textAlign="['left','left','left','left']"
       			data-paddingtop="[0,0,0,0]"
       			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[0,0,0,0]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">............</div>
+      			data-paddingbottom="[0,0,0,0]">
+          </div>
+      			{{-- data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">............</div> --}}
 
             <!-- LAYER NR. 4 -->
         		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-4"
@@ -210,7 +210,8 @@
 
       	</li>
       </ul>
-      <div class="tp-bannertimer" style="height: 3px; background-color: rgba(255, 255, 255, 0.25);"></div>	</div>
+      <div class="tp-bannertimer" style="height: 3px; background-color: rgba(255, 255, 255, 0.25);"></div>
+  	</div>
     </div>
   </div>
   <!--== Hero Slider End ==-->
@@ -234,7 +235,7 @@
     </div>
   </section>
   <!--== Who We Are End ==-->
-  <section id="blog" class="white-bg">
+<section id="blog" class="white-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-8 centerize-col text-center">
@@ -256,10 +257,10 @@
                 <span class="month">NOV</span>
               </div> --}}
                 <div class="blog-grid-slider slick">
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_1)}}"><img class="img-responsive" src="{{url("public",$desa_wisata->foto_1)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_2)}}"><img class="img-responsive" src="{{url("public",$desa_wisata->foto_2)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_3)}}"><img class="img-responsive" src="{{url("public",$desa_wisata->foto_3)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_4)}}"><img class="img-responsive" src="{{url("public",$desa_wisata->foto_4)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>  
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_1)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public",$desa_wisata->foto_1)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_2)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public",$desa_wisata->foto_2)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_3)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public",$desa_wisata->foto_3)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_4)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public",$desa_wisata->foto_4)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>  
                 </div> 
             </div>
          
@@ -283,7 +284,33 @@
       </div>
       
     </div>
-  </section>
+    {{-- links paginate --}}
+	
+	<div class="container">
+		<div class="text-center">
+			<strong style="color: rgb(58, 0, 10)" >{{$list_desa_wisata->onEachSide(1)->links()}}</strong>	
+		</div>
+	</div>
+  <hr class="center_line grey-bg">
+  <div class="container">
+		<div class="text-center">
+			<strong>
+				showing
+				{{ $list_desa_wisata->firstItem()}}
+				to
+				{{ $list_desa_wisata->lastItem()}}
+				of
+				{{ $list_desa_wisata->total()}}
+				entries
+			</strong>
+		</div>
+	</div>
+	{{-- links paginate end --}}
+</section>
+
+
+
+  
   <!--== Testimonials Start ==-->
 
   <!--== Testimonials End ==-->

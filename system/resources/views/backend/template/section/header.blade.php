@@ -69,13 +69,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         @endif
                         <p class="text-center m-t-10 m-b-20">{{ auth()->user()->nama_lengkap }}</p>
                     </div>
-                    <a class="dropdown-item" href="{{ url('backend/profil') }}">
+                    {{-- <a class="dropdown-item" href="{{ url('backend/profil') }}">
                         <span class="pull-left">Profile</span>
                         <span class="float-right"><i class="fas fa-user"></i></span>
-                    </a>
+                    </a> --}}
                     <a class="clearfix bg-master-lighter dropdown-item mt-2" href="{{url('auth/logout')}}">
                         <span class="pull-left">Logout</span>
-                        <span class="float-right"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="float-right"><i class="fas fa-power-off"></i></span>
                     </a>
                 </div>
             </div>

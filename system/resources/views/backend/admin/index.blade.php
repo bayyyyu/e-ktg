@@ -29,8 +29,8 @@
                     <div class="card-body">
                         <table id="example2" class="table table table-striped table-bordered table-datatable table-hover">
                             <thead class="bg-dark">
-                                <th>No</th>
-                                <th>Aksi</th>
+                                <th width="10">No</th>
+                                <th width="50">Aksi</th>
                                 <th>Nama Lengkap</th>
                                 <th>Username</th>
                                 <th>Email</th>
