@@ -1709,7 +1709,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7951e', end
 .hero-video video{position:absolute;max-width:none;}
 .bg-flex.bg-flex-left{left:0;}
 .bg-flex.bg-flex-right{right:0;}
-.bg-flex{padding:0;position:absolute!important;top:0px;height:100%;overflow:hidden;z-index:100;}
+.bg-flex{padding:0;position:absolute!important;top:35px;height:100%;overflow:hidden;z-index:100;}
 .bg-flex-holder{position:absolute;top:0;width:100%;height:100%;}
 .bg-flex-cover{background-size:cover;background-position:center center;background-repeat:no-repeat;}
 .bg-flex-right{position:absolute;padding:0;right:0;top:0;bottom:0;overflow:hidden;}
@@ -2305,3 +2305,135 @@ uncomment this part if you haven't added this code anywhere else
   border-bottom: 1px solid black;
   height: 3px;
 }
+
+
+
+
+.wrapper {
+  width: 100%;
+}
+
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.carousel .card {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 250px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .card-1 {
+  background: #ed1c24;
+}
+
+.carousel .card-2 {
+  background: #0072bc;
+}
+
+.carousel .card-3 {
+  background: #39b54a;
+}
+
+.carousel .card-4 {
+  background: #f26522;
+}
+
+.carousel .card-5 {
+  background: #630460;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #0072bc !important;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.slider2{
+  max-width: 1150px;
+  display: flex;
+}
+.slider2 .card{
+  background:#fff;
+  flex: 1;
+  margin: 0 10px;
+}
+.slider2 .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider2 .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider2 .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+
+
+

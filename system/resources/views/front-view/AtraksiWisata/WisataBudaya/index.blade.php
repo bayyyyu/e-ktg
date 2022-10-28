@@ -62,9 +62,9 @@
           <li class="dropdown"><a href="{{url('front-view/DesaWisata')}}">Desa Wisata</a>
           </li>
           <li><a class="page-scroll actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
-          <li><a class="page-scroll" href="">Kalender Wisata</a></li>
-          <li><a class="page-scroll" href="">Peta Wisata</a></li>
-          <li><a class="page-scroll" href="">Info & Kontak</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
 		  <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>

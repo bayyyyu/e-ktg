@@ -19,6 +19,10 @@
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/layers.css">
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/navigation.css">
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
 
@@ -62,7 +66,7 @@
           <li class="dropdown"><a href="{{url('front-view/DesaWisata')}}">Desa Wisata</a>
           </li>
           <li><a class="page-scroll actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
-          <li><a class="page-scroll" href="">Kalender Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
           <li><a class="page-scroll" href="">Peta Wisata</a></li>
           <li><a class="page-scroll" href="">Info & Kontak</a></li>
 		  <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
@@ -218,12 +222,110 @@
   <!--== Who We Are Start ==-->
   <section class="white-bg" id="pricing">
     <div class="container">
+      <div class="section-title wow fadeInUp text-center" data-wow-delay="0.1s">
+            <strong style="font-size: 20px; font-weight:bold; color:grey">ATRAKSI WISATA KABUPATEN KETAPANG</strong>
+            <hr class="center_line grey-bg">
+      </div> 
+      {{-- <div class="section-title wow fadeInUp text-center" data-wow-delay="0.1s">
+            <p style="font-size: 25px; color:#000000">Rekomendasi</p>
+            <hr class="center_line black-bg">
+      </div>      --}}
+      <div class="slider2 owl-carousel">
+        @foreach ($list_wisata_bahari->take('1') as $wisata_bahari)
+        <div class="card">
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataBahari', $wisata_bahari->id) }}">{{$wisata_bahari->kategori}}</a></div>
+          </div>
+          <div class="img"><img src="{{url("public",$wisata_bahari->foto)}}" alt="Foto Wisata Bahari"></div>
+          <div class="content">
+            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataBahari', $wisata_bahari->id) }}">{{$wisata_bahari->nama}}</a></div>
+            <p>{!! substr(nl2br ($wisata_bahari->deskripsi),0,100,) !!}.....</p>
+          </div>
+        </div>
+         @endforeach
+         
+         @foreach ($list_wisata_budaya->take('1') as $wisata_budaya)
+        <div class="card">
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataBudaya', $wisata_budaya->id) }}">{{$wisata_budaya->kategori}}</a></div>
+          </div>
+          <div class="img"><img src="{{url("public",$wisata_budaya->foto)}}" alt="Foto Wisata Budaya"></div>
+          <div class="content">
+            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataBudaya', $wisata_budaya->id) }}">{{$wisata_budaya->nama}}</a></div>
+            <p>{!! substr(nl2br ($wisata_budaya->deskripsi),0,100,) !!}.....</p>
+          </div>
+        </div>
+         @endforeach
+         
+         @foreach ($list_wisata_kuliner->take('1') as $wisata_kuliner)
+        <div class="card">
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataKuliner', $wisata_kuliner->id) }}">{{$wisata_kuliner->kategori}}</a></div>
+          </div>
+          <div class="img"><img src="{{url("public",$wisata_kuliner->foto)}}" alt="Foto Wisata Kuliner"></div>
+          <div class="content">
+            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataKuliner', $wisata_kuliner->id) }}">{{$wisata_kuliner->nama}}</a></div>
+            <p>{!! substr(nl2br ($wisata_kuliner->deskripsi),0,100,) !!}.....</p>
+          </div>
+        </div>
+         @endforeach
+          
+         @foreach ($list_wisata_rimba->take('1') as $wisata_rimba)
+        <div class="card">
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataRimba', $wisata_rimba->id) }}">{{$wisata_rimba->kategori}}</a></div>
+          </div>
+          <div class="img"><img src="{{url("public",$wisata_rimba->foto)}}" alt="Foto Wisata Rimba"></div>
+          <div class="content">
+            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataRimba', $wisata_rimba->id) }}">{{$wisata_rimba->nama}}</a></div>
+            <p>{!! substr(nl2br ($wisata_rimba->deskripsi),0,100,) !!}.....</p>
+          </div>
+        </div>
+         @endforeach
+
+         @foreach ($list_wisata_kota->take('1') as $wisata_kota)
+        <div class="card">
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataKota', $wisata_kota->id) }}">{{$wisata_kota->kategori}}</a></div>
+          </div>
+          <div class="img"><img src="{{url("public",$wisata_kota->foto)}}" alt="Foto Wisata Kota"></div>
+          <div class="content">
+            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataKota', $wisata_kota->id) }}">{{$wisata_kota->nama}}</a></div>
+            <p>{!! substr(nl2br ($wisata_kota->deskripsi),0,100,) !!}.....</p>
+          </div>
+        </div>
+         @endforeach
+
+         @foreach ($list_wisata_religi->take('1') as $wisata_religi)
+        <div class="card">
+          <div class="content text-center">
+            <div><a href="{{url('front-view/AtraksiWisata/WisataReligi', $wisata_religi->id) }}">{{$wisata_religi->kategori}} </a></div>
+          </div>
+          <div class="img"><img src="{{url("public",$wisata_religi->foto)}}" alt="Foto Wisata Religi"></div>
+          <div class="content">
+            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataReligi', $wisata_religi->id) }}">{{$wisata_religi->nama}}</a></div>
+            <p>{!! substr(nl2br ($wisata_religi->deskripsi),0,100,) !!}.....</p>
+            
+          </div>
+        </div>
+         @endforeach
+
+      </div>
+      <script>
+        $(".slider2").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000, //2000ms = 2s;
+          autoplayHoverPause: true,
+        });
+      </script>
+      <hr class="center_line black-bg">
+      <br>
       <div class="row">
         <div class="col-md-8 centerize-col text-center">
           <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-            <strong style="font-size: 20px; font-weight:bold; color:grey">ATRAKSI WISATA KABUPATEN KETAPANG</strong>
             <h3 style="font-weight:bold">Pilihan atraksi wisata lainnya di Ketapang </h3>
-            <hr class="center_line grey-bg">
+            
           </div>
         </div>
       </div>
@@ -231,7 +333,7 @@
           <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
             <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
                 <h5>Wisata Bahari</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataBahari')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/1.jpg" alt=""> </a>          
+                <a href="{{url('front-view/AtraksiWisata/WisataBahari')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/12.jpg" alt=""> </a>          
             </div>
           </div>
           <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
@@ -249,19 +351,19 @@
           <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
             <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
                 <h5>Wisata Rimba</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataRimba')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/4.jpg" alt=""> </a>          
+                <a href="{{url('front-view/AtraksiWisata/WisataRimba')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/9.jpg" alt=""> </a>          
             </div>
           </div> 
           <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
             <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
                 <h5>Wisata Kota</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataKota')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/5.jpg" alt=""> </a>          
+                <a href="{{url('front-view/AtraksiWisata/WisataKota')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/10.jpg" alt=""> </a>          
             </div>
           </div>
           <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
             <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
                 <h5>Wisata Religi</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataReligi')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/6.jpg" alt=""> </a>          
+                <a href="{{url('front-view/AtraksiWisata/WisataReligi')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/13.jpg" alt=""> </a>          
             </div>
           </div>      
         </div>

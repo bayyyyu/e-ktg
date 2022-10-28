@@ -61,7 +61,7 @@
         <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
           <li><a class="page-scroll actives" href="#home" data-toggle="dropdown">Desa Wisata</a></li>
           <li><a class="page-scroll" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
-          <li><a class="page-scroll" href="">Kalender Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
           <li><a class="page-scroll" href="">Peta Wisata</a></li>
           <li><a class="page-scroll" href="">Info & Kontak</a></li>
 		      <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
@@ -122,8 +122,8 @@
       			data-paddingtop="[10,10,10,10]"
       			data-paddingright="[0,0,0,0]"
       			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:5px;"></div>
-
+      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:5px;"
+            data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:10px;">E-KTG</div>
 
       		<!-- LAYER NR. 3 -->
       		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-3"

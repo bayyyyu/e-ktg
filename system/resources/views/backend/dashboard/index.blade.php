@@ -23,18 +23,18 @@
           <div class="col-md-3">
             <div class="small-box bg-gradient-success">
               <div class="inner ml-3">
-                <h3>44</h3>
-                <p>Uploads Desa Wisata</p>
+                <h3>8</h3>
+                <p>Upload Desa Wisata</p>
               </div>
               <div class="icon">
                 <i class="fas fa-globe-asia"></i>
               </div>
-              <a href="" class="small-box-footer">
+              {{-- <a href="" class="small-box-footer">
                 More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
+              </a> --}}
             </div>
           </div>
-          {{-- <div class="col-md-3">
+          <div class="col-md-3">
             <div class="small-box bg-gradient-warning">
               <div class="inner ml-3">
                 <h3>44</h3>
@@ -43,12 +43,12 @@
               <div class="icon">
                 <i class="fas fa-hiking"></i>
               </div>
-              <a href="" class="small-box-footer">
+              {{-- <a href="" class="small-box-footer">
                 More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
+              </a> --}}
             </div>
           </div>
-          <div class="col-md-3">
+          {{-- <div class="col-md-3">
             <div class="small-box bg-gradient-info">
               <div class="inner ml-3">
                 <h3>44</h3>

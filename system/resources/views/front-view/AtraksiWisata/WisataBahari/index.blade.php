@@ -62,9 +62,9 @@
           <li class="dropdown"><a href="{{url('front-view/DesaWisata')}}">Desa Wisata</a>
           </li>
           <li><a class="page-scroll actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
-          <li><a class="page-scroll" href="">Kalender Wisata</a></li>
-          <li><a class="page-scroll" href="">Peta Wisata</a></li>
-          <li><a class="page-scroll" href="">Info & Kontak</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
 		  <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>
@@ -82,7 +82,7 @@
 <ul>	<!-- SLIDE  -->
 	<li data-index="rs-3238" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
-		<img src="{{url('public')}}/assets-web/images/post/100.jpg" data-bgcolor="#7F00FF" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina />
+		<img src="{{url('public')}}/assets-web/images/Atraksi Wisata/12.jpg" data-bgcolor="#7F00FF" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina />
 		<!-- LAYERS -->
 
 		<!-- LAYER NR. 1 -->

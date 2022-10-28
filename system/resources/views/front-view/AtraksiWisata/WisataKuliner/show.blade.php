@@ -62,9 +62,9 @@
           <li class="dropdown"><a href="{{url('front-view/DesaWisata')}}">Desa Wisata</a>
           </li>
           <li><a class="page-scroll actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
-          <li><a class="page-scroll" href="">Kalender Wisata</a></li>
-          <li><a class="page-scroll" href="">Peta Wisata</a></li>
-          <li><a class="page-scroll" href="">Info & Kontak</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
 		  <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>
@@ -115,8 +115,8 @@
   <!--== Who We Are Start ==-->
   <div class="grey-bg pt-0 pb-0 about-section mt-50 mb-50">
     
-    <div class="col-md-6 col-sm-6 bg-flex bg-flex-left ml-20">
-      <img src="{{url("public",$wisata_kuliner->foto)}}" style="width:700px; height:600px; object-fit: cover; " class="bg-flex-holder bg-flex-cover"/>
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-left ml-80">
+      <img src="{{url("public",$wisata_kuliner->foto)}}" style="width:500px; height:400px; object-fit: cover; " class="bg-flex-holder bg-flex-cover"/>
     </div>
     <div class="container-fluid">
       <div class="col-md-6 col-sm-6 col-md-offset-6 col-sm-offset-6">

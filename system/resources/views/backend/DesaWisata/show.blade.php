@@ -61,6 +61,7 @@
                     <div class="info-box-content">
                         <p class="text-center">Link Jadesta
                         <a href="{{$desa_wisata->link_jadesta}}" target="_blank">
+                          <br>
                      <strong class="text-center">{{$desa_wisata->link_jadesta}}</strong>
                         </a>
                         </p>
@@ -74,31 +75,31 @@
           <div class="row">
             <div class="col-12 col-md-12 order-2 order-md-1">
               <div class="row">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-6">
                   <div class="info-box bg-light">
                     <div class="info-box-content">            
-                      <img src="{{url("public", $desa_wisata->foto_1)}}" alt="desa wisata picture">
+                      <img src="{{url("public", $desa_wisata->foto_1)}}" style="width:500px; height:300px; object-fit: cover" alt="desa wisata picture">
                       </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-6">
                   <div class="info-box bg-light">
                     <div class="info-box-content">
-                      <img src="{{url("public", $desa_wisata->foto_2)}}" alt="desa wisata picture">
+                      <img src="{{url("public", $desa_wisata->foto_2)}}" style="width:500px; height:300px; object-fit: cover" alt="desa wisata picture">
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-6">
                   <div class="info-box bg-light">
                     <div class="info-box-content">
-                      <img src="{{url("public", $desa_wisata->foto_3)}}" alt="desa wisata picture">
+                      <img src="{{url("public", $desa_wisata->foto_3)}}" style="width:500px; height:300px; object-fit: cover" alt="desa wisata picture">
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-6">
                   <div class="info-box bg-light">
                     <div class="info-box-content">
-                     <img src="{{url("public", $desa_wisata->foto_4)}}" alt="desa wisata picture">
+                     <img src="{{url("public", $desa_wisata->foto_4)}}" style="width:500px; height:300px; object-fit: cover" alt="desa wisata picture">
                     </div>
                   </div>
                 </div>

@@ -700,3 +700,5 @@ h.revertResizeSinglePageInline(),h.wrap.removeClass("cbp-popup-singlePageInline-
 	};
 
 })(jQuery, window, document);
+
+

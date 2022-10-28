@@ -63,7 +63,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu" x-placement="top-end" style="position: absolute; transform: translate3d(-1px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
                     <div class="dropdown-item dropdown-profile-pic" href="#" style="display:table-cell; vertical-align:middle; text-align:center">
                         @if (Auth::check())
-                        <img src="{{ url("public",auth()->user()->foto) }}" height="150px" width="150px" class="img-circle mb-2">
+                        <img src="{{ url("public",auth()->user()->foto) }}"  style="width:150px; height:150px; object-fit: cover" class="img-circle mb-2">
                         @else
                         <img src="{{url("public")}}/images/user.jpg" height="150px" width="150px" class="img-circle mb-2">
                         @endif
