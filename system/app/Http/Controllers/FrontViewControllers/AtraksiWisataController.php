@@ -3,24 +3,34 @@
 namespace App\Http\Controllers\FrontViewControllers;
 
 use App\Models\AtraksiWisata;
-use App\Models\WisataBahari;
-use App\Models\WisataBudaya;
-use App\Models\WisataKota;
-use App\Models\WisataKuliner;
-use App\Models\WisataReligi;
-use App\Models\WisataRimba;
 
 class AtraksiWisataController extends Controller
 {
     function index()
     {
-        $data['list_wisata_bahari'] = WisataBahari::all();
-        $data['list_wisata_budaya'] = WisataBudaya::all();
-        $data['list_wisata_kuliner'] = WisataKuliner::all();
-        $data['list_wisata_rimba'] = WisataRimba::all();
-        $data['list_wisata_kota'] = WisataKota::all();
-        $data['list_wisata_religi'] = WisataReligi::all();
+        $data['list_atraksi_wisata'] = AtraksiWisata::all();
         return view('front-view.AtraksiWisata.index',$data);
     }
-    
+
+    function index2()
+    {
+        $data['list_atraksi_wisata'] = AtraksiWisata::all();
+        return view('front-view.AtraksiWisata.WisataAlam.index', $data);
+    }
+    function index3()
+    {
+        $data['list_atraksi_wisata'] = AtraksiWisata::all();
+        return view('front-view.AtraksiWisata.WisataBudaya.index', $data);
+    }
+    function index4()
+    {
+        $data['list_atraksi_wisata'] = AtraksiWisata::all();
+        return view('front-view.AtraksiWisata.WisataBuatan.index', $data);
+    }
+
+    function show(AtraksiWisata $atraksi_wisata)
+    {
+        $data['atraksi_wisata'] = $atraksi_wisata;
+        return view('front-view.AtraksiWisata.show', $data);
+    }
 }

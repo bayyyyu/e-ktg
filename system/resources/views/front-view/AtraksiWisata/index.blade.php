@@ -56,20 +56,19 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/AtraksiWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/logo-white3.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/logo-black4.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
-          <li class="dropdown"><a href="{{url('front-view/DesaWisata')}}">Desa Wisata</a>
-          </li>
-          <li><a class="page-scroll actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
-          <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
-          <li><a class="page-scroll" href="">Peta Wisata</a></li>
-          <li><a class="page-scroll" href="">Info & Kontak</a></li>
-		  <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
+          <li><a class="" href="{{url('front-view/DesaWisata')}}">Desa Wisata</a></li>
+          <li><a class="actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
+          <li><a class="" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
+          <li><a class="" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
+          <li><a class="" href="">Info & Kontak</a></li>
+		      <li><a class="" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
@@ -94,122 +93,11 @@
 
           <!-- LAYER NR. 1 -->
       		<div class="hero-text-wrap">
-      		<div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-1"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['-90','-90','-90','-50']"
-            data-fontsize="['30','30','30','25']"
-      			data-lineheight="['40','40','40','30']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[10,10,10,10]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">ATRAKSI WISATA</div>
-
-      		<!-- LAYER NR. 2 -->
-      		<div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-2"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','-10','-10']"
-            data-fontsize="['80','80','66','30']"
-      			data-lineheight="['96','96','86','40']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-      			data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[10,10,10,10]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:10px;">E-KTG</div>
-
-
-      		<!-- LAYER NR. 3 -->
-      		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-3"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','40']"
-            data-fontsize="['16','16','16','16']"
-      			data-lineheight="['20','20','20','20']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-      			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[0,0,0,0]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[0,0,0,0]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;"></div>
-
-            <!-- LAYER NR. 4 -->
-        		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-4"
-        			data-x="['center','center','center','center']" data-hoffset="['-120','-120','-120','50']"
-        			data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-        			data-width="none"
-        			data-height="none"
-        			data-whitespace="['normal','nowrap','nowrap','nowrap']"
-        			data-type="button"
-              data-basealign="slide"
-        			data-responsive_offset="on"
-        			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-        			data-textAlign="['inherit','inherit','inherit','inherit']"
-        			data-paddingtop="[0,0,0,0]"
-        			data-paddingright="[0,0,0,0]"
-        			data-paddingbottom="[0,0,0,0]">
-        			{{-- data-paddingleft="[0,0,0,0]"><a href="works.html" class="btn btn-lg btn-light-outline btn-square">/</a> --}}
-				</div>
-
-              <!-- LAYER NR. 5 -->
-          		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-5"
-          			data-x="['center','center','center','center']" data-hoffset="['100','100','100','50']"
-          			data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-          			data-width="none"
-          			data-height="none"
-          			data-whitespace="['normal','nowrap','nowrap','nowrap']"
-          			data-type="button"
-                data-basealign="slide"
-          			data-responsive_offset="on"
-          			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-          			data-textAlign="['inherit','inherit','inherit','inherit']"
-          			data-paddingtop="[0,0,0,0]"
-          			data-paddingright="[0,0,0,0]"
-          			data-paddingbottom="[0,0,0,0]">
-          			{{-- data-paddingleft="[0,0,0,0]"><a href="#" class="btn btn-lg btn-color-outline btn-square">\</a> --}}
-				</div>
-
-              <!-- LAYER NR. 6 -->
-          		<div class="tp-caption rev-scroll-btn"
-          			 id="slide-3238-layer-13"
-          			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-          			 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']"
-          						data-width="35"
-          			data-height="55"
-          			data-whitespace="nowrap"
-
-          			data-type="button"
-          			data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
-          			data-basealign="slide"
-          			data-responsive_offset="on"
-          			data-responsive="off"
-          			data-frames='[{"from":"y:-50px;opacity:0;","speed":1500,"to":"o:1;","delay":800,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-          			data-textAlign="['left','left','left','left']"
-          			data-paddingtop="[0,0,0,0]"
-          			data-paddingright="[0,0,0,0]"
-          			data-paddingbottom="[0,0,0,0]"
-          			data-paddingleft="[0,0,0,0]"
-
-          			style="z-index: 19; min-width: 35px; max-width: 35px; max-width: 55px; max-width: 55px; white-space: nowrap; font-weight: 400;border-color:rgba(255, 255, 255, 1.00);border-style:solid;border-width:3px;border-radius:23px 23px 23px 23px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-          							<span>
-          							</span>
-          		  </div>
-
+      		<div class="hero-text-wrap">
+                <center>
+                  <h3 style="color: white; font-weight:40px; margin-top:250px">Atraksi Wisata</h3>
+              <img src="{{url('public')}}/assets-web/images/logo/miskit.png" alt="" style="width:420px; height:60px; object-fit: cover; ">
+                </center>
             </div>
 
       	</li>
@@ -226,148 +114,89 @@
             <strong style="font-size: 20px; font-weight:bold; color:grey">ATRAKSI WISATA KABUPATEN KETAPANG</strong>
             <hr class="center_line grey-bg">
       </div> 
-      {{-- <div class="section-title wow fadeInUp text-center" data-wow-delay="0.1s">
-            <p style="font-size: 25px; color:#000000">Rekomendasi</p>
-            <hr class="center_line black-bg">
-      </div>      --}}
-      <div class="slider2 owl-carousel">
-        @foreach ($list_wisata_bahari->take('1') as $wisata_bahari)
-        <div class="card">
-          <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataBahari', $wisata_bahari->id) }}">{{$wisata_bahari->kategori}}</a></div>
-          </div>
-          <div class="img"><img src="{{url("public",$wisata_bahari->foto)}}" alt="Foto Wisata Bahari"></div>
-          <div class="content">
-            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataBahari', $wisata_bahari->id) }}">{{$wisata_bahari->nama}}</a></div>
-            <p>{!! substr(nl2br ($wisata_bahari->deskripsi),0,100,) !!}.....</p>
-          </div>
-        </div>
-         @endforeach
-         
-         @foreach ($list_wisata_budaya->take('1') as $wisata_budaya)
-        <div class="card">
-          <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataBudaya', $wisata_budaya->id) }}">{{$wisata_budaya->kategori}}</a></div>
-          </div>
-          <div class="img"><img src="{{url("public",$wisata_budaya->foto)}}" alt="Foto Wisata Budaya"></div>
-          <div class="content">
-            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataBudaya', $wisata_budaya->id) }}">{{$wisata_budaya->nama}}</a></div>
-            <p>{!! substr(nl2br ($wisata_budaya->deskripsi),0,100,) !!}.....</p>
-          </div>
-        </div>
-         @endforeach
-         
-         @foreach ($list_wisata_kuliner->take('1') as $wisata_kuliner)
-        <div class="card">
-          <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataKuliner', $wisata_kuliner->id) }}">{{$wisata_kuliner->kategori}}</a></div>
-          </div>
-          <div class="img"><img src="{{url("public",$wisata_kuliner->foto)}}" alt="Foto Wisata Kuliner"></div>
-          <div class="content">
-            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataKuliner', $wisata_kuliner->id) }}">{{$wisata_kuliner->nama}}</a></div>
-            <p>{!! substr(nl2br ($wisata_kuliner->deskripsi),0,100,) !!}.....</p>
-          </div>
-        </div>
-         @endforeach
-          
-         @foreach ($list_wisata_rimba->take('1') as $wisata_rimba)
-        <div class="card">
-          <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataRimba', $wisata_rimba->id) }}">{{$wisata_rimba->kategori}}</a></div>
-          </div>
-          <div class="img"><img src="{{url("public",$wisata_rimba->foto)}}" alt="Foto Wisata Rimba"></div>
-          <div class="content">
-            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataRimba', $wisata_rimba->id) }}">{{$wisata_rimba->nama}}</a></div>
-            <p>{!! substr(nl2br ($wisata_rimba->deskripsi),0,100,) !!}.....</p>
-          </div>
-        </div>
-         @endforeach
-
-         @foreach ($list_wisata_kota->take('1') as $wisata_kota)
-        <div class="card">
-          <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataKota', $wisata_kota->id) }}">{{$wisata_kota->kategori}}</a></div>
-          </div>
-          <div class="img"><img src="{{url("public",$wisata_kota->foto)}}" alt="Foto Wisata Kota"></div>
-          <div class="content">
-            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataKota', $wisata_kota->id) }}">{{$wisata_kota->nama}}</a></div>
-            <p>{!! substr(nl2br ($wisata_kota->deskripsi),0,100,) !!}.....</p>
-          </div>
-        </div>
-         @endforeach
-
-         @foreach ($list_wisata_religi->take('1') as $wisata_religi)
-        <div class="card">
-          <div class="content text-center">
-            <div><a href="{{url('front-view/AtraksiWisata/WisataReligi', $wisata_religi->id) }}">{{$wisata_religi->kategori}} </a></div>
-          </div>
-          <div class="img"><img src="{{url("public",$wisata_religi->foto)}}" alt="Foto Wisata Religi"></div>
-          <div class="content">
-            <div class="sub-title"><a href="{{url('front-view/AtraksiWisata/WisataReligi', $wisata_religi->id) }}">{{$wisata_religi->nama}}</a></div>
-            <p>{!! substr(nl2br ($wisata_religi->deskripsi),0,100,) !!}.....</p>
+      <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+           <a href="{{url('front-view/AtraksiWisata/WisataAlam')}}"> <p style="font-size: 20px; font-weight:bold; color:#000000">Wisata Alam</p></a>
             
+      </div>     
+      <div class="slider2 owl-carousel">
+        @foreach ($list_atraksi_wisata->where('kategori', 'Wisata Alam') as $atraksi_wisata)
+        <div class="card">
+          
+          <div class="img"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="Foto Wisata Alam"></div>
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
           </div>
         </div>
          @endforeach
-
       </div>
+      
       <script>
         $(".slider2").owlCarousel({
-          loop: true,
+          loop: false,
           autoplay: true,
           autoplayTimeout: 2000, //2000ms = 2s;
           autoplayHoverPause: true,
+          
         });
       </script>
-      <hr class="center_line black-bg">
+      <hr class="dark-grey-bg">
       <br>
-      <div class="row">
-        <div class="col-md-8 centerize-col text-center">
-          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-            <h3 style="font-weight:bold">Pilihan atraksi wisata lainnya di Ketapang </h3>
+       
+       <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+           <a href="{{url('front-view/AtraksiWisata/WisataBudaya')}}"> <p style="font-size: 20px; font-weight:bold; color:#000000">Wisata Budaya</p></a>
             
+      </div>     
+      <div class="slider2 owl-carousel">
+        @foreach ($list_atraksi_wisata->where('kategori', 'Wisata Budaya') as $atraksi_wisata)
+        <div class="card">
+          
+          <div class="img"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="Foto Wisata Alam"></div>
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
           </div>
         </div>
+         @endforeach
       </div>
-        <div class="row mt-50">
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Wisata Bahari</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataBahari')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/12.jpg" alt=""> </a>          
-            </div>
+      
+      <script>
+        $(".slider2").owlCarousel({
+          loop: false,
+          autoplay: true,
+          autoplayTimeout: 2000, //2000ms = 2s;
+          autoplayHoverPause: true,
+          
+        });
+      </script>
+      <hr class="dark-grey-bg">
+      <br>
+
+       <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+           <a href="{{url('front-view/AtraksiWisata/WisataBuatan')}}"> <p style="font-size: 20px; font-weight:bold; color:#000000">Wisata Buatan</p></a>
+            
+      </div>     
+      <div class="slider2 owl-carousel">
+        @foreach ($list_atraksi_wisata->where('kategori', 'Wisata Buatan') as $atraksi_wisata)
+        <div class="card">
+          
+          <div class="img"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="Foto Wisata Alam"></div>
+          <div class="content">
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
           </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Wisata Budaya</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataBudaya')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/2.jpg" alt=""> </a>          
-            </div>
-          </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Wisata Kuliner</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataKuliner')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/3.jpg" alt=""> </a>          
-            </div>
-          </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Wisata Rimba</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataRimba')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/9.jpg" alt=""> </a>          
-            </div>
-          </div> 
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Wisata Kota</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataKota')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/10.jpg" alt=""> </a>          
-            </div>
-          </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Wisata Religi</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataReligi')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/13.jpg" alt=""> </a>          
-            </div>
-          </div>      
         </div>
-                
+         @endforeach
+      </div>
+      
+      <script>
+        $(".slider2").owlCarousel({
+          loop: false,
+          autoplay: true,
+          autoplayTimeout: 2000, //2000ms = 2s;
+          autoplayHoverPause: true,
+          
+        });
+      </script>
+      <hr class="dark-grey-bg">
+      <br>
     </div>
   </section>
 
@@ -378,13 +207,13 @@
         <div class="row wow fadeInUp" data-wow-delay="0.1s">
           <div class="col-md-8 centerize-col text-center">
             <div class="footer-logo">
-              <a href="index.html"><img src="{{url('public')}}/assets-web/images/logo-white.png" class="img-responsive centerize-col" alt="Footer Logo"/></a>
+              <a href="index.html"><img src="{{url('public')}}/assets-web/images/logo-white-footer.png" class="img-responsive centerize-col" alt="Footer Logo"/></a>
             </div>
             <div class="copy-right">Copyright &copy; <span class="default-color">E-KTG 2022 @if (date ("Y")> '2022')-{{date("Y")}} @endif.</span> All rights reserved</div>
             <ul class="social-media mt-30 float-none">
-              <li><a href="mailto:dpcketapang.masata@gmail.com" class="icofont icofont-email"></a></li>
-      			  <li><a href="https://www.instagram.com/_bayyz/" target="_blank" class="icofont icofont-instagram"></a></li>
-      			  <li><a href="https://github.com/bayyyyu" target="_blank" class="icofont icofont-github "></a></li>
+              <li><a href="" class="icofont icofont-email"></a></li>
+      			  <li><a href="" target="_blank" class="icofont icofont-instagram"></a></li>
+      			  <li><a href="" target="_blank" class="icofont icofont-github "></a></li>
             </ul>
           </div>
         </div>

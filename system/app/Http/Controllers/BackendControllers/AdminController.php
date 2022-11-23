@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\BackendControllers;
 
 use App\Models\User;
+use Auth;
 
 class AdminController extends Controller {
     function index(){
@@ -41,9 +42,8 @@ class AdminController extends Controller {
         $admin->username = request('username');
         $admin->email = request('email');
         if (request('password')) $admin->password = (request('password'));
+        if (request('foto')) $admin->handleUploadFoto();
         $admin->save();
-
-        $admin->handleUploadFoto();
         return redirect('backend/admin')->with('success', 'Data Berhasil Diedit');
     }
     function destroy(User $admin)

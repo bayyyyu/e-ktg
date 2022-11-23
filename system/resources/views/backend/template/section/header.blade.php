@@ -15,11 +15,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{url('public')}}/assets-admin/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{url('public')}}/assets-admin/dist/css/adminlte.min.css">
-
+  <link rel="stylesheet" href="{{url('public')}}/assets-admin/plugins/fullcalendar/main.css">
 
   <link rel="stylesheet" href="{{url('public')}}/assets-admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="{{url('public')}}/assets-admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="{{url('public')}}/assets-admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+    <!-- Google Font: Source Sans Pro -->
+  
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -53,8 +57,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="dropdown pull-right">
                 <li aria-expanded="false" aria-haspopup="true" class="profile-dropdown-toggle" style="display:table-cell; vertical-align:middle; text-align:center" data-toggle="dropdown">
                     <span class="thumbnail-wrapper d32 circular inline">
-                        @if (auth()->check())
-                        <img height="33" width="33" src="{{ url("public",auth()->user()->foto) }}" style="object-fit: cover; object-position: 0px 10%;" class="img-circle">
+                        @if (Auth()->check())
+                        <img height="33" width="33" src="{{ url("public",auth()->user()->foto) }}" style="object-fit: cover; object-position: 0px 10%;" class="img-circle" oneerror="this.src='{{url("public")}}/assets-web/images/user.png'">
                         @else
                         <img height="33" width="33" src="{{url("public")}}/images/user.jpg" style="object-fit: cover; object-position: 0px 10%;">
                         @endif
@@ -62,10 +66,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </li>
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu" x-placement="top-end" style="position: absolute; transform: translate3d(-1px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
                     <div class="dropdown-item dropdown-profile-pic" href="#" style="display:table-cell; vertical-align:middle; text-align:center">
-                        @if (Auth::check())
+                        @if (Auth()->user())
                         <img src="{{ url("public",auth()->user()->foto) }}"  style="width:150px; height:150px; object-fit: cover" class="img-circle mb-2">
                         @else
-                        <img src="{{url("public")}}/images/user.jpg" height="150px" width="150px" class="img-circle mb-2">
+                        <img src="{{url("public")}}/assets-admin/images/user.png" height="150px" width="150px" class="img-circle mb-2">
                         @endif
                         <p class="text-center m-t-10 m-b-20">{{ auth()->user()->nama_lengkap }}</p>
                     </div>

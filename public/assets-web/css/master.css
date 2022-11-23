@@ -2437,3 +2437,48 @@ uncomment this part if you haven't added this code anywhere else
 
 
 
+
+#share-button {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #bdc3c7;
+  overflow: hidden;
+  border-radius: 2px 30px;
+}
+
+#share-button p {
+  font-weight: bold;
+  float: left;
+  display: block;
+  padding: 10px 5px 8px 8px !important;
+  margin: 0 3px 3px 0;
+}
+
+#share-button a {
+  position: relative;
+  float: left;
+  box-shadow: 1px 1px 5px rgba(1, 1, 1, .1);
+  display: block;
+  border-radius: 1px 1px;
+  color: #fafafa;
+  padding: 5px 8px;
+  margin: 0 5px 3px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 0px #000000
+}
+
+#share-button a:hover {
+  top: 2px;
+  left: 2px;
+  box-shadow: 1px 1px 0px #000000
+}
+
+#share-button a svg {
+  width: 24px;
+  height: 24px;
+}
+
+#share-button a svg path {
+  fill: #fff
+}
+

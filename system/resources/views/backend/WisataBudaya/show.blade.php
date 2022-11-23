@@ -58,6 +58,42 @@
                   </div>
                 </div>
               </div> 
+
+              <div class="row">
+                <div class="col-12 col-sm-3">
+                  <div class="info-box bg-light">
+                    <div class="info-box-content">
+                        <p class="text-center">Nama Pengelola</p>
+                     <strong class="text-center">{{$wisata_budaya->nama_pengelola}}</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                  <div class="info-box bg-light">
+                    <div class="info-box-content">
+                        <p class="text-center">Nomor Pengelola</p>
+                     <strong class="text-center">{{$wisata_budaya->no_pengelola}}</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                  <div class="info-box bg-light">
+                    <div class="info-box-content">
+                        <p class="text-center">Jam Buka - Tutup</p>
+                     <strong class="text-center">{!!date('H:i', strtotime($wisata_budaya->jam_buka)) !!} - {!!date('H:i', strtotime($wisata_budaya->jam_tutup)) !!}</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                  <div class="info-box bg-light">
+                    <div class="info-box-content">
+                        <p class="text-center">Hari Buka</p>
+                     <strong class="text-center">{{$wisata_budaya->hari_start}}</strong>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
                 <div class="col-12 col-sm-12">
                   <div class="info-box bg-light">
                     <div class="info-box-content">
@@ -67,22 +103,35 @@
                   </div>
                 </div>
               
-              <hr>
-            <h3 class="text-center">foto</h3>
+              {{-- <hr>
+            <h3 class="text-center">foto</h3> --}}
             <hr>
           <div class="row">
-            <div class="col-12 col-md-12 order-2 order-md-1">
-              <div class="row">
-                <div class="col-12 col-sm-12">
-                  <div class="info-box bg-light">
-                    <div class="info-box-content">            
-                      <img src="{{url("public", $wisata_budaya->foto)}}" alt="desa wisata picture">
-                      </div>
-                    </div>
+            <div class="col-md-12">
+            <!-- Line chart -->
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h3 class="card-title ">
+                  <i class="far fa-image"></i>
+                  Foto
+                </h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
                 </div>
               </div>
-              <hr>
-              
+              <div class="card-body">
+                <img src="{{url("public/$wisata_budaya->foto")}}" style="width:1000px; height:500px; object-fit: cover" alt="wisata bahari picture">
+              </div>
+              <!-- /.card-body-->
+            </div>
+            <!-- /.card -->
+
+            <!-- Area chart -->
+            <!-- /.card -->
+
             </div>
           </div>
         </div>

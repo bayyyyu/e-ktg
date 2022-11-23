@@ -51,6 +51,10 @@
 <script src="{{url('public')}}/assets-admin/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="{{url('public')}}/assets-admin/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
+
+
+
+
 @stack('script')
 <script>
   $(".table-datatable").DataTable();

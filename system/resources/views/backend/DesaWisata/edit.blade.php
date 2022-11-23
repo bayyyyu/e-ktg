@@ -44,13 +44,13 @@
                         
                             <div class="form-group">
                                     <label for="" class="control-label">Deskripsi Singkat</label>
-                                    <textarea name="deskripsi" id="deskripsi" class="form-control" value="{{$desa_wisata->deskripsi}}"></textarea> 
+                                    <textarea name="deskripsi" id="deskripsi" class="form-control"></textarea> 
                             </div>
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="" class="control-label">Foto 1</label>
-                                        <input type="file" class="form-control" name="foto_1" accept=".jpg" value="{{$desa_wisata->foto_1}}">
+                                        <input type="file" class="form-control" name="foto_1" accept=".jpg">
                                     </div>
                                 </div>
                                 <div class="col-md-3">

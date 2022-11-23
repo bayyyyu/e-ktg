@@ -9,8 +9,8 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a>Home</a></li>
-              <li class="breadcrumb-item"><a>Pengelola</a></li>
+              <li class="breadcrumb-item"><a href="{{url('backend/dashboard')}}" style="color: black" >Home</a></li>
+              <li class="breadcrumb-item"><a href="{{url('backend/admin')}}" style="color: black" >Pengelola</a></li>
               <li class="breadcrumb-item active">Detail Data Pengelola</li>
             </ol>
           </div>
@@ -22,7 +22,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header bg-dark">
-          <h3 class="card-title">Detail Data Desa Wisata</h3>
+          <h3 class="card-title">Detail Data Desa Pengelola</h3>
 
           <div class="card-tools">
             <a href="{{url('backend/admin')}}" type="button" class="btn btn-tool">
@@ -37,8 +37,8 @@
             <div class="card card-primary ">
               <div class="card-body box-profile">
                 <div class="text-center">
-                    <p class="text-muted text-center">Foto Profil</p>
-                  <img class="profile-user-img img-fluid"
+                    {{-- <p class="text-muted text-center">Foto Profil</p> --}}
+                  <img class="profile-user-img img-fluid"style="width:150px; height:185px; object-fit: cover"
                        src="{{url("public",$admin->foto)}}"
                        alt="User profile picture">
                 </div>

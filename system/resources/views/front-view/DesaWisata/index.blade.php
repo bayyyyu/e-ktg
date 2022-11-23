@@ -52,17 +52,17 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/logo-white3.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/logo-black4.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
-          <li><a class="page-scroll actives" href="#home" data-toggle="dropdown">Desa Wisata</a></li>
+          <li><a class="page-scroll actives" href="{{url('front-view/DesaWisata')}}" data-toggle="dropdown">Desa Wisata</a></li>
           <li><a class="page-scroll" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
           <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
-          <li><a class="page-scroll" href="">Peta Wisata</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
           <li><a class="page-scroll" href="">Info & Kontak</a></li>
 		      <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
@@ -85,129 +85,12 @@
       	<li data-index="rs-3045" data-transition="slotfade-vertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
       		<!-- MAIN IMAGE -->
       		<img src="{{url('public')}}/assets-web/images/post/1.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-      		<!-- LAYERS -->
-
-          <!-- LAYER NR. 1 -->
-      		<div class="hero-text-wrap">
-      		<div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-1"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['-90','-90','-90','-50']"
-            data-fontsize="['30','30','30','25']"
-      			data-lineheight="['40','40','40','30']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[10,10,10,10]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">DESA WISATA</div>
-
-      		<!-- LAYER NR. 2 -->
-      		<div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-2"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','-10','-10']"
-            data-fontsize="['80','80','66','30']"
-      			data-lineheight="['96','96','86','40']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-      			data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[10,10,10,10]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:5px;"
-            data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:10px;">E-KTG</div>
-
-      		<!-- LAYER NR. 3 -->
-      		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-3"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','40']"
-            data-fontsize="['16','16','16','16']"
-      			data-lineheight="['20','20','20','20']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-      			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[0,0,0,0]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[0,0,0,0]">
-          </div>
-      			{{-- data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">............</div> --}}
-
-            <!-- LAYER NR. 4 -->
-        		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-4"
-        			data-x="['center','center','center','center']" data-hoffset="['-120','-120','-120','50']"
-        			data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-        			data-width="none"
-        			data-height="none"
-        			data-whitespace="['normal','nowrap','nowrap','nowrap']"
-        			data-type="button"
-              data-basealign="slide"
-        			data-responsive_offset="on"
-        			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-        			data-textAlign="['inherit','inherit','inherit','inherit']"
-        			data-paddingtop="[0,0,0,0]"
-        			data-paddingright="[0,0,0,0]"
-        			data-paddingbottom="[0,0,0,0]">
-        			{{-- data-paddingleft="[0,0,0,0]"><a href="works.html" class="btn btn-lg btn-light-outline btn-square">/</a> --}}
-				</div>
-
-              <!-- LAYER NR. 5 -->
-          		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-5"
-          			data-x="['center','center','center','center']" data-hoffset="['100','100','100','50']"
-          			data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-          			data-width="none"
-          			data-height="none"
-          			data-whitespace="['normal','nowrap','nowrap','nowrap']"
-          			data-type="button"
-                data-basealign="slide"
-          			data-responsive_offset="on"
-          			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-          			data-textAlign="['inherit','inherit','inherit','inherit']"
-          			data-paddingtop="[0,0,0,0]"
-          			data-paddingright="[0,0,0,0]"
-          			data-paddingbottom="[0,0,0,0]">
-          			{{-- data-paddingleft="[0,0,0,0]"><a href="#" class="btn btn-lg btn-color-outline btn-square">\</a> --}}
-				</div>
-
-              <!-- LAYER NR. 6 -->
-          		<div class="tp-caption rev-scroll-btn"
-          			 id="slide-3238-layer-13"
-          			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-          			 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']"
-          						data-width="35"
-          			data-height="55"
-          			data-whitespace="nowrap"
-
-          			data-type="button"
-          			data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
-          			data-basealign="slide"
-          			data-responsive_offset="on"
-          			data-responsive="off"
-          			data-frames='[{"from":"y:-50px;opacity:0;","speed":1500,"to":"o:1;","delay":800,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-          			data-textAlign="['left','left','left','left']"
-          			data-paddingtop="[0,0,0,0]"
-          			data-paddingright="[0,0,0,0]"
-          			data-paddingbottom="[0,0,0,0]"
-          			data-paddingleft="[0,0,0,0]"
-
-          			style="z-index: 19; min-width: 35px; max-width: 35px; max-width: 55px; max-width: 55px; white-space: nowrap; font-weight: 400;border-color:rgba(255, 255, 255, 1.00);border-style:solid;border-width:3px;border-radius:23px 23px 23px 23px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-          							<span>
-          							</span>
-          		  </div>
-
+              <div class="hero-text-wrap">
+                <center>
+                  <h3 style="color: white; font-weight:40px; margin-top:250px">Desa Wisata</h3>
+              <img src="{{url('public')}}/assets-web/images/logo/miskit.png" alt="" style="width:420px; height:60px; object-fit: cover; ">
+                </center>
             </div>
-
       	</li>
       </ul>
       <div class="tp-bannertimer" style="height: 3px; background-color: rgba(255, 255, 255, 0.25);"></div>
@@ -241,7 +124,7 @@
         <div class="col-md-8 centerize-col text-center">
           <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
             <strong style="font-size: 20px; font-weight:bold">DESA WISATA KABUPATEN KETAPANG</strong>
-            <hr class="center_line grey-bg">
+            <hr class="">
           </div>
         </div>
       </div>
@@ -250,28 +133,28 @@
         <div class="col-md-4 blog-list wow fadeInDown mt-2" data-wow-delay="0.2s">
           <div class="post-wrap">
              <hr class="center_line dark-bg">
-            <h5 class="text-center"><a href="{{$desa_wisata->link_jadesta}}" target="_blank">{{$desa_wisata->nama_desa_wisata}}</a></h5>
+            {{-- <h5 class="text-center"><a href="{{$desa_wisata->link_jadesta}}" target="_blank">{{$desa_wisata->nama_desa_wisata}}</a></h5> --}}
             <div class="post-img">
               {{-- <div class="date-box dark-bg">
                 <span class="day">26</span>
                 <span class="month">NOV</span>
               </div> --}}
                 <div class="blog-grid-slider slick">
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_1)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public",$desa_wisata->foto_1)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_2)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public",$desa_wisata->foto_2)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_3)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public",$desa_wisata->foto_3)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$desa_wisata->foto_4)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public",$desa_wisata->foto_4)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>  
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public/$desa_wisata->foto_1")}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public/$desa_wisata->foto_1")}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public/$desa_wisata->foto_2")}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public/$desa_wisata->foto_2")}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public/$desa_wisata->foto_3")}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public/$desa_wisata->foto_3")}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public/$desa_wisata->foto_4")}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public/$desa_wisata->foto_4")}}" alt="Tidak Dapat Memuat Gambar"/></a></div>  
                 </div> 
             </div>
          
             <div class="post-text">
-              <hr class="grey-bg">
-              <h3><a href="{{$desa_wisata->link_jadesta}}" target="_blank">{{$desa_wisata->nama_desa_wisata}}</a></h3>
+              {{-- <hr class="grey-bg"> --}}
+              <h3><a href="{{$desa_wisata->link_jadesta}}" target="_blank" >{{$desa_wisata->nama_desa_wisata}}</a></h3>
               <p>
                 {{"''".$desa_wisata->deskripsi."''"}}
               </p>
-			  <hr class="grey-bg">
-			  <i class="icofont-speech-comments"> "Tanggapan Pengunjung"</i>
+			  {{-- <hr class="grey-bg"> --}}
+			  {{-- <i class="icofont-speech-comments"> "Tanggapan Pengunjung"</i> --}}
               {{-- <div class="text-center">
                   <i class="icofont-caret-down"></i>
               </div> --}}
@@ -694,13 +577,13 @@
         <div class="row wow fadeInUp" data-wow-delay="0.1s">
           <div class="col-md-8 centerize-col text-center">
             <div class="footer-logo">
-              <a href="index.html"><img src="{{url('public')}}/assets-web/images/logo-white.png" class="img-responsive centerize-col" alt="Footer Logo"/></a>
+              <a href="index.html"><img src="{{url('public')}}/assets-web/images/logo-white-footer.png" class="img-responsive centerize-col" alt="Footer Logo"/></a>
             </div>
             <div class="copy-right">Copyright &copy; <span class="default-color">E-KTG 2022 @if (date ("Y")> '2022')-{{date("Y")}} @endif.</span> All rights reserved</div>
             <ul class="social-media mt-30 float-none">
-              <li><a href="mailto:dpcketapang.masata@gmail.com" class="icofont icofont-email"></a></li>
-      			  <li><a href="https://www.instagram.com/_bayyz/" target="_blank" class="icofont icofont-instagram"></a></li>
-      			  <li><a href="https://github.com/bayyyyu" target="_blank" class="icofont icofont-github "></a></li>
+              <li><a href="" class="icofont icofont-email"></a></li>
+      			  <li><a href="" target="_blank" class="icofont icofont-instagram"></a></li>
+      			  <li><a href="" target="_blank" class="icofont icofont-github "></a></li>
             </ul>
           </div>
         </div>

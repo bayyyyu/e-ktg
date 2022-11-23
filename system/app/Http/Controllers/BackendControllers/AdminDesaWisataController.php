@@ -42,11 +42,13 @@ class AdminDesaWisataController extends Controller
     function update(DesaWisata $desa_wisata)
     {
         $desa_wisata->nama_desa_wisata = request('nama_desa_wisata');
-        $desa_wisata->deskripsi = request('deskripsi');
+        if (request('deskripsi')) $desa_wisata->desa_wisata = (request('desa_wisata'));
         $desa_wisata->link_jadesta = request('link_jadesta');
+        if (request('foto_1')) $desa_wisata->handleUploadFoto();
+        if (request('foto_2')) $desa_wisata->handleUploadFoto();
+        if (request('foto_3')) $desa_wisata->handleUploadFoto();
+        if (request('foto_4')) $desa_wisata->handleUploadFoto();
         $desa_wisata->save();
-
-        $desa_wisata->handleUploadFoto();
         return redirect('backend/DesaWisata')->with('success', 'Data Berhasil Diedit');
     }
     function destroy(DesaWisata $desa_wisata)

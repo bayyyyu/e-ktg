@@ -36,7 +36,7 @@
                                 <br>
                         <div class="btn-group float-right">
                         <a href="{{url('backend/admin')}}" class="btn btn-danger"> Batal </a>
-                       <button class="btn btn-primary float-right"><i class="fa fa-save "></i> Simpan</button>
+                       <button class="btn btn-dark float-right"><i class="fa fa-save "></i> Simpan</button>
                         </div>
                        </form>
                     </div>

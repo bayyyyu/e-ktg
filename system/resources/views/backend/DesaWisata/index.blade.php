@@ -1,4 +1,4 @@
-@extends('backend.template.Adminbase')
+@extends('backend.template.adminBase')
 
 @section('content')
 <section class="content-header">

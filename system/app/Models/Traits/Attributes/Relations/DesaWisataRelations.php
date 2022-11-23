@@ -10,5 +10,6 @@ trait DesaWisataRelations
     {
         return $this->belongsTo(User::class, 'id_user');
     }
+   
     
 }

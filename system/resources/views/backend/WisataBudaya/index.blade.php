@@ -1,17 +1,18 @@
-@extends('backend.template.Adminbase')
+
+@extends('backend.template.adminBase')
 
 @section('content')
+
 <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Atraksi Wisata</h1>
+            <h1>Wisata Budaya</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-              <li class="breadcrumb-item">Atraksi Wisata</li>
-               <li class="breadcrumb-item active">Wisata Budaya</li>
+              <li class="breadcrumb-item"><a href="{{url('dashboard')}}">Home</a></li>
+              <li class="breadcrumb-item active">Wisata Budaya</li>
             </ol>
           </div>
         </div>
@@ -23,16 +24,18 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        Data Atraksi Wisata Budaya
+                        Data Wisata Budaya
                         <a href="{{url('backend/WisataBudaya/create')}}" class="btn btn-dark float-right"><i class="fa fa-plus"></i> Tambah Data</a>
                     </div>
                     <div class="card-body">
                         <table class="table table-striped table-bordered table-datatable">
                             <thead class="bg-dark">
-                                <th>No</th>
-                                <th>Aksi</th>
-                                <th>Kategori Atraksi Wisata</th>
-                                <th>Nama Atraksi Wisata</th>
+                                <th width="10">No</th>
+                                <th width="50">Aksi</th>
+                                <th>Kategori</th>
+                                <th>Nama Event</th>
+                                <th>Hari Buka</th>
+                                <th>Jam Buka - Tutup</th>
                             </thead>
                             <tbody>
                                @foreach($list_wisata_budaya as $wisata_budaya)
@@ -47,6 +50,8 @@
                                     </td>
                                     <td>{{$wisata_budaya->kategori}}</td>
                                     <td>{{$wisata_budaya->nama}}</td>
+                                    <td>{{$wisata_budaya->hari_start}}</td>
+                                    <td>{!!date('H:i', strtotime($wisata_budaya->jam_buka)) !!} - {!!date('H:i', strtotime($wisata_budaya->jam_tutup)) !!}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -58,3 +63,5 @@
     </div>
 
 @endsection
+
+

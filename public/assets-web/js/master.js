@@ -20,7 +20,7 @@
 		/* ===== PRELOADER  ===== */
 
 		      $("#loader-overlay").delay(500).fadeOut();
-	        $(".loader").delay(1000).fadeOut("slow");
+	        $(".loader").delay(0).fadeOut("slow");
 
 	        $(window).trigger("scroll");
 	        $(window).trigger("resize");

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\FrontViewControllers;
 
-use App\Models\AtraksiWisata;
 use App\Models\WisataBudaya;
 
 class WisataBudayaController extends Controller
@@ -17,6 +16,7 @@ class WisataBudayaController extends Controller
     function show(WisataBudaya $wisata_budaya)
     {
         $data['wisata_budaya'] = $wisata_budaya;
+        $data['list_wisata_budaya'] = WisataBudaya::all();
         return view('front-view.AtraksiWisata.WisataBudaya.show', $data);
     }
 }

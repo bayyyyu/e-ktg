@@ -7,7 +7,7 @@
 <meta name="author" content="Designs Ninja">
 <meta name="description" content="Professional and Great template with 10 unique home page designs for corporate, classic, creative, parallax, studio, crypto Currency, business and minimal concept">
 	<meta name="keywords" content="animation, creative, digital, flex, marketing, minimal, one page, parallax, portfolio, responsive, revolution slider, startup, studio, video background">
-<title>KETAPANG TRAVEL GUIDE - Wisata Budaya di Kabupaten Ketapang</title>
+<title>KETAPANG TRAVEL GUIDE - Wisata Bahari di Kabupaten Ketapang</title>
 <link rel="shortcut icon" href="{{url('public')}}/assets-web-web/images/favicon.ico">
 
 <!-- Core Style Sheets -->
@@ -52,7 +52,7 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/AtraksiWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/loo/logo-white.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/logo-black3.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
@@ -82,7 +82,7 @@
 <ul>	<!-- SLIDE  -->
 	<li data-index="rs-3238" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
-		<img src="{{url('public')}}/assets-web/images/Atraksi Wisata/2.jpg" data-bgcolor="#7F00FF" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina />
+		<img src="{{url('public')}}/assets-web/images/post/22.jpg" data-bgcolor="#7F00FF" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina />
 		<!-- LAYERS -->
 
 		<!-- LAYER NR. 1 -->
@@ -124,25 +124,24 @@
         </div>
       </div>
       <div class="row">
-        @foreach($list_wisata_budaya as $wisata_budaya)
+        @foreach($list_atraksi_wisata->where('kategori','Wisata Budaya') as $atraksi_wisata)
         <div class="col-md-4 blog-list wow fadeInDown mt-2" data-wow-delay="0.2s">
           <div class="post-wrap">
              <hr class="center_line dark-bg">
-            <h5 class="text-center">{{$wisata_budaya->kategori}}</h5>
             <div class="post-img">
               {{-- <div class="date-box dark-bg">
                 <span class="day">26</span>
                 <span class="month">NOV</span>
               </div> --}}
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$wisata_budaya->foto)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public",$wisata_budaya->foto)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$atraksi_wisata->foto)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public",$atraksi_wisata->foto)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
                  
             </div>
          
             <div class="post-text">
               
-              <h3>{{$wisata_budaya->nama}}</h3>
+              <h3>{{$atraksi_wisata->nama}}</h3>
               <p>
-                {!! substr(nl2br ($wisata_budaya->deskripsi),0,220,) !!}..... <a href="{{url('front-view/AtraksiWisata/WisataBudaya', $wisata_budaya->id) }}" style="color: blue">selengkapnya</a>
+                {!! substr(nl2br ($atraksi_wisata->deskripsi),0,220,) !!}..... <a href="{{url('front-view/AtraksiWisata', $atraksi_wisata->id) }}" style="color: blue">selengkapnya</a>
               </p>
 			  <hr class="grey-bg">
               {{-- <div class="text-center">
@@ -186,13 +185,13 @@
         <div class="row wow fadeInUp" data-wow-delay="0.1s">
           <div class="col-md-8 centerize-col text-center">
             <div class="footer-logo">
-              <a href="index.html"><img src="{{url('public')}}/assets-web/images/logo-white.png" class="img-responsive centerize-col" alt="Footer Logo"/></a>
+              <a href="index.html"><img src="{{url('public')}}/assets-web/images/logo-white-footer.png" class="img-responsive centerize-col" alt="Footer Logo"/></a>
             </div>
             <div class="copy-right">Copyright &copy; <span class="default-color">E-KTG 2022 @if (date ("Y")> '2022')-{{date("Y")}} @endif.</span> All rights reserved</div>
             <ul class="social-media mt-30 float-none">
-              <li><a href="mailto:dpcketapang.masata@gmail.com" class="icofont icofont-email"></a></li>
-      			  <li><a href="https://www.instagram.com/_bayyz/" target="_blank" class="icofont icofont-instagram"></a></li>
-      			  <li><a href="https://github.com/bayyyyu" target="_blank" class="icofont icofont-github "></a></li>
+              <li><a href="" class="icofont icofont-email"></a></li>
+      			  <li><a href="" target="_blank" class="icofont icofont-instagram"></a></li>
+      			  <li><a href="" target="_blank" class="icofont icofont-github "></a></li>
             </ul>
           </div>
         </div>
