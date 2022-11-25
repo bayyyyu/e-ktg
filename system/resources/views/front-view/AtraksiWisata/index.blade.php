@@ -56,7 +56,7 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/AtraksiWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/logo-white3.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/logo-black4.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/AtraksiWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/maskot-putih6.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/maskot-itam.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
@@ -96,7 +96,7 @@
       		<div class="hero-text-wrap">
                 <center>
                   <h3 style="color: white; font-weight:40px; margin-top:250px">Atraksi Wisata</h3>
-              <img src="{{url('public')}}/assets-web/images/logo/miskit.png" alt="" style="width:420px; height:60px; object-fit: cover; ">
+              <img src="{{url('public')}}/assets-web/images/logo/maskot-putih5.png" alt="" style="width:100%; height:auto; object-fit: cover; ">
                 </center>
             </div>
 
@@ -124,7 +124,7 @@
           
           <div class="img"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="Foto Wisata Alam"></div>
           <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
           </div>
         </div>
          @endforeach
@@ -152,7 +152,7 @@
           
           <div class="img"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="Foto Wisata Alam"></div>
           <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataBudaya', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
           </div>
         </div>
          @endforeach
@@ -178,9 +178,9 @@
         @foreach ($list_atraksi_wisata->where('kategori', 'Wisata Buatan') as $atraksi_wisata)
         <div class="card">
           
-          <div class="img"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="Foto Wisata Alam"></div>
+          <div class="img"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="Foto Wisata Buatan"></div>
           <div class="content">
-            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
+            <div class="text-center"><a href="{{url('front-view/AtraksiWisata/WisataBuatan', $atraksi_wisata->id)}}">{{$atraksi_wisata->nama}}</a></div>
           </div>
         </div>
          @endforeach

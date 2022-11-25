@@ -53,7 +53,7 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/logo-white.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/maskot-putih6.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/maskot-itam.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
@@ -79,7 +79,7 @@
   <!--== Header End ==-->
 
   <!--== Hero Slider Start ==-->
-  <div class="remove-padding transition-none" id="home">
+<div class="remove-padding transition-none" id="home">
   <div id="rev_slider_1078_2_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:#000000;padding:0px;margin-top:0px;margin-bottom:0px;">
   <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
 	<div id="rev_slider_1078_2" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
@@ -93,7 +93,7 @@
       		<div class="hero-text-wrap">
                 <center>
                   <h3 style="color: white; font-weight:40px; margin-top:250px">Kalender Wisata</h3>
-              <img src="{{url('public')}}/assets-web/images/logo/miskit.png" alt="" style="width:420px; height:60px; object-fit: cover; ">
+              <img src="{{url('public')}}/assets-web/images/logo/maskot-putih5.png" alt="" style="width:100%; height:auto; object-fit: cover; ">
                 </center>
             </div>
 
@@ -101,7 +101,7 @@
       </ul>
       <div class="tp-bannertimer" style="height: 3px; background-color: rgba(255, 255, 255, 0.25);"></div>	</div>
     </div>
-  </div>
+</div>
   <!--== Hero Slider End ==-->
 
   <!--== Who We Are Start ==-->

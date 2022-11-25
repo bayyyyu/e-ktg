@@ -52,7 +52,7 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/AtraksiWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/logo-white3.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/logo-black4.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/AtraksiWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/maskot-putih6.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/maskot-itam.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
@@ -141,9 +141,9 @@
               
               <h3>{{$atraksi_wisata->nama}}</h3>
               <p>
-                {!! substr(nl2br ($atraksi_wisata->deskripsi),0,220,) !!}..... <a href="{{url('front-view/AtraksiWisata', $atraksi_wisata->id) }}" style="color: blue">selengkapnya</a>
+                {!! substr(nl2br ($atraksi_wisata->deskripsi),0,220,) !!}..... <a href="{{url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}" style="color: blue">selengkapnya</a>
               </p>
-			  <hr class="grey-bg">
+			        <hr class="grey-bg">
               {{-- <div class="text-center">
                   <i class="icofont-caret-down"></i>
               </div> --}}

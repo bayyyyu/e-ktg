@@ -16,7 +16,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="{{url('public')}}/assets-login/css/style.css">
 
-    <title>Login #7</title>
+    <title>Login Admin E-KTG</title>
   </head>
   <body>
   
@@ -53,7 +53,7 @@
                   <input type="checkbox" checked="checked"/>
                   <div class="control__indicator"></div>
                 </label>
-                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+                {{-- <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>  --}}
               </div>
 
               <input type="submit" value="Log In" class="btn btn-block btn-primary">

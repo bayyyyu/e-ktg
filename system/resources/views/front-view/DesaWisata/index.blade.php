@@ -52,7 +52,7 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/logo-white3.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/logo-black4.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/maskot-putih6.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/maskot-itam.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
@@ -88,7 +88,7 @@
               <div class="hero-text-wrap">
                 <center>
                   <h3 style="color: white; font-weight:40px; margin-top:250px">Desa Wisata</h3>
-              <img src="{{url('public')}}/assets-web/images/logo/miskit.png" alt="" style="width:420px; height:60px; object-fit: cover; ">
+              <img src="{{url('public')}}/assets-web/images/logo/maskot-putih5.png" alt="" style="width:100%; height:auto; object-fit: cover; ">
                 </center>
             </div>
       	</li>
@@ -110,7 +110,7 @@
               ELECTRONIC KETAPANG TRAVEL GUIDE, e-KTG (beta), adalah sarana penyedia informasi pariwisata dan desa wisata di Kabupaten Ketapang yang terintegrasi dengan sistem JADESTA (Jaringan Desa Wisata) Kemenparekraf RI.  ​Website ini dikelola bersama  oleh DPC MASATA Ketapang, Politeknik Negeri Ketapang, dan Dinas Pariwisata dan Kebudayaan Kabupaten Ketapang, Kalimantan Barat.
             </p>
 			<p>
-				Silahkan KLIK pada poster desa wisata yang tersedia untuk menemukan beragam informasi paket wisata dan fasilitas pendukung lainnya.
+				Silahkan KLIK pada nama desa wisata yang tersedia untuk menemukan beragam informasi paket wisata dan fasilitas pendukung lainnya.
 			</p>
           </div>
         </div>

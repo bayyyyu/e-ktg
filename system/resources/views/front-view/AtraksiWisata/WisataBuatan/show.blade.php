@@ -8,21 +8,16 @@
 <meta name="description" content="Professional and Great template with 10 unique home page designs for corporate, classic, creative, parallax, studio, crypto Currency, business and minimal concept">
 	<meta name="keywords" content="animation, creative, digital, flex, marketing, minimal, one page, parallax, portfolio, responsive, revolution slider, startup, studio, video background">
 <title>KETAPANG TRAVEL GUIDE</title>
-<link rel="shortcut icon" href="{{url('public')}}/assets-web-web/images/favicon.ico">
 
 <!-- Core Style Sheets -->
 <link rel="stylesheet" href="{{url('public')}}/assets-web/css/master.css">
 <!-- Responsive Style Sheets -->
 <link rel="stylesheet" href="{{url('public')}}/assets-web/css/responsive.css">
 <!-- Revolution Style Sheets -->
-<link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/settings.css">
-<link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/layers.css">
-<link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/navigation.css">
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
 
-
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
 
@@ -56,115 +51,113 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/maskot-putih6.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/maskot-itam.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/AtraksiWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/maskot-putih6.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/maskot-itam.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
-          <li class="dropdown"><a href="{{url('front-view/DesaWisata')}}">Desa Wisata</a>
-          </li>
-          <li><a class="page-scroll" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
-          <li><a class="page-scroll actives" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
-          <li><a class="page-scroll" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
-          <li><a class="page-scroll" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
-		  <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
+          <li><a class="" href="{{url('front-view/DesaWisata')}}">Desa Wisata</a></li>
+          <li><a class="actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
+          <li><a class="" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
+          <li><a class="" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
+          <li><a class="" href="">Info & Kontak</a></li>
+		      <li><a class="" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
     </div>
 
-    <!-- Start Side Menu -->
-     <!-- End Side Menu -->
-
   </nav>
   <!--== Header End ==-->
 
-  <!--== Hero Slider Start ==-->
-  <div id="rev_slider_1174_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
-<ul>	<!-- SLIDE  -->
-	<li data-index="rs-3238" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-		<!-- MAIN IMAGE -->
-		<img src="{{url('public')}}/assets-web/images/post/kalender.jpg" data-bgcolor="#7F00FF" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina />
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
- 
-        
-          
+  <!--== Page Title Start ==-->
+  <div class="transition-none">
+      <section class="title-hero-bg parallax-effect" style="background-image: url({{url('public')}}/assets-web/images/post/22.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
               <div class="page-title text-center white-color">
-                <h1 class="raleway-font font-300">{{$kalender_wisata->nama}}</h1>
+                <h1 class="raleway-font font-300">{{$atraksi_wisata->nama}}</h1>
                 <div class="breadcrumb mt-20">
                     <!-- Breadcrumb Start -->
                         <ul>
-                          <li><a href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
-                          <li>Detail</li>
+                          <li><a href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
+                          <li><a href="{{url('front-view/AtraksiWisata/WisataBuatan')}}">{{$atraksi_wisata->kategori}}</a></li>
+                          <li>Blog Details</li>
                         </ul>
                     <!-- Breadcrumb End -->
                 </div>
               </div>
-	</li>
-</ul>
-  <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-</div>
-  <!--== Hero Slider End ==-->
+            </div>
+          </div>
 
-  <!--== Who We Are Start ==-->
-  {{-- <div class="grey-bg pt-0 pb-0 about-section mt-50 mb-50">
-    
-    <div class="col-md-6 col-sm-6 bg-flex bg-flex-left ml-80">
-      <img src="{{url("public",$kalender_wisata->foto)}}" style="width:500px; height:400px; object-fit: cover; " class="bg-flex-holder bg-flex-cover"/>
-    </div>
-    <div class="container-fluid">
-      <div class="col-md-6 col-sm-6 col-md-offset-6 col-sm-offset-6">
-          <div class="col-inner spacer text-left wow fadeInLeft" data-wow-delay="0.1s">
-            <div class="mission-section">
-            <h2 class="raleway-font">{{$kalender_wisata->nama}}</h2>
-            <hr class="left-line dark-bg" />
-            <p>
-              {{$kalender_wisata->isi}}
-            </p>
-            
-          </div>
-          </div>
         </div>
-      </div>
-  </div> --}}
+      </section>
+  </div>
+  <!--== Page Title End ==-->
 
-
+  <!--== Blog Details Start ==-->
   <section class="white-bg">
     <div class="container">
       <div class="row">
-        <div class="col-md-12  col-xs-12 xs-mb-50">
+        <div class="col-md-9 col-sm-9 col-xs-12 xs-mb-50">
           <div class="row">
-            <div class="col-md-12  col-sm-12 col-xs-12 mb-50">
+            <div class="col-md-12 col-sm-12 col-xs-12">
               <ul class="single-blog-list">
                 <li>
                   <div class="post-wrap">
                     <div class="post-img">
-                      <div class="date-box dark-bg">
-                        <span class="day">{!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!}</span>
-                      </div>
-                        <div class="item"><img class="img-responsive" style="width:100%; height:100%; object-fit: cover" src="{{url("public/$kalender_wisata->foto")}}"  alt=""/></div>
-                        {{-- <div class="item"><img class="img-responsive" src="{{url('public')}}/assets-web/images/post/post-06.jpg" alt=""/></div> --}}
+                        <div class="item"><img class="img-responsive" src="{{url("public/$atraksi_wisata->foto")}}"  style="width: 100%; height: 50%; object-fit: cover" alt=""/></div>
                     </div>
+                    <br>
                     <div class="post-text">
-                      <h3>{{$kalender_wisata->nama}}</h3>
+                      <h3>{{$atraksi_wisata->nama}}</h3>
                       <p>
-                        {!!nl2br ($kalender_wisata->isi) !!}
+                        {!! nl2br ($atraksi_wisata->deskripsi) !!}
                       </p>
                     </div>
                   </div>
+                </li>
               </ul>
             </div>
+            <!--== Post End ==-->
           </div>
         </div>
-        
+
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="sidebar_widget widget_archive ">
+            <h5 class="aside-title">{{$atraksi_wisata->nama}}</h5>
+            <ul>
+              <li>Nama Pengelola</a> :<span>{{$atraksi_wisata->nama_pengelola}}</span></li>
+              <li>No Pengelola</a> :<span>{{$atraksi_wisata->no_pengelola}}</span></li>
+              <li>Hari Buka</a> :<span>{{$atraksi_wisata->hari_buka}}</span></li>
+              <li>Jam Buka</a> :<span>{!!date('H:i', strtotime($atraksi_wisata->jam_buka)) !!}</span></li>
+              <li>Jam Tutup</a> :<span> {!!date('H:i', strtotime($atraksi_wisata->jam_tutup)) !!}</span></li>
+            </ul>
+          </div>
+        </div>
+         <div class="sidebar_widget widget_recent_post mb-50 col-md-3 col-sm-3 col-xs-12">
+            <h5 class="aside-title">Postingan Terbaru</h5>
+            @foreach ($recent_upload->where('kategori', 'Wisata Buatan') as $atraksi_wisata)
+            <div class="post-item">
+                  
+               <div class="post-thumb">
+                 <a href=""><img width="75" height="75" src="{{url("public/$atraksi_wisata->foto")}}" style="object-fit:cover" class="img-responsive" alt="post-01"/></a>
+                </div>
+                <div class="post-body">
+                  <span class="font-14px"><a href="{{url('front-view/AtraksiWisata/WisataAlam') }}">{{$atraksi_wisata->kategori}}</a></span>
+                  <div class="post-time">{{ $atraksi_wisata->created_at->diffForHumans() }}</div>
+                  <a href="{{url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}" class="subtitle">{{$atraksi_wisata->nama}}</a>
+                </div>
+              </div>
+              @endforeach
+          </div>
       </div>
     </div>
 
-  <div id='share-button'> <p>Share : </p>
+    <div id='share-button'> <p>Share : </p>
  <!-- untuk tombol Whatsapp -->
   <a href="whatsapp://send?text= echo site_url().'first/artikel/'.$single_artikel['id']" rel='nofollow' style='background:#4dc247;' target='_blank' title='Whatsapp'><svg viewBox='0 0 24 24'><path d='M16.75,13.96C17,14.09 17.16,14.16 17.21,14.26C17.27,14.37 17.25,14.87 17,15.44C16.8,16 15.76,16.54 15.3,16.56C14.84,16.58 14.83,16.92 12.34,15.83C9.85,14.74 8.35,12.08 8.23,11.91C8.11,11.74 7.27,10.53 7.31,9.3C7.36,8.08 8,7.5 8.26,7.26C8.5,7 8.77,6.97 8.94,7H9.41C9.56,7 9.77,6.94 9.96,7.45L10.65,9.32C10.71,9.45 10.75,9.6 10.66,9.76L10.39,10.17L10,10.59C9.88,10.71 9.74,10.84 9.88,11.09C10,11.35 10.5,12.18 11.2,12.87C12.11,13.75 12.91,14.04 13.15,14.17C13.39,14.31 13.54,14.29 13.69,14.13L14.5,13.19C14.69,12.94 14.85,13 15.08,13.08L16.75,13.96M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C10.03,22 8.2,21.43 6.65,20.45L2,22L3.55,17.35C2.57,15.8 2,13.97 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12C4,13.72 4.54,15.31 5.46,16.61L4.5,19.5L7.39,18.54C8.69,19.46 10.28,20 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z'/></svg></a>
  <!-- untuk tombol Facbook -->
@@ -178,10 +171,12 @@
    <!-- untuk tombol Telegram -->
   <a expr:data-text='data:post.title' expr:data-url='data:post.url' expr:href='&quot;https://telegram.me/share/url?url=&quot; + data:post.url + &quot;&amp;text=Ada%20yang%20keren%20lho,%20nyesel%20kalo%20ga%20buka...%20kunjungi:&quot;' rel='nofollow' style='background: #32afed;' target='_blank' title='Share to Telegram'><svg viewBox='0 0 24 24'><path d='M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z.083 -0.219,-0.037c-2.5,1.596 -6.939,4.43 -6.939,4.43Z'/></svg></a>
  </div>
+
   </section>
-  
+  <!--== Blog Details End ==-->
+
   <!--== Footer Start ==-->
-  <footer class="footer">
+ <footer class="footer">
     <div class="footer-copyright">
       <div class="container">
         <div class="row wow fadeInUp" data-wow-delay="0.1s">
@@ -210,24 +205,23 @@
 <!--== Wrapper End ==-->
 
 <!--== Javascript Plugins ==-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1eO-IAC9PhPE5APzZDSs8W40ewuxnsu8"></script>
 <script src="{{url('public')}}/assets-web/js/jquery.min.js"></script>
 <script src="{{url('public')}}/assets-web/js/smoothscroll.js"></script>
 <script src="{{url('public')}}/assets-web/js/plugins.js"></script>
 <script src="{{url('public')}}/assets-web/js/master.js"></script>
 
 <!-- Revolution js Files -->
-<script src="{{url('public')}}/assets-web/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.actions.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.carousel.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.kenburn.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.layeranimation.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.migration.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.navigation.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.parallax.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.slideanims.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.video.min.js"></script>
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="revolution/js/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/revolution.extension.video.min.js"></script>
 <!--== Javascript Plugins End ==-->
 
 </body>

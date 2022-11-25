@@ -7,7 +7,7 @@
 <meta name="author" content="Designs Ninja">
 <meta name="description" content="Professional and Great template with 10 unique home page designs for corporate, classic, creative, parallax, studio, crypto Currency, business and minimal concept">
 	<meta name="keywords" content="animation, creative, digital, flex, marketing, minimal, one page, parallax, portfolio, responsive, revolution slider, startup, studio, video background">
-<title>KETAPANG TRAVEL GUIDE - Kalender Wisata di Kabupaten Ketapang</title>
+<title>KETAPANG TRAVEL GUIDE - Peta Wisata di Kabupaten Ketapang</title>
 <link rel="shortcut icon" href="{{url('public')}}/assets-web-web/images/favicon.ico">
 
 <!-- Core Style Sheets -->
@@ -18,6 +18,32 @@
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/settings.css">
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/layers.css">
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/navigation.css">
+
+
+<!--== Javascript Plugins ==-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1eO-IAC9PhPE5APzZDSs8W40ewuxnsu8"></script>
+<script src="{{url('public')}}/assets-web/js/jquery.min.js"></script>
+<script src="{{url('public')}}/assets-web/js/smoothscroll.js"></script>
+<script src="{{url('public')}}/assets-web/js/plugins.js"></script>
+<script src="{{url('public')}}/assets-web/js/master.js"></script>
+
+<!-- Revolution js Files -->
+<script src="{{url('public')}}/assets-web/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.actions.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.carousel.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.kenburn.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.layeranimation.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.migration.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.navigation.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.parallax.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.slideanims.min.js"></script>
+<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.video.min.js"></script>
+<!--== Javascript Plugins End ==-->
+
+<!--==Leafleat==-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
 </head>
 <body>
@@ -52,7 +78,7 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="{{url('front-view/DesaWisata')}}"><img class="logo logo-display" src="{{url('public')}}/assets-web/images/logo/maskot-putih6.png" alt=""> <img class="logo logo-scrolled" src="{{url('public')}}/assets-web/images/logo/maskot-itam.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
@@ -90,129 +116,17 @@
 
           <!-- LAYER NR. 1 -->
       		<div class="hero-text-wrap">
-      		<div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-1"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['-90','-90','-90','-50']"
-            data-fontsize="['30','30','30','25']"
-      			data-lineheight="['40','40','40','30']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[10,10,10,10]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">PETA WISATA</div>
-
-      		<!-- LAYER NR. 2 -->
-      		<div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-2"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','-10','-10']"
-            data-fontsize="['80','80','66','30']"
-      			data-lineheight="['96','96','86','40']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-      			data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[10,10,10,10]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[10,10,10,10]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:10px;"><img src="{{url('public')}}/assets-web/images/logo/logo-white.png" alt=""></div>
-
-
-      		<!-- LAYER NR. 3 -->
-      		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-3"
-      			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-      			data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','40']"
-            data-fontsize="['16','16','16','16']"
-      			data-lineheight="['20','20','20','20']"
-      			data-width="none"
-      			data-height="none"
-      			data-whitespace="nowrap"
-      			data-type="text"
-      			data-responsive_offset="on"
-      			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-      			data-textAlign="['left','left','left','left']"
-      			data-paddingtop="[0,0,0,0]"
-      			data-paddingright="[0,0,0,0]"
-      			data-paddingbottom="[0,0,0,0]"
-      			data-paddingleft="[0,0,0,0]" style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;"></div>
-
-            <!-- LAYER NR. 4 -->
-        		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-4"
-        			data-x="['center','center','center','center']" data-hoffset="['-120','-120','-120','50']"
-        			data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-        			data-width="none"
-        			data-height="none"
-        			data-whitespace="['normal','nowrap','nowrap','nowrap']"
-        			data-type="button"
-              data-basealign="slide"
-        			data-responsive_offset="on"
-        			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-        			data-textAlign="['inherit','inherit','inherit','inherit']"
-        			data-paddingtop="[0,0,0,0]"
-        			data-paddingright="[0,0,0,0]"
-        			data-paddingbottom="[0,0,0,0]">
-        			{{-- data-paddingleft="[0,0,0,0]"><a href="works.html" class="btn btn-lg btn-light-outline btn-square">/</a> --}}
-				</div>
-
-              <!-- LAYER NR. 5 -->
-          		<div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-5"
-          			data-x="['center','center','center','center']" data-hoffset="['100','100','100','50']"
-          			data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-          			data-width="none"
-          			data-height="none"
-          			data-whitespace="['normal','nowrap','nowrap','nowrap']"
-          			data-type="button"
-                data-basealign="slide"
-          			data-responsive_offset="on"
-          			data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-          			data-textAlign="['inherit','inherit','inherit','inherit']"
-          			data-paddingtop="[0,0,0,0]"
-          			data-paddingright="[0,0,0,0]"
-          			data-paddingbottom="[0,0,0,0]">
-          			{{-- data-paddingleft="[0,0,0,0]"><a href="#" class="btn btn-lg btn-color-outline btn-square">\</a> --}}
-				</div>
-
-              <!-- LAYER NR. 6 -->
-          		<div class="tp-caption rev-scroll-btn"
-          			 id="slide-3238-layer-13"
-          			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-          			 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']"
-          						data-width="35"
-          			data-height="55"
-          			data-whitespace="nowrap"
-
-          			data-type="button"
-          			data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
-          			data-basealign="slide"
-          			data-responsive_offset="on"
-          			data-responsive="off"
-          			data-frames='[{"from":"y:-50px;opacity:0;","speed":1500,"to":"o:1;","delay":800,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-          			data-textAlign="['left','left','left','left']"
-          			data-paddingtop="[0,0,0,0]"
-          			data-paddingright="[0,0,0,0]"
-          			data-paddingbottom="[0,0,0,0]"
-          			data-paddingleft="[0,0,0,0]"
-
-          			style="z-index: 19; min-width: 35px; max-width: 35px; max-width: 55px; max-width: 55px; white-space: nowrap; font-weight: 400;border-color:rgba(255, 255, 255, 1.00);border-style:solid;border-width:3px;border-radius:23px 23px 23px 23px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-          							<span>
-          							</span>
-          		  </div>
-
+                <center>
+                  <h3 style="color: white; font-weight:40px; margin-top:250px">Peta Wisata</h3>
+              <img src="{{url('public')}}/assets-web/images/logo/maskot-putih5.png" alt="" style="width:100%; height:auto; object-fit: cover; ">
+                </center>
             </div>
 
       	</li>
       </ul>
       <div class="tp-bannertimer" style="height: 3px; background-color: rgba(255, 255, 255, 0.25);"></div>	</div>
     </div>
-  </div>
+</div>
   <!--== Hero Slider End ==-->
 
   <!--== Who We Are Start ==-->
@@ -227,57 +141,19 @@
           </div>
         </div>
       </div>
-        {{-- <div class="row mt-50">
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Januari</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataBahari')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/1.jpg" alt=""> </a>          
-            </div>
-          </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Februari</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataBudaya')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/2.jpg" alt=""> </a>          
-            </div>
-          </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Maret</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataKuliner')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/3.jpg" alt=""> </a>          
-            </div>
-          </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>April</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataRimba')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/4.jpg" alt=""> </a>          
-            </div>
-          </div> 
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Mei</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataKota')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/5.jpg" alt=""> </a>          
-            </div>
-          </div>
-          <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
-            <div class="pricing-box pricing-box-bg text-center wow fadeInLeft" data-wow-delay="0.1s">             
-                <h5>Juni</h5>
-                <a href="{{url('front-view/AtraksiWisata/WisataReligi')}}"><img style="width:300px; height:150px; object-fit: cover" src="{{url('public')}}/assets-web/images/Atraksi Wisata/6.jpg" alt=""> </a>          
-            </div>
-          </div>      
-        </div> --}}
-      {{-- <div class="row">
-        <div class="col-md-8 centerize-col text-center">
+       
+       <div class="container">
+      <div class="row">
+        <div class="col-md-12 centerize-col">
           <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-            <strong style="font-size: 20px; font-weight:bold; color:black">BELUM JADI</strong>
-            <h3 style="font-weight:bold">Pilihan atraksi wisata lainnya di Ketapang </h3>
-            <hr class="center_line grey-bg">
+            <strong style="font-size: 20px; font-weight:bold; color:black">Note :</strong>
+            <br>
+           <p style="color: black"><img class="mt-2" src="https://cdn-icons-png.flaticon.com/128/2776/2776000.png" style="width: 20px" alt=""> : Desa Wisata</p>
+           <p style="color: black"><img class="mt-2" src="https://cdn-icons-png.flaticon.com/512/7987/7987463.png" style="width: 20px" alt=""> : Atraksi Wisata</p>
           </div>
         </div>
-      </div> --}}
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.7510693205127!2d109.97681791405772!3d-1.8444905370083062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e051843e122a29b%3A0x7dc929a137c9dc5e!2sKantor%20Bupati%20Kabupaten%20Ketapang!5e0!3m2!1sid!2sid!4v1667986787458!5m2!1sid!2sid" width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-
+      </div>
+      <div id="map" style="width: 100%; height: 500px;"></div>
         
     </div>
   </section>
@@ -307,30 +183,79 @@
   <!--== Go to Top  ==-->
   <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
   <!--== Go to Top End ==-->
-
 </div>
 <!--== Wrapper End ==-->
+<script>
+  var peta1 = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11'
+	});
 
-<!--== Javascript Plugins ==-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1eO-IAC9PhPE5APzZDSs8W40ewuxnsu8"></script>
-<script src="{{url('public')}}/assets-web/js/jquery.min.js"></script>
-<script src="{{url('public')}}/assets-web/js/smoothscroll.js"></script>
-<script src="{{url('public')}}/assets-web/js/plugins.js"></script>
-<script src="{{url('public')}}/assets-web/js/master.js"></script>
+var peta2 = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/satellite-v9'
+	});
 
-<!-- Revolution js Files -->
-<script src="{{url('public')}}/assets-web/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.actions.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.carousel.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.kenburn.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.layeranimation.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.migration.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.navigation.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.parallax.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.slideanims.min.js"></script>
-<script src="{{url('public')}}/assets-web/revolution/js/revolution.extension.video.min.js"></script>
-<!--== Javascript Plugins End ==-->
+
+var peta3 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	});
+
+var map = L.map('map', {
+    center: [-1.8028443920355783, 109.9684624870144],
+    zoom: 9,
+    layers: [peta3],
+});
+
+var baseMaps = {
+    "Grayscale": peta1,
+    "Sattelite": peta2,
+    "Streets":peta3,
+};
+
+
+var layerControl = L.control.layers(baseMaps).addTo(map);
+
+	L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Ts9g8McLuNVEfjGFTHeG', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+        }).addTo(map);
+
+        var LeafIcon = L.Icon.extend({
+            options: {
+                // shadowUrl: 'imgs/leaf-shadow.png',
+                iconSize:     [28, 30],
+                shadowSize:   [50, 64],
+                // iconAnchor:   [22, 94],
+                shadowAnchor: [4, 62],
+            }
+        });
+
+        var greenIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'}),
+        redIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'}),
+        orangeIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/512/7987/7987463.png'});
+
+        L.marker([-2.4261205059839894, 110.20954827208297], {icon: greenIcon}).addTo(map).bindPopup("Kendawangan Kiri");
+        L.marker([-1.827727650093884, 109.90554097731221], {icon: greenIcon}).addTo(map).bindPopup("Suka Baru");
+        L.marker([-1.388630329162174, 110.20585539637383], {icon: greenIcon}).addTo(map).bindPopup("Laman Satong");
+        L.marker([-2.294156865904084, 110.25612196569554], {icon: greenIcon}).addTo(map).bindPopup("Mekar Utama");
+        L.marker([-0.8217186248899767, 110.40858642416592], {icon: greenIcon}).addTo(map).bindPopup("Sinar Kuri");
+        L.marker([-1.7941568142505078, 110.6252223481849], {icon: greenIcon}).addTo(map).bindPopup("Jelayan");
+        L.marker([-1.7431600501599884, 109.98113375071058], {icon: greenIcon}).addTo(map).bindPopup("Pantai Air Mata Permai");
+        L.marker([-1.8693057481495226, 109.95493868116024], {icon: greenIcon}).addTo(map).bindPopup("Kinjil Pesisir");
+
+
+        L.marker([-0.8998817765621778, 110.40184614449552], {icon: orangeIcon}).addTo(map).bindPopup("Bukit Kuri");
+        L.marker([-1.3877605622747031, 110.18115553890323], {icon: orangeIcon}).addTo(map).bindPopup("Goa Maria Manjau");
+        L.marker([-2.351773713814248, 110.14362463953195], {icon: orangeIcon}).addTo(map).bindPopup("Sungai Tengar");
+        L.marker([-1.8609021488206756, 109.98085680365591], {icon: orangeIcon}).addTo(map).bindPopup("Keraton Kerajaan Matan Tanjung Pura");
+        L.marker([-1.8497262569940318, 109.97026383890562], {icon: orangeIcon}).addTo(map).bindPopup("Taman Merdeka");
+
+</script>
+
 
 </body>
 </html>

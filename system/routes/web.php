@@ -6,21 +6,14 @@ use App\Http\Controllers\BackendControllers\AdminController;
 use App\Http\Controllers\BackendControllers\AdminDesaWisataController;
 use App\Http\Controllers\BackendControllers\AdminAtraksiWisataController;
 use App\Http\Controllers\BackendControllers\AdminWisataAlamController;
-use App\Http\Controllers\BackendControllers\AdminWisataBudayaController;
-use App\Http\Controllers\BackendControllers\AdminWisataBuatanController;
 use App\Http\Controllers\BackendControllers\AdminKalenderWisataController;
-use App\Http\Controllers\BackendControllers\KategoriController;
 
 use App\Http\Controllers\BackendControllers\AuthController;
-
 
 use App\Http\Controllers\FrontViewControllers\DesaWisataController;
 use App\Http\Controllers\FrontViewControllers\AtraksiWisataController;
 use App\Http\Controllers\FrontViewControllers\KalenderWisataController;
 use App\Http\Controllers\FrontViewControllers\PetaWisataController;
-use App\Http\Controllers\FrontViewControllers\WisataAlamController;
-use App\Http\Controllers\FrontViewControllers\WisataBudayaController;
-use App\Http\Controllers\FrontViewControllers\WisataBuatanController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -86,23 +79,6 @@ Route::get('backend/WisataAlam/{wisata_alam}/edit', [AdminWisataAlamController::
 Route::put('backend/WisataAlam/{wisata_alam}', [AdminWisataAlamController::class, 'update']);
 Route::delete('backend/WisataAlam/{wisata_alam}', [AdminWisataAlamController::class, 'destroy']);
 
-// Admin Wisata Budaya
-Route::get('backend/WisataBudaya', [AdminWisataBudayaController::class, 'index']);
-Route::get('backend/WisataBudaya/create', [AdminWisataBudayaController::class, 'create']);
-Route::post('backend/WisataBudaya', [AdminWisataBudayaController::class, 'store']);
-Route::get('backend/WisataBudaya/{wisata_budaya}', [AdminWisataBudayaController::class, 'show']);
-Route::get('backend/WisataBudaya/{wisata_budaya}/edit', [AdminWisataBudayaController::class, 'edit']);
-Route::put('backend/WisataBudaya/{wisata_budaya}', [AdminWisataBudayaController::class, 'update']);
-Route::delete('backend/WisataBudaya/{wisata_budaya}', [AdminWisataBudayaController::class, 'destroy']);
-
-// Admin Wisata Buatan
-Route::get('backend/WisataBuatan', [AdminWisataBuatanController::class, 'index']);
-Route::get('backend/WisataBuatan/create', [AdminWisataBuatanController::class, 'create']);
-Route::post('backend/WisataBuatan', [AdminWisataBuatanController::class, 'store']);
-Route::get('backend/WisataBuatan/{wisata_buatan}', [AdminWisataBuatanController::class, 'show']);
-Route::get('backend/WisataBuatan/{wisata_buatan}/edit', [AdminWisataBuatanController::class, 'edit']);
-Route::put('backend/WisataBuatan/{wisata_buatan}', [AdminWisataBuatanController::class, 'update']);
-Route::delete('backend/WisataBuatan/{wisata_buatan}', [AdminWisataBuatanController::class, 'destroy']);
 
 // Admin Atraksi Wisata
 Route::get('backend/AtraksiWisata', [AdminAtraksiWisataController::class, 'index']);
@@ -139,7 +115,9 @@ Route::get('front-view/AtraksiWisata', [AtraksiWisataController::class, 'index']
 Route::get('front-view/AtraksiWisata/WisataAlam', [AtraksiWisataController::class, 'index2']);
 Route::get('front-view/AtraksiWisata/WisataBudaya', [AtraksiWisataController::class, 'index3']);
 Route::get('front-view/AtraksiWisata/WisataBuatan', [AtraksiWisataController::class, 'index4']);
-Route::get('front-view/AtraksiWisata/{atraksi_wisata}', [AtraksiWisataController::class, 'show']);
+Route::get('front-view/AtraksiWisata/WisataAlam/{atraksi_wisata}', [AtraksiWisataController::class, 'show']);
+Route::get('front-view/AtraksiWisata/WisataBudaya/{atraksi_wisata}', [AtraksiWisataController::class, 'show2']);
+Route::get('front-view/AtraksiWisata/WisataBuatan/{atraksi_wisata}', [AtraksiWisataController::class, 'show3']);
 
 //kalender Wisata
 Route::get('front-view/KalenderWisata', [KalenderWisataController::class, 'index']);
