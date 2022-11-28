@@ -18,6 +18,7 @@
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/settings.css">
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/layers.css">
 <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/revolution/css/navigation.css">
+<link rel="stylesheet" type="text/css" href="{{url('public')}}/assets-web/css/leaflet.defaultextent.css">
 
 
 <!--== Javascript Plugins ==-->
@@ -26,6 +27,7 @@
 <script src="{{url('public')}}/assets-web/js/smoothscroll.js"></script>
 <script src="{{url('public')}}/assets-web/js/plugins.js"></script>
 <script src="{{url('public')}}/assets-web/js/master.js"></script>
+<script src="{{url('public')}}/assets-web/js/leaflet.defaultextent.js"></script>
 
 <!-- Revolution js Files -->
 <script src="{{url('public')}}/assets-web/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -45,6 +47,13 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
+{{-- search tool leaflet --}}
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+{{-- lokasi --}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
 </head>
 <body>
 
@@ -193,67 +202,74 @@
 		id: 'mapbox/streets-v11'
 	});
 
-var peta2 = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox/satellite-v9'
-	});
+    var peta2 = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/satellite-v9'
+      });
 
 
-var peta3 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	});
+    var peta3 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      });
 
-var map = L.map('map', {
-    center: [-1.8028443920355783, 109.9684624870144],
-    zoom: 9,
-    layers: [peta3],
-});
+    var map = L.map('map', {
+        center: [-1.8028443920355783, 109.9684624870144],
+        zoom: 9,
+        layers: [peta3],
+    });
 
-var baseMaps = {
-    "Grayscale": peta1,
-    "Sattelite": peta2,
-    "Streets":peta3,
-};
-
-
-var layerControl = L.control.layers(baseMaps).addTo(map);
-
-	L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Ts9g8McLuNVEfjGFTHeG', {
-            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
-        }).addTo(map);
-
-        var LeafIcon = L.Icon.extend({
-            options: {
-                // shadowUrl: 'imgs/leaf-shadow.png',
-                iconSize:     [28, 30],
-                shadowSize:   [50, 64],
-                // iconAnchor:   [22, 94],
-                shadowAnchor: [4, 62],
-            }
-        });
-
-        var greenIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'}),
-        redIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'}),
-        orangeIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/512/7987/7987463.png'});
-
-        L.marker([-2.4261205059839894, 110.20954827208297], {icon: greenIcon}).addTo(map).bindPopup("Kendawangan Kiri");
-        L.marker([-1.827727650093884, 109.90554097731221], {icon: greenIcon}).addTo(map).bindPopup("Suka Baru");
-        L.marker([-1.388630329162174, 110.20585539637383], {icon: greenIcon}).addTo(map).bindPopup("Laman Satong");
-        L.marker([-2.294156865904084, 110.25612196569554], {icon: greenIcon}).addTo(map).bindPopup("Mekar Utama");
-        L.marker([-0.8217186248899767, 110.40858642416592], {icon: greenIcon}).addTo(map).bindPopup("Sinar Kuri");
-        L.marker([-1.7941568142505078, 110.6252223481849], {icon: greenIcon}).addTo(map).bindPopup("Jelayan");
-        L.marker([-1.7431600501599884, 109.98113375071058], {icon: greenIcon}).addTo(map).bindPopup("Pantai Air Mata Permai");
-        L.marker([-1.8693057481495226, 109.95493868116024], {icon: greenIcon}).addTo(map).bindPopup("Kinjil Pesisir");
+    var baseMaps = {
+        "Grayscale": peta1,
+        "Sattelite": peta2,
+        "Streets":peta3,
+    };
 
 
-        L.marker([-0.8998817765621778, 110.40184614449552], {icon: orangeIcon}).addTo(map).bindPopup("Bukit Kuri");
-        L.marker([-1.3877605622747031, 110.18115553890323], {icon: orangeIcon}).addTo(map).bindPopup("Goa Maria Manjau");
-        L.marker([-2.351773713814248, 110.14362463953195], {icon: orangeIcon}).addTo(map).bindPopup("Sungai Tengar");
-        L.marker([-1.8609021488206756, 109.98085680365591], {icon: orangeIcon}).addTo(map).bindPopup("Keraton Kerajaan Matan Tanjung Pura");
-        L.marker([-1.8497262569940318, 109.97026383890562], {icon: orangeIcon}).addTo(map).bindPopup("Taman Merdeka");
+    var layerControl = L.control.layers(baseMaps).addTo(map);
 
+      L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Ts9g8McLuNVEfjGFTHeG', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+            }).addTo(map);
+
+            var LeafIcon = L.Icon.extend({
+                options: {
+                    // shadowUrl: 'imgs/leaf-shadow.png',
+                    iconSize:     [28, 30],
+                    shadowSize:   [50, 64],
+                    // iconAnchor:   [22, 94],
+                    shadowAnchor: [4, 62],
+                }
+            });
+
+            var greenIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'}),
+            redIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'}),
+            orangeIcon = new LeafIcon({iconUrl: 'https://cdn-icons-png.flaticon.com/512/7987/7987463.png'});
+
+            L.marker([-2.4261205059839894, 110.20954827208297], {icon: greenIcon}).addTo(map).bindPopup("Kendawangan Kiri");
+            L.marker([-1.827727650093884, 109.90554097731221], {icon: greenIcon}).addTo(map).bindPopup("Suka Baru");
+            L.marker([-1.388630329162174, 110.20585539637383], {icon: greenIcon}).addTo(map).bindPopup("Laman Satong");
+            L.marker([-2.294156865904084, 110.25612196569554], {icon: greenIcon}).addTo(map).bindPopup("Mekar Utama");
+            L.marker([-0.8217186248899767, 110.40858642416592], {icon: greenIcon}).addTo(map).bindPopup("Sinar Kuri");
+            L.marker([-1.7941568142505078, 110.6252223481849], {icon: greenIcon}).addTo(map).bindPopup("Jelayan");
+            L.marker([-1.7431600501599884, 109.98113375071058], {icon: greenIcon}).addTo(map).bindPopup("Pantai Air Mata Permai");
+            L.marker([-1.8693057481495226, 109.95493868116024], {icon: greenIcon}).addTo(map).bindPopup("Kinjil Pesisir");
+
+
+            L.marker([-0.8998817765621778, 110.40184614449552], {icon: orangeIcon}).addTo(map).bindPopup("Bukit Kuri");
+            L.marker([-1.3877605622747031, 110.18115553890323], {icon: orangeIcon}).addTo(map).bindPopup("Goa Maria Manjau");
+            L.marker([-2.351773713814248, 110.14362463953195], {icon: orangeIcon}).addTo(map).bindPopup("Sungai Tengar");
+            L.marker([-1.8609021488206756, 109.98085680365591], {icon: orangeIcon}).addTo(map).bindPopup("Keraton Kerajaan Matan Tanjung Pura");
+            L.marker([-1.8497262569940318, 109.97026383890562], {icon: orangeIcon}).addTo(map).bindPopup("Taman Merdeka");
+
+            L.control.defaultExtent().addTo(map);
+
+            L.Control.geocoder({
+                position: 'topleft'
+            }).addTo(map);
+
+            L.control.locate().addTo(map);
 </script>
 
 
