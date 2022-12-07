@@ -21,6 +21,8 @@ class AdminDesaWisataController extends Controller
         $desa_wisata->nama_desa_wisata = request('nama_desa_wisata');
         $desa_wisata->deskripsi = request('deskripsi');
         $desa_wisata->link_jadesta = request('link_jadesta');
+        $desa_wisata->lat = request('lat');
+        $desa_wisata->lng = request('lng');
         $desa_wisata->save();
 
         $desa_wisata->handleUploadFoto();
@@ -48,6 +50,8 @@ class AdminDesaWisataController extends Controller
         if (request('foto_2')) $desa_wisata->handleUploadFoto();
         if (request('foto_3')) $desa_wisata->handleUploadFoto();
         if (request('foto_4')) $desa_wisata->handleUploadFoto();
+        $desa_wisata->lat = request('lat');
+        $desa_wisata->lng = request('lng');
         $desa_wisata->save();
         return redirect('backend/DesaWisata')->with('success', 'Data Berhasil Diedit');
     }

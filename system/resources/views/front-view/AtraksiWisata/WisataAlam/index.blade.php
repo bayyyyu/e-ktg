@@ -63,7 +63,7 @@
           <li><a class="actives" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
           <li><a class="" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
           <li><a class="" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
-          <li><a class="" href="">Info & Kontak</a></li>
+          <li><a class="" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
 		      <li><a class="" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>

@@ -63,7 +63,7 @@
           <li><a class="page-scroll" href="{{url('front-view/AtraksiWisata')}}">Atraksi Wisata</a></li>
           <li><a class="page-scroll" href="{{url('front-view/KalenderWisata')}}">Kalender Wisata</a></li>
           <li><a class="page-scroll" href="{{url('front-view/PetaWisata')}}">Peta Wisata</a></li>
-          <li><a class="page-scroll" href="">Info & Kontak</a></li>
+          <li><a class="page-scroll" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
 		      <li><a class="page-scroll" href="{{url('auth/login')}}"><i class="icofont-user-male"></i></a></li>
         </ul>
       </div>
@@ -135,10 +135,6 @@
              <hr class="center_line dark-bg">
             {{-- <h5 class="text-center"><a href="{{$desa_wisata->link_jadesta}}" target="_blank">{{$desa_wisata->nama_desa_wisata}}</a></h5> --}}
             <div class="post-img">
-              {{-- <div class="date-box dark-bg">
-                <span class="day">26</span>
-                <span class="month">NOV</span>
-              </div> --}}
                 <div class="blog-grid-slider slick">
                     <div class="item"><a class="image-popup-no-margins" href="{{url("public/$desa_wisata->foto_1")}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public/$desa_wisata->foto_1")}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
                     <div class="item"><a class="image-popup-no-margins" href="{{url("public/$desa_wisata->foto_2")}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover"src="{{url("public/$desa_wisata->foto_2")}}" alt="Tidak Dapat Memuat Gambar"/></a></div>

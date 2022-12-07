@@ -27,6 +27,8 @@ class AdminAtraksiWisataController extends Controller
         $atraksi_wisata->hari_buka = request('hari_buka');
         $atraksi_wisata->jam_buka = request('jam_buka');
         $atraksi_wisata->jam_tutup = request('jam_tutup');
+        $atraksi_wisata->lat = request('lat');
+        $atraksi_wisata->lng = request('lng');
         $atraksi_wisata->save();
 
         $atraksi_wisata->handleUploadFoto();
@@ -55,6 +57,8 @@ class AdminAtraksiWisataController extends Controller
         $atraksi_wisata->hari_buka = request('hari_buka');
         $atraksi_wisata->jam_buka = request('jam_buka');
         $atraksi_wisata->jam_tutup = request('jam_tutup');
+        $atraksi_wisata->lat = request('lat');
+        $atraksi_wisata->lng = request('lng');
         $atraksi_wisata->save();
 
         if (request('foto')) $atraksi_wisata->handleUploadFoto();

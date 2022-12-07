@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="dashboard" class="brand-link">
 
-        <span class="info font-weight-light"><img src="{{ url('public') }}/assets-web/images/logo/logo-black4.png"
+        <span class="info font-weight-light"><img src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png"
                 style="width:230px; height:20px; object-fit: cover" alt=""></span>
     </a>
 

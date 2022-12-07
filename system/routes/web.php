@@ -14,6 +14,7 @@ use App\Http\Controllers\FrontViewControllers\DesaWisataController;
 use App\Http\Controllers\FrontViewControllers\AtraksiWisataController;
 use App\Http\Controllers\FrontViewControllers\KalenderWisataController;
 use App\Http\Controllers\FrontViewControllers\PetaWisataController;
+use App\Http\Controllers\FrontViewControllers\KontakController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -125,3 +126,6 @@ Route::get('front-view/KalenderWisata/{kalender_wisata}', [KalenderWisataControl
 
 //PetaWisata
 Route::get('front-view/PetaWisata', [PetaWisataController::class, 'index']);
+
+//Kontak
+Route::get('front-view/Kontak', [KontakController::class, 'index']);

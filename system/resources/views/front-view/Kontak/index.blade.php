@@ -10,7 +10,7 @@
         content="Professional and Great template with 10 unique home page designs for corporate, classic, creative, parallax, studio, crypto Currency, business and minimal concept">
     <meta name="keywords"
         content="animation, creative, digital, flex, marketing, minimal, one page, parallax, portfolio, responsive, revolution slider, startup, studio, video background">
-    <title>KETAPANG TRAVEL GUIDE - Kalender Wisata di Kabupaten Ketapang</title>
+    <title>KETAPANG TRAVEL GUIDE - Info & Kontak</title>
     <link rel="shortcut icon" href="{{ url('public') }}/assets-web-web/images/favicon.ico">
 
     <!-- Core Style Sheets -->
@@ -21,8 +21,44 @@
     <link rel="stylesheet" type="text/css" href="{{ url('public') }}/assets-web/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="{{ url('public') }}/assets-web/revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="{{ url('public') }}/assets-web/revolution/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="{{ url('public') }}/assets-web/css/leaflet.defaultextent.css">
 
 
+    <!--== Javascript Plugins ==-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1eO-IAC9PhPE5APzZDSs8W40ewuxnsu8"></script>
+    <script src="{{ url('public') }}/assets-web/js/jquery.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/js/smoothscroll.js"></script>
+    <script src="{{ url('public') }}/assets-web/js/plugins.js"></script>
+    <script src="{{ url('public') }}/assets-web/js/master.js"></script>
+    <script src="{{ url('public') }}/assets-web/js/leaflet.defaultextent.js"></script>
+
+    <!-- Revolution js Files -->
+    <script src="{{ url('public') }}/assets-web/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.actions.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.carousel.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.kenburn.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.layeranimation.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.migration.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.navigation.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.parallax.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.slideanims.min.js"></script>
+    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.video.min.js"></script>
+    <!--== Javascript Plugins End ==-->
+
+    <!--==Leafleat==-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    {{-- search tool leaflet --}}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    {{-- lokasi --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -74,10 +110,11 @@
                         <li class="dropdown"><a href="{{ url('front-view/DesaWisata') }}">Desa Wisata</a>
                         </li>
                         <li><a class="page-scroll" href="{{ url('front-view/AtraksiWisata') }}">Atraksi Wisata</a></li>
-                        <li><a class="page-scroll actives" href="{{ url('front-view/KalenderWisata') }}">Kalender
-                                Wisata</a></li>
-                        <li><a class="page-scroll" href="{{ url('front-view/PetaWisata') }}">Peta Wisata</a></li>
-                        <li><a class="page-scroll" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
+                        <li><a class="page-scroll" href="{{ url('front-view/KalenderWisata') }}">Kalender Wisata</a>
+                        </li>
+                        <li><a class="page-scroll " href="{{ url('front-view/PetaWisata') }}">Peta Wisata</a>
+                        </li>
+                        <li><a class="page-scroll actives" href="{{ url('front-view/Kontak') }}">Info & Kontak</a></li>
                         <li><a class="page-scroll" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a>
                         </li>
                     </ul>
@@ -108,7 +145,7 @@
                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                             data-param9="" data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{{ url('public') }}/assets-web/images/post/a.jpg" alt=""
+                            <img src="{{ url('public') }}/assets-web/images/post/c.jpeg" alt=""
                                 data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 data-bgparallax="10" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
@@ -116,7 +153,7 @@
                             <!-- LAYER NR. 1 -->
                             <div class="hero-text-wrap">
                                 <center>
-                                    <h3 style="color: white; font-weight:40px; margin-top:250px">Kalender Wisata</h3>
+                                    <h3 style="color: white; font-weight:40px; margin-top:250px">Info & Kontak</h3>
                                     <img src="{{ url('public') }}/assets-web/images/logo/maskot-putih5.png"
                                         alt="" style="width:100%; height:auto; object-fit: cover; ">
                                 </center>
@@ -125,48 +162,15 @@
                         </li>
                     </ul>
                     <div class="tp-bannertimer" style="height: 3px; background-color: rgba(255, 255, 255, 0.25);">
+                    
                     </div>
                 </div>
             </div>
         </div>
         <!--== Hero Slider End ==-->
 
+        
         <!--== Who We Are Start ==-->
-
-
-        <section class="white-bg" id="pricing">
-            <div class="container">
-                <div class="section-title wow fadeInUp text-center" data-wow-delay="0.1s">
-                    <strong style="font-size: 20px; font-weight:bold; color:black">EVENT</strong>
-                    <hr class="center_line grey-bg">
-                </div>
-                <div class="row">
-                    @foreach ($list_kalender_wisata as $kalender_wisata)
-                        <div class="col-md-4 pricing-table col-sm-4 xs-mb-30 mt-50">
-                            <div class="date-box dark-bg text-center">
-                                <span style="color: white" class="day">{!! date('M', strtotime($kalender_wisata->tanggal)) !!}</span>
-                            </div>
-                            <div class="pricing-box pricing-box-bg  wow fadeInLeft" data-wow-delay="0.1s">
-                                <a href="{{ url('front-view/KalenderWisata', $kalender_wisata->id) }}"><img
-                                        style="width:100%; height:200px; object-fit: cover"
-                                        src="{{ url("public/$kalender_wisata->foto") }}" alt=""> </a>
-                                <h5>{{ $kalender_wisata->nama }}</h5>
-                                <i class="icofont-ui-calendar"> {!! date('d, M Y', strtotime($kalender_wisata->tanggal)) !!}</i> <i
-                                    class="icofont-location-pin"> {{ $kalender_wisata->tempat }}</i>
-                                <br>
-                                <br>
-                                {!! substr(nl2br($kalender_wisata->isi), 0, 100) !!}..... <a
-                                    href="{{ url('front-view/KalenderWisata', $kalender_wisata->id) }}"><i
-                                        class="icofont-rounded-double-right" style="color: #000000"></i></a>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-
-            </div>
-        </section>
-
-
 
         <!--== Footer Start ==-->
         <footer class="footer">
@@ -182,11 +186,15 @@
                             <div class="copy-right">Copyright &copy; <span class="default-color">E-KTG 2022
                                     @if (date('Y') > '2022')
                                         -{{ date('Y') }}
-                                    @endif.</span> All rights reserved</div>
+                                    @endif.
+                                </span> All rights reserved</div>
                             <ul class="social-media mt-30 float-none">
-                                <li><a href="" class="icofont icofont-email"></a></li>
-                                <li><a href="" target="_blank" class="icofont icofont-instagram"></a></li>
-                                <li><a href="" target="_blank" class="icofont icofont-github "></a></li>
+                                <li><a href="mailto:dpcketapang.masata@gmail.com" class="icofont icofont-email"></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/_bayyz/" target="_blank"
+                                        class="icofont icofont-instagram"></a></li>
+                                <li><a href="https://github.com/bayyyyu" target="_blank"
+                                        class="icofont icofont-github "></a></li>
                             </ul>
                         </div>
                     </div>
@@ -198,31 +206,8 @@
         <!--== Go to Top  ==-->
         <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
         <!--== Go to Top End ==-->
-
     </div>
     <!--== Wrapper End ==-->
-
-    <!--== Javascript Plugins ==-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1eO-IAC9PhPE5APzZDSs8W40ewuxnsu8"></script>
-    <script src="{{ url('public') }}/assets-web/js/jquery.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/js/smoothscroll.js"></script>
-    <script src="{{ url('public') }}/assets-web/js/plugins.js"></script>
-    <script src="{{ url('public') }}/assets-web/js/master.js"></script>
-
-    <!-- Revolution js Files -->
-    <script src="{{ url('public') }}/assets-web/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.actions.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.carousel.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.kenburn.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.layeranimation.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.migration.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.navigation.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.parallax.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.slideanims.min.js"></script>
-    <script src="{{ url('public') }}/assets-web/revolution/js/revolution.extension.video.min.js"></script>
-    <!--== Javascript Plugins End ==-->
-
 </body>
 
 </html>

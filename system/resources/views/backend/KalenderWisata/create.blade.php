@@ -47,7 +47,7 @@
                                     <div class="form-group">
                                         <label for="" class="control-label">Latitude</label>
                                         <span style="color: grey"><span style="color: red"> *</span>(click pada peta kemudian drag marker)</span>
-                                        <input type="float" disabled="disabled" class="form-control" name="foto" id="latitude">
+                                        <input type="float" readonly="readonly"  class="form-control" name="foto" id="latitude">
                                         <br>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@
                                     <div class="form-group">
                                         <label for="" class="control-label">Longitude</label>
                                         <span style="color: grey"><span style="color: red"> *</span>(click pada peta kemudian drag marker)</span>
-                                        <input type="float" disabled="disabled" class="form-control" name="foto" id="longitude">
+                                        <input type="float" readonly="readonly"  class="form-control" name="foto" id="longitude">
                                         <br>
                                     </div>
                                 </div>

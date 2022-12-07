@@ -134,7 +134,7 @@
                 <span class="day">26</span>
                 <span class="month">NOV</span>
               </div> --}}
-                    <div class="item"><a class="image-popup-no-margins" href="{{url("public",$atraksi_wisata->foto)}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public",$atraksi_wisata->foto)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
+                    <div class="item"><a class="image-popup-no-margins" href="{{url("public/$atraksi_wisata->foto")}}"><img class="img-responsive" style="width:400px; height:300px; object-fit: cover" src="{{url("public",$atraksi_wisata->foto)}}" alt="Tidak Dapat Memuat Gambar"/></a></div>
                  
             </div>
          
