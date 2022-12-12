@@ -73,7 +73,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         @if (Auth()->check())
                         <img height="33" width="33" src="{{ url("public",auth()->user()->foto) }}" style="object-fit: cover; object-position: 0px 10%;" class="img-circle" oneerror="this.src='{{url("public")}}/assets-web/images/user.png'">
                         @else
-                        <img height="33" width="33" src="{{url("public")}}/images/user.jpg" style="object-fit: cover; object-position: 0px 10%;">
+                        <img height="33" width="33" src="{{url("public")}}/assets-admin/images/user.jpg" style="object-fit: cover; object-position: 0px 10%;">
                         @endif
                     </span>
                   </li>

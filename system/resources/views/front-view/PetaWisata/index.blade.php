@@ -63,6 +63,16 @@
     {{-- default extends leaflet --}}
     <link rel="stylesheet" type="text/css" href="{{ url('public') }}/assets-web/css/leaflet.defaultextent.css">
     <script src="{{ url('public') }}/assets-web/js/leaflet.defaultextent.js"></script>
+
+    {{-- search control --}}
+    {{-- <link rel="stylesheet" type="text/css"
+        href="{{ url('public') }}/assets-web/js/leaflet-search/dist/leaflet-search.min.css">
+    <script src="{{ url('public') }}/assets-web/js/leaflet-search/dist/leaflet-search.src.js"></script> --}}
+
+    <link rel="stylesheet"
+        href="{{ url('public') }}/assets-web/js/leaflet-panel-layers/dist/leaflet-panel-layers.min.css" />
+    <script src="{{ url('public') }}/assets-web/js/leaflet-panel-layers/dist/leaflet-panel-layers.src.js"></script>
+
 </head>
 
 <body>
@@ -101,9 +111,10 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                             class="tr-icon ion-android-menu"></i> </button>
                     <div class="logo"> <a href="{{ url('front-view/DesaWisata') }}"><img class="logo logo-display"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt=""> <img
-                                class="logo logo-scrolled"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt=""> </a>
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt=""
+                                style="width: 100%; object-fit:contain"> <img class="logo logo-scrolled"
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt=""
+                                style="width: 100%; object-fit:contain"> </a>
                     </div>
                 </div>
                 <!--== End Header Navigation ==-->
@@ -175,34 +186,50 @@
         <!--== Who We Are Start ==-->
         <section class="white-bg" id="pricing">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 centerize-col text-center">
-                        <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                            <strong style="font-size: 20px; font-weight:bold; color:grey">PETA WISATA KABUPATEN
-                                KETAPANG</strong>
-                            {{-- <h3 style="font-weight:bold">Pilihan atraksi wisata lainnya di Ketapang </h3> --}}
-                            <hr class="center_line grey-bg">
-                        </div>
-                    </div>
-                </div>
-
                 <div class="container">
+
+                    {{-- <div class="row">
+                        <div class="col-md-6 text-center pull-right">
+                            <strong class="text-center"><i class="icofont icofont-notepad"> Daftar Desa
+                                    Wisata</i></strong>
+                            <select onchange="cari(this.id)" style="color: black">
+                                @foreach ($list_desa_wisata as $desa_wisata)
+                                    <option value="{{ $desa_wisata->id }}" style="color: black">
+                                        {{ $desa_wisata->nama_desa_wisata }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-md-6 text-center pull-right">
+                            <strong class="text-center" style="color: black;"><i class="icofont icofont-notepad">
+                                    Daftar
+                                    Atraksi Wisata</i></strong>
+                            <select onchange="cari(this.id)" style="color: black">
+                                @foreach ($list_atraksi_wisata as $atraksi_wisata)
+                                    <option value="{{ $atraksi_wisata->id }}" style="color: black">
+                                        {{ $atraksi_wisata->nama }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div> --}}
+
+                    <div id="map" style="width: 100%; height: 500px;"></div>
+                    <br>
                     <div class="row">
-                        <div class="col-md-12 centerize-col">
+                        <div class="col-md-2">
                             <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                                 <strong style="font-size: 20px; font-weight:bold; color:black">Note :</strong>
                                 <br>
                                 <p style="color: black"><img class="mt-2"
-                                        src="https://jadesta.kemenparekraf.go.id/images/merah.png"
-                                        style="width: 20px" alt=""> : Desa Wisata</p>
+                                        src="https://jadesta.kemenparekraf.go.id/images/merah.png" style="width: 20px"
+                                        alt=""> : Desa Wisata</p>
                                 <p style="color: black"><img class="mt-2"
-                                        src="https://jadesta.kemenparekraf.go.id/images/kota.png"
-                                        style="width: 20px" alt=""> : Atraksi Wisata</p>
+                                        src="https://jadesta.kemenparekraf.go.id/images/kota.png" style="width: 20px"
+                                        alt=""> : Atraksi Wisata</p>
                             </div>
                         </div>
-                    </div>
-                    <div id="map" style="width: 100%; height: 500px;"></div>
+                        <br>
 
+                    </div>
                 </div>
         </section>
 
@@ -244,6 +271,14 @@
     </div>
     <!--== Wrapper End ==-->
     <script>
+        // var data = [
+        //     <?php foreach ($list_desa_wisata as $desa_wisata) { ?> {
+        //         "lokasi": [<?= $desa_wisata->lat ?>, <?= $desa_wisata->lng ?>],
+        //         "nama_desa_wisata": "<?= $desa_wisata->nama_desa_wisata ?>"
+        //     },
+        //     <?php } ?>
+        // ];
+
         navigator.geolocation.getCurrentPosition(function(location) {
             var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
 
@@ -251,123 +286,152 @@
 
 
             var peta1 = L.tileLayer(
-            'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                id: 'mapbox/streets-v11'
+                'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: 'mapbox/streets-v11'
+                });
+
+            var peta2 = L.tileLayer(
+                'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: 'mapbox/satellite-v9'
+                });
+
+
+            var peta3 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             });
 
-        var peta2 = L.tileLayer(
-            'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                id: 'mapbox/satellite-v9'
+            var map = L.map('map', {
+                center: [-1.8572961278636353, 109.97172781841756],
+                zoom: 9,
+                layers: [peta3],
             });
 
-
-        var peta3 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        });
-
-        var map = L.map('map', {
-            center: [-1.8028443920355783, 109.9684624870144],
-            zoom: 9,
-            layers: [peta3],
-        });
-
-        var baseMaps = {
-            "Grayscale": peta1,
-            "Sattelite": peta2,
-            "Streets": peta3,
-        };
+            var baseMaps = {
+                "Grayscale": peta1,
+                "Sattelite": peta2,
+                "Streets": peta3,
+            };
 
 
-         var layerControl = L.control.layers(baseMaps).addTo(map);
+            var layerControl = L.control.layers(baseMaps);
+            //.addTo(map);
 
-        L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Ts9g8McLuNVEfjGFTHeG', {
-            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
-        }).addTo(map);
+            L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Ts9g8McLuNVEfjGFTHeG', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+            }).addTo(map);
 
-        var LeafIcon = L.Icon.extend({
-            options: {
-                shadowUrl: '',
-                iconSize: [28, 30],
-                shadowSize: [50, 64],
-                // iconAnchor:   [22, 94],
-                shadowAnchor: [4, 62],
+            var LeafIcon = L.Icon.extend({
+                options: {
+                    shadowUrl: '',
+                    iconSize: [28, 30],
+                    shadowSize: [50, 64],
+                    // iconAnchor:   [22, 94],
+                    shadowAnchor: [4, 62],
+                }
+            });
+
+            var greenIcon = new LeafIcon({
+                    iconUrl: 'https://jadesta.kemenparekraf.go.id/images/merah.png'
+                }),
+                redIcon = new LeafIcon({
+                    iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'
+                }),
+                orangeIcon = new LeafIcon({
+                    iconUrl: 'https://jadesta.kemenparekraf.go.id/images/kota.png'
+                });
+
+
+
+            function cari(id) {
+                map.flyTo(geoLayer.getBounds().getCenter(), 19);
             }
-        });
-
-        var greenIcon = new LeafIcon({
-                iconUrl: 'https://jadesta.kemenparekraf.go.id/images/merah.png'
-            }),
-            redIcon = new LeafIcon({
-                iconUrl: 'https://cdn-icons-png.flaticon.com/128/2776/2776000.png'
-            }),
-            orangeIcon = new LeafIcon({
-                iconUrl: 'https://jadesta.kemenparekraf.go.id/images/kota.png'
-            });
 
 
-        //Desa Wisata
-        <?php foreach ($list_desa_wisata as $desa_wisata) { ?>
-        L.marker([<?= $desa_wisata->lat ?>, <?= $desa_wisata->lng ?>], {
-            icon: greenIcon
-        }).addTo(map).bindPopup(
-            '<h5 class="text-center" ><?= $desa_wisata->nama_desa_wisata ?></h5> <img  src="{{ url("public/$desa_wisata->foto_1") }}"/><h6 class="text-center" ><?= $desa_wisata->deskripsi ?></h6> <br><br> <button class="btn btn-info"><a href="<?= $desa_wisata->link_jadesta ?> " target="_blank" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
-            "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
-				location.coords.latitude + "," + location.coords.longitude + "&destination=<?= $desa_wisata->lat ?>,<?= $desa_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
+
+            //control search
+            // var markersLayer = new L.LayerGroup(); //layer contain searched elements
+            // map.addLayer(markersLayer);
+            // var controlSearch = new L.Control.Search({
+            //     position: 'topright',
+            //     layer: markersLayer,
+            //     initial: false,
+            //     zoom: 12,
+            //     marker: false
+            // });
+            // map.addControl(controlSearch);
+            // ////////////populate map with markers from sample data
+            // for (i in data) {
+            //     var nama_desa_wisata = data[i].nama_desa_wisata;//value searched
+            //     var lokasi = data[i].lokasi; //position found
+            //     var marker = new L.Marker(new L.latLng(lokasi), {title: nama_desa_wisata}); //se property searched
+            // }
+
+
+            //Desa Wisata
+            <?php foreach ($list_desa_wisata as $desa_wisata) { ?>
+            L.marker([<?= $desa_wisata->lat ?>, <?= $desa_wisata->lng ?>], {
+                icon: greenIcon
+            }).addTo(map).bindPopup(
+                '<h5 class="text-center" ><?= $desa_wisata->nama_desa_wisata ?></h5> <img  src="{{ url("public/$desa_wisata->foto_1") }}"/><h6 class="text-center" ><?= $desa_wisata->deskripsi ?></h6> <br><br> <button class="btn btn-info"><a href="<?= $desa_wisata->link_jadesta ?> " target="_blank" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
+                "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
+                location.coords.latitude + "," + location.coords.longitude +
+                "&destination=<?= $desa_wisata->lat ?>,<?= $desa_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
             );
-        <?php } ?>
+            <?php } ?>
 
 
 
-        //Atraksi Wisata Alam
-        <?php foreach ($list_atraksi_wisata->where('kategori', 'Wisata Alam') as $atraksi_wisata) { ?>
-        L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
-            icon: orangeIcon
-        }).addTo(map).bindPopup(
-            '<h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/> <br><br> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
-            "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
-				location.coords.latitude + "," + location.coords.longitude + "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
-        );
-        <?php } ?>
+            //Atraksi Wisata Alam
+            <?php foreach ($list_atraksi_wisata->where('kategori', 'Wisata Alam') as $atraksi_wisata) { ?>
+            L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
+                icon: orangeIcon
+            }).addTo(map).bindPopup(
+                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
+                "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
+                location.coords.latitude + "," + location.coords.longitude +
+                "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
+            );
+            <?php } ?>
 
-        //Atraksi Wisata Budaya
-        <?php foreach ($list_atraksi_wisata->where('kategori', 'Wisata Budaya') as $atraksi_wisata) { ?>
-        L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
-            icon: orangeIcon
-        }).addTo(map).bindPopup(
-            '<h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/> <br><br> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataBudaya', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
-            "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
-				location.coords.latitude + "," + location.coords.longitude + "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
-        );
-        <?php } ?>
+            //Atraksi Wisata Budaya
+            <?php foreach ($list_atraksi_wisata->where('kategori', 'Wisata Budaya') as $atraksi_wisata) { ?>
+            L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
+                icon: orangeIcon
+            }).addTo(map).bindPopup(
+                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataBudaya', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
+                "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
+                location.coords.latitude + "," + location.coords.longitude +
+                "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
+            );
+            <?php } ?>
 
-        //Atraksi Wisata Buatan
-        <?php foreach ($list_atraksi_wisata->where('kategori', 'Wisata Buatan') as $atraksi_wisata) { ?>
-        L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
-            icon: orangeIcon
-        }).addTo(map).bindPopup(
-            '<h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/> <br><br> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataBuatan', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button>' +
-            "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
-				location.coords.latitude + "," + location.coords.longitude + "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
-        );
-        <?php } ?>
+            //Atraksi Wisata Buatan
+            <?php foreach ($list_atraksi_wisata->where('kategori', 'Wisata Buatan') as $atraksi_wisata) { ?>
+            L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
+                icon: orangeIcon
+            }).addTo(map).bindPopup(
+                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataBuatan', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button>' +
+                "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
+                location.coords.latitude + "," + location.coords.longitude +
+                "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
+            );
+            <?php } ?>
 
-        L.control.defaultExtent().addTo(map);
+            L.control.defaultExtent().addTo(map);
 
-        // L.Control.geocoder({
-        //     position: 'topleft'
-        // }).addTo(map);
+            // L.Control.geocoder({
+            //     position: 'topleft'
+            // }).addTo(map);
 
-        // L.control.locate().addTo(map);
+            L.control.locate().addTo(map);
 
         })
-
-        
     </script>
 </body>
 

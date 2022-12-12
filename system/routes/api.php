@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\DesaWisataApiController;
+use App\Http\Controllers\Api\AtraksiWisataApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('desawisata/all', [DesaWisataApiController::class, 'getAllData']);
+
+//Atraksi Wisata API
+Route::get('atraksiwisata/all', [AtraksiWisataApiController::class, 'getAllData']);

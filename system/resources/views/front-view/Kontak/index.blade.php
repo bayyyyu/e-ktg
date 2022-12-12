@@ -97,9 +97,9 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                             class="tr-icon ion-android-menu"></i> </button>
                     <div class="logo"> <a href="{{ url('front-view/DesaWisata') }}"><img class="logo logo-display"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt=""> <img
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt="" style="width: 100%; object-fit:contain"> <img
                                 class="logo logo-scrolled"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt=""> </a>
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt="" style="width: 100%; object-fit:contain"> </a>
                     </div>
                 </div>
                 <!--== End Header Navigation ==-->
@@ -162,14 +162,14 @@
                         </li>
                     </ul>
                     <div class="tp-bannertimer" style="height: 3px; background-color: rgba(255, 255, 255, 0.25);">
-                    
+
                     </div>
                 </div>
             </div>
         </div>
         <!--== Hero Slider End ==-->
 
-        
+
         <!--== Who We Are Start ==-->
 
         <!--== Footer Start ==-->

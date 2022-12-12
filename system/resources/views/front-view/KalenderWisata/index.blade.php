@@ -61,9 +61,9 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                             class="tr-icon ion-android-menu"></i> </button>
                     <div class="logo"> <a href="{{ url('front-view/DesaWisata') }}"><img class="logo logo-display"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt=""> <img
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt="" style="width: 100%; object-fit:contain"> <img
                                 class="logo logo-scrolled"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt=""> </a>
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt="" style="width: 100%; object-fit:contain"> </a>
                     </div>
                 </div>
                 <!--== End Header Navigation ==-->
@@ -77,7 +77,7 @@
                         <li><a class="page-scroll actives" href="{{ url('front-view/KalenderWisata') }}">Kalender
                                 Wisata</a></li>
                         <li><a class="page-scroll" href="{{ url('front-view/PetaWisata') }}">Peta Wisata</a></li>
-                        <li><a class="page-scroll" href="{{url('front-view/Kontak')}}">Info & Kontak</a></li>
+                        <li><a class="page-scroll" href="{{ url('front-view/Kontak') }}">Info & Kontak</a></li>
                         <li><a class="page-scroll" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a>
                         </li>
                     </ul>
@@ -182,7 +182,8 @@
                             <div class="copy-right">Copyright &copy; <span class="default-color">E-KTG 2022
                                     @if (date('Y') > '2022')
                                         -{{ date('Y') }}
-                                    @endif.</span> All rights reserved</div>
+                                    @endif.
+                                </span> All rights reserved</div>
                             <ul class="social-media mt-30 float-none">
                                 <li><a href="" class="icofont icofont-email"></a></li>
                                 <li><a href="" target="_blank" class="icofont icofont-instagram"></a></li>
