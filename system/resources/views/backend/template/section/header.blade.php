@@ -49,7 +49,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{url('front-view/DesaWisata')}}" role="button">Visitor Page</a>
+        <a class="nav-link" href="{{url('DesaWisata')}}" role="button">Visitor Page</a>
       </li>
       {{-- <li class="nav-item d-none d-sm-inline-block">
         <a href="dashboard" class="nav-link">Home</a>

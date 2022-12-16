@@ -15,16 +15,19 @@ class AtraksiWisataController extends Controller
     function index2()
     {
         $data['list_atraksi_wisata'] = AtraksiWisata::all();
+        
         return view('front-view.AtraksiWisata.WisataAlam.index', $data);
     }
     function index3()
     {
         $data['list_atraksi_wisata'] = AtraksiWisata::all();
+        
         return view('front-view.AtraksiWisata.WisataBudaya.index', $data);
     }
     function index4()
     {
         $data['list_atraksi_wisata'] = AtraksiWisata::all();
+        
         return view('front-view.AtraksiWisata.WisataBuatan.index', $data);
     }
 

@@ -18,7 +18,7 @@
                         <form action="{{ url('backend/AtraksiWisata') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-control-label" for="status_member">Kategori</label>
                                         <select class="form-control" id="kategori" name="kategori" required="required">
@@ -29,12 +29,20 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="" class="control-label">Nama Atraksi Wisata</label>
+                                        <label for="" class="control-label">Nama Destinasi</label>
                                         <input type="text" class="form-control" name="nama">
                                     </div>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Atraksi/Aktifitas</label>
+                                        <input type="text" class="form-control" name="atraksi">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="" class="control-label">Nama Pengelola</label>
@@ -47,7 +55,14 @@
                                         <input type="text" class="form-control" name="no_pengelola">
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Alamat</label>
+                                        <input type="text" class="form-control" name="alamat">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
@@ -79,6 +94,10 @@
 
                             </div>
                             <div class="form-group">
+                                <label for="" class="control-label">Sumber Foto</label>
+                                <input type="text" class="form-control" name="sumber_foto" accept=".jpg">
+                            </div>
+                            <div class="form-group">
                                 <label for="" class="control-label">Deskripsi</label>
                                 <textarea name="deskripsi" id="deskripsi" class="form-control"></textarea>
                             </div>
@@ -87,20 +106,25 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="" class="control-label">Latitude</label>
-                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta kemudian drag marker)</span>
-                                        <input type="float" readonly="readonly"  class="form-control" name="lat" id="latitude">
+                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta
+                                            kemudian drag marker)</span>
+                                        <input type="float"  class="form-control" name="lat"
+                                            id="latitude">
                                         <br>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="" class="control-label">Longitude</label>
-                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta kemudian drag marker)</span>
-                                        <input type="float" readonly="readonly"  class="form-control" name="lng" id="longitude">
+                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta
+                                            kemudian drag marker)</span>
+                                        <input type="float"  class="form-control" name="lng"
+                                            id="longitude">
                                         <br>
                                     </div>
                                 </div>
-                                <div id="map" style="width: 80%; height: 300px;margin-left:auto;margin-right:auto" ></div>
+                                <div id="map" style="width: 80%; height: 300px;margin-left:auto;margin-right:auto">
+                                </div>
                             </div>
                             <br>
                             <button class="btn btn-dark float-right"><i class="fa fa-save "></i> Simpan</button>
@@ -143,7 +167,7 @@
             "Sattelite": peta2,
             "Streets": peta3,
         };
-        
+
         var latInput = document.querySelector("[name=latitude]");
         var lngInput = document.querySelector("[name=longitude]");
 
@@ -151,11 +175,11 @@
 
         map.attributionControl.setPrefix(false);
 
-        var marker = new L.marker(curLocation,{
+        var marker = new L.marker(curLocation, {
             draggable: 'true'
         });
 
-        marker.on('dragend', function(event){
+        marker.on('dragend', function(event) {
             var position = marker.getLatLng();
             marker.setLatLng(position, {
                 draggable: 'true'
@@ -171,7 +195,7 @@
             var lng = e.latlng.lng;
             if (!marker) {
                 marker = L.marker(e.latlng).addTo(map);
-            }else {
+            } else {
                 marker.setLatLng(e.latlng);
             }
             latInput.value = lat;
@@ -185,6 +209,5 @@
         L.control.defaultExtent().addTo(map);
 
         L.control.locate().addTo(map);
-        
     </script>
 @endsection

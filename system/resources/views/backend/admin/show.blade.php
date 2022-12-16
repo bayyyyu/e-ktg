@@ -22,7 +22,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header bg-dark">
-          <h3 class="card-title">Detail Data Desa Pengelola</h3>
+          <h3 class="card-title">Detail Data Pengelola</h3>
 
           <div class="card-tools">
             <a href="{{url('backend/admin')}}" type="button" class="btn btn-tool">

@@ -100,7 +100,7 @@ nav.navbar.bootsnav ul.nav > li > a{
     letter-spacing: 1px;
 }
 
-nav.navbar.bootsnav ul.nav > li > a:hover{color: #cc2a49;}
+nav.navbar.bootsnav ul.nav > li > a:hover{color: #858585;}
 nav.navbar.bootsnav.corporate ul.nav > li > a:hover{color: #50C9C3!important;}
 nav.navbar.bootsnav.video ul.nav > li > a:hover{color: #56ab2f;}
 nav.navbar.bootsnav.agency ul.nav > li > a:hover{color: #56ab2f;}
@@ -512,7 +512,7 @@ body{
 }
 .dark.side .close-side{color:#1d2124;}
 
-.side a:hover.close-side {color:#cc2a49;}
+.side a:hover.close-side {color:#858585;}
 .corporate.side a:hover.close-side {color:#50C9C3;}
 .video.side a:hover.close-side {color:#56ab2f;}
 .agency.side a:hover.close-side {color:#f7971e;}
@@ -547,7 +547,7 @@ body{
 
 .side ul.social-media li{display: inline-block;margin-right: 10px;font-size: 18px;}
 .side ul.social-media li a{color: #fff;}
-.side ul.social-media li a:hover, .side .widget ul.social-media li a:focus{color:#cc2a49;}
+.side ul.social-media li a:hover, .side .widget ul.social-media li a:focus{color:#858585;}
 .corporate.side ul.social-media li a:hover, .corporate.side .widget ul.social-media li a:focus{color: #50C9C3;}
 .video.side ul.social-media li a:hover, .video.side .widget ul.social-media li a:focus{color: #56ab2f;}
 .agency.side ul.social-media li a:hover, .agency.side .widget ul.social-media li a:focus{color: #f7971e;}
@@ -642,7 +642,7 @@ body{
 
 .side .widget ul.link li a:focus,
 .side .widget ul.link li a:hover{
-    color: #cc2a49;
+    color: #858585;
     text-decoration: none;
 }
 
@@ -810,7 +810,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover,
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover{
-        background-color:#cc2a49;
+        background-color:#858585;
 		    color:#fff;
     }
     nav.navbar.bootsnav.corporate li.dropdown ul.dropdown-menu > li a:hover,
@@ -999,7 +999,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     nav.navbar.bootsnav.navbar-transparent.dark .attr-nav > ul > li > a:hover,
     nav.navbar.bootsnav.navbar-transparent.dark ul.nav > li > a:hover{
-        color: #cc2a49!important;
+        color: #858585!important;
     }
 
     nav.navbar.bootsnav.no-background.white .attr-nav > ul > li > a:hover,
@@ -1011,7 +1011,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     nav.navbar.bootsnav.navbar-transparent.dark ul.nav > li > a:hover,
     nav.navbar.bootsnav.no-background.dark ul.nav > li > a:hover
 	         {
-        color: #cc2a49;
+        color: #858585;
     }
     nav.navbar.bootsnav.no-background.white.corporate .attr-nav > ul > li > a:hover,
     nav.navbar.bootsnav.navbar-transparent.white.corporate .attr-nav > ul > li > a:hover,
@@ -1280,13 +1280,13 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
       position: absolute;
       top: 40px;
       left: 15px;
-      background-color: #cc2a49;
+      background-color: #858585;
       height: 1px;
       width: 20px;
     }
 
 	  nav.bootsnav.navbar-sidebar ul.nav > li > a:hover{
-        color:#cc2a49;
+        color:#858585;
     }
 
     nav.bootsnav.navbar-sidebar ul.nav > li.dropdown > a:after{

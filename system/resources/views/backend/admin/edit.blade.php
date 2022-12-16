@@ -6,7 +6,7 @@
             <div class="col-md-12 mt-5">
                 <div class="card">
                     <div class="card-header bg-dark">
-                       Edit Data Admin
+                       Edit Data Pengelola
                     </div>
                     <div class="card-body">
                         <form action="{{url('backend/admin', $admin->id)}}" method="post" enctype="multipart/form-data">

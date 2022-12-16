@@ -32,6 +32,7 @@
                                 <th width="50">Aksi</th>
                                 <th>Nama Desa Wisata</th>
                                 <th>Deskripsi Singkat</th>
+                                <th>Foto</th>
                             </thead>
                             <tbody>
                                @foreach($list_desa_wisata as $desa_wisata)
@@ -46,6 +47,7 @@
                                     </td>
                                     <td>{{$desa_wisata->nama_desa_wisata}}</td>
                                     <td>{{$desa_wisata->deskripsi}}</td>
+                                     <td><a href="{{url('backend/DesaWisata', $desa_wisata->id)}}"><img src="{{url("public/$desa_wisata->foto_1")}}" alt="" style="width:100%; height:80px; object-fit:cover"></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>

@@ -96,10 +96,11 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                             class="tr-icon ion-android-menu"></i> </button>
-                    <div class="logo"> <a href="{{ url('front-view/DesaWisata') }}"><img class="logo logo-display"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt="" style="width: 100%; object-fit:contain"> <img
-                                class="logo logo-scrolled"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt="" style="width: 100%; object-fit:contain"> </a>
+                    <div class="logo"> <a href="{{ url('DesaWisata') }}"><img class="logo logo-display"
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt=""
+                                style="width: 100%; object-fit:contain"> <img class="logo logo-scrolled"
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt=""
+                                style="width: 100%; object-fit:contain"> </a>
                     </div>
                 </div>
                 <!--== End Header Navigation ==-->
@@ -107,16 +108,16 @@
                 <!--== Collect the nav links, forms, and other content for toggling ==-->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
-                        <li class="dropdown"><a href="{{ url('front-view/DesaWisata') }}">Desa Wisata</a>
+                        <li class="dropdown"><a href="{{ url('DesaWisata') }}">Desa Wisata</a>
                         </li>
-                        <li><a class="page-scroll" href="{{ url('front-view/AtraksiWisata') }}">Atraksi Wisata</a></li>
-                        <li><a class="page-scroll" href="{{ url('front-view/KalenderWisata') }}">Kalender Wisata</a>
+                        <li><a class="page-scroll" href="{{ url('AtraksiWisata') }}">Atraksi Wisata</a></li>
+                        <li><a class="page-scroll" href="{{ url('KalenderWisata') }}">Kalender Wisata</a>
                         </li>
-                        <li><a class="page-scroll " href="{{ url('front-view/PetaWisata') }}">Peta Wisata</a>
+                        <li><a class="page-scroll " href="{{ url('PetaWisata') }}">Peta Wisata</a>
                         </li>
-                        <li><a class="page-scroll actives" href="{{ url('front-view/Kontak') }}">Info & Kontak</a></li>
-                        <li><a class="page-scroll" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a>
-                        </li>
+                        <li><a class="page-scroll " href="{{ url('Kontak') }}">Info & Kontak</a></li>
+                        {{-- <li><a class="page-scroll" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a>
+                        </li> --}}
                     </ul>
                 </div>
                 <!--== /.navbar-collapse ==-->
@@ -153,8 +154,8 @@
                             <!-- LAYER NR. 1 -->
                             <div class="hero-text-wrap">
                                 <center>
-                                    <h3 style="color: white; font-weight:40px; margin-top:250px">Info & Kontak</h3>
-                                    <img src="{{ url('public') }}/assets-web/images/logo/maskot-putih5.png"
+                                    <h3 style="color: white; font-weight:40px; margin-top:45vh">Info & Kontak</h3>
+                                    <img src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png"
                                         alt="" style="width:100%; height:auto; object-fit: cover; ">
                                 </center>
                             </div>
@@ -169,6 +170,66 @@
         </div>
         <!--== Hero Slider End ==-->
 
+        <section class="white-bg" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 centerize-col text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title">
+                            <div class="row">
+                                <div class="col-md-8 centerize-col text-center">
+                                    <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                                        <h2 class="raleway-font"><span class="font-100">Info</span></h2>
+                                        <hr class="center_line dark-bg">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                ELECTRONIC KETAPANG TRAVEL GUIDE, e-KTG (beta), adalah sarana penyedia informasi
+                                pariwisata dan desa wisata di Kabupaten Ketapang yang terintegrasi dengan sistem JADESTA
+                                (Jaringan Desa Wisata) Kemenparekraf RI. ​Website ini dikelola bersama oleh DPC MASATA
+                                Ketapang, Politeknik Negeri Ketapang, dan Dinas Pariwisata dan Kebudayaan Kabupaten
+                                Ketapang, Kalimantan Barat.
+                            </p>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.812596785114!2d109.98644231405744!3d-1.8168321369457205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e0518e6aef713bf%3A0xe05ee65e3627ba6c!2sPoliteknik%20Negeri%20Ketapang!5e0!3m2!1sid!2sid!4v1671195827915!5m2!1sid!2sid"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 centerize-col text-center mt-50">
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                            <h2 class="raleway-font"><span class="font-100">Kontak</span></h2>
+                            <hr class="center_line dark-bg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-50 ">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="team-member" >
+                            <div class="team-thumb">
+                                <div class="thumb-overlay"></div>
+                                <img src="{{ url('public') }}/assets-web/Kontak/User3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="member-info text-center white-bg">
+                            <h3>Nama</h3>
+                            {{-- <span class="title purple-color">Project Manager</span> --}}
+                            <div class="social-icons-style-02">
+                                <ul class="sm-icon mt-20 mb-0">
+                                    <li><a class="fb" href="#."><i class="icofont icofont-facebook"></i></a>
+                                    </li>
+                                    <li><a class="tw" href="#."><i class="icofont icofont-whatsapp"></i></a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--== Who We Are Start ==-->
 
@@ -179,7 +240,7 @@
                     <div class="row wow fadeInUp" data-wow-delay="0.1s">
                         <div class="col-md-8 centerize-col text-center">
                             <div class="footer-logo">
-                                <a href="index.html"><img
+                                <a href=""><img
                                         src="{{ url('public') }}/assets-web/images/logo-white-footer.png"
                                         class="img-responsive centerize-col" alt="Footer Logo" /></a>
                             </div>
@@ -188,14 +249,6 @@
                                         -{{ date('Y') }}
                                     @endif.
                                 </span> All rights reserved</div>
-                            <ul class="social-media mt-30 float-none">
-                                <li><a href="mailto:dpcketapang.masata@gmail.com" class="icofont icofont-email"></a>
-                                </li>
-                                <li><a href="https://www.instagram.com/_bayyz/" target="_blank"
-                                        class="icofont icofont-instagram"></a></li>
-                                <li><a href="https://github.com/bayyyyu" target="_blank"
-                                        class="icofont icofont-github "></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>

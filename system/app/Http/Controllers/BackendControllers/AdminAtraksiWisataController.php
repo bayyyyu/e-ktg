@@ -8,7 +8,8 @@ class AdminAtraksiWisataController extends Controller
 {
     function index()
     {
-        $data['list_atraksi_wisata'] = AtraksiWisata::all();
+        $admin = request()->user();
+        $data['list_atraksi_wisata'] = $admin->atraksi_wisata;
         return view('backend.AtraksiWisata.index', $data);
     }
     function create()
@@ -19,14 +20,18 @@ class AdminAtraksiWisataController extends Controller
     function store()
     {
         $atraksi_wisata = new AtraksiWisata();
+        $atraksi_wisata->id_user = request()->user()->id;
         $atraksi_wisata->nama = request('nama');
         $atraksi_wisata->kategori = request('kategori');
         $atraksi_wisata->deskripsi = request('deskripsi');
+        $atraksi_wisata->alamat = request('alamat');
+        $atraksi_wisata->atraksi = request('atraksi');
         $atraksi_wisata->nama_pengelola = request('nama_pengelola');
         $atraksi_wisata->no_pengelola = request('no_pengelola');
         $atraksi_wisata->hari_buka = request('hari_buka');
         $atraksi_wisata->jam_buka = request('jam_buka');
         $atraksi_wisata->jam_tutup = request('jam_tutup');
+        $atraksi_wisata->sumber_foto = request('sumber_foto');
         $atraksi_wisata->lat = request('lat');
         $atraksi_wisata->lng = request('lng');
         $atraksi_wisata->save();
@@ -50,6 +55,8 @@ class AdminAtraksiWisataController extends Controller
     function update(AtraksiWisata $atraksi_wisata)
     {
         $atraksi_wisata->nama = request('nama');
+        $atraksi_wisata->atraksi = request('atraksi');
+        $atraksi_wisata->alamat = request('alamat');
         if (request('deskripsi')) $atraksi_wisata->deskripsi = (request('deskripsi'));
         $atraksi_wisata->kategori = request('kategori');
         $atraksi_wisata->nama_pengelola = request('nama_pengelola');
@@ -57,6 +64,7 @@ class AdminAtraksiWisataController extends Controller
         $atraksi_wisata->hari_buka = request('hari_buka');
         $atraksi_wisata->jam_buka = request('jam_buka');
         $atraksi_wisata->jam_tutup = request('jam_tutup');
+        $atraksi_wisata->sumber_foto = request('sumber_foto');
         $atraksi_wisata->lat = request('lat');
         $atraksi_wisata->lng = request('lng');
         $atraksi_wisata->save();

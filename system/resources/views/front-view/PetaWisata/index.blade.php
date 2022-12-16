@@ -110,8 +110,8 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                             class="tr-icon ion-android-menu"></i> </button>
-                    <div class="logo"> <a href="{{ url('front-view/DesaWisata') }}"><img class="logo logo-display"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt=""
+                    <div class="logo"> <a href="{{ url('DesaWisata') }}"><img class="logo logo-display"
+                                src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png" alt=""
                                 style="width: 100%; object-fit:contain"> <img class="logo logo-scrolled"
                                 src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt=""
                                 style="width: 100%; object-fit:contain"> </a>
@@ -122,16 +122,16 @@
                 <!--== Collect the nav links, forms, and other content for toggling ==-->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
-                        <li class="dropdown"><a href="{{ url('front-view/DesaWisata') }}">Desa Wisata</a>
+                        <li class="dropdown"><a href="{{ url('DesaWisata') }}">Desa Wisata</a>
                         </li>
-                        <li><a class="page-scroll" href="{{ url('front-view/AtraksiWisata') }}">Atraksi Wisata</a></li>
-                        <li><a class="page-scroll" href="{{ url('front-view/KalenderWisata') }}">Kalender Wisata</a>
+                        <li><a class="page-scroll" href="{{ url('AtraksiWisata') }}">Atraksi Wisata</a></li>
+                        <li><a class="page-scroll" href="{{ url('KalenderWisata') }}">Kalender Wisata</a>
                         </li>
-                        <li><a class="page-scroll actives" href="{{ url('front-view/PetaWisata') }}">Peta Wisata</a>
+                        <li><a class="page-scroll" href="{{ url('PetaWisata') }}">Peta Wisata</a>
                         </li>
-                        <li><a class="page-scroll" href="{{ url('front-view/Kontak') }}">Info & Kontak</a></li>
-                        <li><a class="page-scroll" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a>
-                        </li>
+                        <li><a class="page-scroll" href="{{ url('Kontak') }}">Info & Kontak</a></li>
+                        {{-- <li><a class="page-scroll" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a>
+                        </li> --}}
                     </ul>
                 </div>
                 <!--== /.navbar-collapse ==-->
@@ -168,8 +168,8 @@
                             <!-- LAYER NR. 1 -->
                             <div class="hero-text-wrap">
                                 <center>
-                                    <h3 style="color: white; font-weight:40px; margin-top:250px">Peta Wisata</h3>
-                                    <img src="{{ url('public') }}/assets-web/images/logo/maskot-putih5.png"
+                                    <h3 style="color: white; font-weight:40px; margin-top:45vh">Peta Wisata</h3>
+                                    <img src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png"
                                         alt="" style="width:100%; height:auto; object-fit: cover; ">
                                 </center>
                             </div>
@@ -240,7 +240,7 @@
                     <div class="row wow fadeInUp" data-wow-delay="0.1s">
                         <div class="col-md-8 centerize-col text-center">
                             <div class="footer-logo">
-                                <a href="index.html"><img
+                                <a href=""><img
                                         src="{{ url('public') }}/assets-web/images/logo-white-footer.png"
                                         class="img-responsive centerize-col" alt="Footer Logo" /></a>
                             </div>
@@ -249,14 +249,6 @@
                                         -{{ date('Y') }}
                                     @endif.
                                 </span> All rights reserved</div>
-                            <ul class="social-media mt-30 float-none">
-                                <li><a href="mailto:dpcketapang.masata@gmail.com" class="icofont icofont-email"></a>
-                                </li>
-                                <li><a href="https://www.instagram.com/_bayyz/" target="_blank"
-                                        class="icofont icofont-instagram"></a></li>
-                                <li><a href="https://github.com/bayyyyu" target="_blank"
-                                        class="icofont icofont-github "></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -392,7 +384,7 @@
             L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
                 icon: orangeIcon
             }).addTo(map).bindPopup(
-                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
+                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
                 "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
                 location.coords.latitude + "," + location.coords.longitude +
                 "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
@@ -404,7 +396,7 @@
             L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
                 icon: orangeIcon
             }).addTo(map).bindPopup(
-                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataBudaya', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
+                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('AtraksiWisata/WisataBudaya', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button> ' +
                 "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
                 location.coords.latitude + "," + location.coords.longitude +
                 "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"
@@ -416,7 +408,7 @@
             L.marker([<?= $atraksi_wisata->lat ?>, <?= $atraksi_wisata->lng ?>], {
                 icon: orangeIcon
             }).addTo(map).bindPopup(
-                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('front-view/AtraksiWisata/WisataBuatan', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button>' +
+                '<h6 class="text-center" >Atraksi <?= $atraksi_wisata->kategori ?></h6> <img style="height:100%; object-fit: cover" src="{{ url("public/$atraksi_wisata->foto") }}"/><h6 class="text-center" ><?= $atraksi_wisata->nama ?></h6> <button class="btn btn-info"><a href="{{ url('AtraksiWisata/WisataBuatan', $atraksi_wisata->id) }}" style="color: white"><i class="icofont-look"></i> Lihat Detail</a></button>' +
                 "<button class='btn btn-info'><a href='https://www.google.com/maps/dir/?api=1&origin=" +
                 location.coords.latitude + "," + location.coords.longitude +
                 "&destination=<?= $atraksi_wisata->lat ?>,<?= $atraksi_wisata->lng ?>' target='_blank'  style='color: white'><i class='icofont-location-arrow'></i> Rute</a></button>"

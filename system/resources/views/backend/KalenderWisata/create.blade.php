@@ -6,32 +6,55 @@
             <div class="col-md-12 mt-5">
                 <div class="card">
                     <div class="card-header bg-dark">
-                       Tambah Data Atraksi Wisata Rimba
-                       <div class="card-tools">
-                            <a href="{{url('backend/KalenderWisata')}}" type="button" class="btn btn-tool">
-                            <i class="fas fa-sign-out-alt"></i> 
+                        Tambah Data Kalender Wisata
+                        <div class="card-tools">
+                            <a href="{{ url('backend/KalenderWisata') }}" type="button" class="btn btn-tool">
+                                <i class="fas fa-sign-out-alt"></i>
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="card-body">
-                        <form action="{{url('backend/KalenderWisata')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{ url('backend/KalenderWisata') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                    <label for="" class="control-label">Nama Event</label>
-                                    <input type="text" class="form-control" name="nama">
+                                <label for="" class="control-label">Nama Event</label>
+                                <input type="text" class="form-control" name="nama">
                             </div>
                             <div class="form-group">
-                                    <label for="" class="control-label">Tempat</label>
-                                    <input type="text" class="form-control" name="tempat">
+                                <label for="" class="control-label">Tempat</label>
+                                <input type="text" class="form-control" name="tempat">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Tanggal</label>
+                                        <input type="date" class="form-control" name="tanggal">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="status_member">Bulan</label>
+                                        <select class="form-control" id="bulan" name="bulan" required="required">
+                                            <option value="" disabled selected>- Pilih -</option>
+                                            <option value="Januari">Januari</option>
+                                            <option value="Februari">Februari</option>
+                                            <option value="Maret">Maret</option>
+                                            <option value="Mei">Mei</option>
+                                            <option value="Juni">Juni</option>
+                                            <option value="Juli">Juli</option>
+                                            <option value="Agustus">Agustus</option>
+                                            <option value="September">September</option>
+                                            <option value="Oktober">Oktober</option>
+                                            <option value="November">November</option>
+                                            <option value="Desember">Desember</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                    <label for="" class="control-label">Tanggal</label>
-                                    <input type="date" class="form-control" name="tanggal">
-                            </div>
-                            <div class="form-group">
-                                    <label for="" class="control-label">Isi</label>
-                                    <textarea name="isi" id="deskripsi" class="form-control"></textarea>
+                                <label for="" class="control-label">Isi</label>
+                                <textarea name="isi" id="deskripsi" class="form-control"></textarea>
                             </div>
                             <div class="row">
                                 <div class="col-md-3">
@@ -46,20 +69,25 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="" class="control-label">Latitude</label>
-                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta kemudian drag marker)</span>
-                                        <input type="float" readonly="readonly"  class="form-control" name="foto" id="latitude">
+                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta
+                                            kemudian drag marker)</span>
+                                        <input type="float" readonly="readonly" class="form-control" name="foto"
+                                            id="latitude">
                                         <br>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="" class="control-label">Longitude</label>
-                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta kemudian drag marker)</span>
-                                        <input type="float" readonly="readonly"  class="form-control" name="foto" id="longitude">
+                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta
+                                            kemudian drag marker)</span>
+                                        <input type="float" readonly="readonly" class="form-control" name="foto"
+                                            id="longitude">
                                         <br>
                                     </div>
                                 </div>
-                                <div id="map" style="width: 80%; height: 300px;margin-left:auto;margin-right:auto" ></div>
+                                <div id="map" style="width: 80%; height: 300px;margin-left:auto;margin-right:auto">
+                                </div>
                             </div>
                             <br>
                             <button class="btn btn-dark float-right"><i class="fa fa-save "></i> Simpan</button>
@@ -102,7 +130,7 @@
             "Sattelite": peta2,
             "Streets": peta3,
         };
-        
+
         var latInput = document.querySelector("[name=latitude]");
         var lngInput = document.querySelector("[name=longitude]");
 
@@ -110,11 +138,11 @@
 
         map.attributionControl.setPrefix(false);
 
-        var marker = new L.marker(curLocation,{
+        var marker = new L.marker(curLocation, {
             draggable: 'true'
         });
 
-        marker.on('dragend', function(event){
+        marker.on('dragend', function(event) {
             var position = marker.getLatLng();
             marker.setLatLng(position, {
                 draggable: 'true'
@@ -130,7 +158,7 @@
             var lng = e.latlng.lng;
             if (!marker) {
                 marker = L.marker(e.latlng).addTo(map);
-            }else {
+            } else {
                 marker.setLatLng(e.latlng);
             }
             latInput.value = lat;
@@ -144,6 +172,5 @@
         L.control.defaultExtent().addTo(map);
 
         L.control.locate().addTo(map);
-        
     </script>
 @endsection

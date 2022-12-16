@@ -17,9 +17,21 @@ class User extends Authenticatable
     protected $table = 'admin';
     use HasApiTokens, HasFactory, Notifiable;
 
-    function desawisata()
+    function desa_wisata()
     {
         return $this->hasMany(DesaWisata::class, 'id_user');
+    }
+    function atraksi_wisata()
+    {
+        return $this->hasMany(AtraksiWisata::class, 'id_user');
+    }
+    function kalender_wisata()
+    {
+        return $this->hasMany(KalenderWisata::class, 'id_user');
+    }
+    function dashboard()
+    {
+        return $this->hasMany(KalenderWisata::class, 'id_user');
     }
 
 }

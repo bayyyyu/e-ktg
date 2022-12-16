@@ -63,8 +63,8 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                             class="tr-icon ion-android-menu"></i> </button>
-                    <div class="logo"> <a href="{{ url('front-view/AtraksiWisata') }}"><img class="logo logo-display"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-putih6.png" alt="" style="width: 100%; object-fit:contain"> <img
+                    <div class="logo"> <a href="{{ url('AtraksiWisata') }}"><img class="logo logo-display"
+                                src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png" alt="" style="width: 100%; object-fit:contain"> <img
                                 class="logo logo-scrolled"
                                 src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt="" style="width: 100%; object-fit:contain"> </a>
                     </div>
@@ -74,12 +74,12 @@
                 <!--== Collect the nav links, forms, and other content for toggling ==-->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
-                        <li><a class="" href="{{ url('front-view/DesaWisata') }}">Desa Wisata</a></li>
-                        <li><a class="actives" href="{{ url('front-view/AtraksiWisata') }}">Atraksi Wisata</a></li>
-                        <li><a class="" href="{{ url('front-view/KalenderWisata') }}">Kalender Wisata</a></li>
-                        <li><a class="" href="{{ url('front-view/PetaWisata') }}">Peta Wisata</a></li>
-                        <li><a class="" href="{{ url('front-view/Kontak') }}">Info & Kontak</a></li>
-                        <li><a class="" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a></li>
+                        <li><a class="" href="{{ url('DesaWisata') }}">Desa Wisata</a></li>
+                        <li><a class="" href="{{ url('AtraksiWisata') }}">Atraksi Wisata</a></li>
+                        <li><a class="" href="{{ url('KalenderWisata') }}">Kalender Wisata</a></li>
+                        <li><a class="" href="{{ url('PetaWisata') }}">Peta Wisata</a></li>
+                        <li><a class="" href="{{ url('Kontak') }}">Info & Kontak</a></li>
+                        {{-- <li><a class="" href="{{ url('auth/login') }}"><i class="icofont-user-male"></i></a></li> --}}
                     </ul>
                 </div>
                 <!--== /.navbar-collapse ==-->
@@ -117,9 +117,9 @@
                             <div class="hero-text-wrap">
                                 <div class="hero-text-wrap">
                                     <center>
-                                        <h3 style="color: white; font-weight:40px; margin-top:250px">Atraksi Wisata
+                                        <h3 style="color: white; font-weight:40px; margin-top:45vh">Atraksi Wisata
                                         </h3>
-                                        <img src="{{ url('public') }}/assets-web/images/logo/maskot-putih5.png"
+                                        <img src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png"
                                             alt="" style="width:100%; height:auto; object-fit: cover; ">
                                     </center>
                                 </div>
@@ -142,7 +142,7 @@
                     <hr class="center_line grey-bg">
                 </div>
                 <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="{{ url('front-view/AtraksiWisata/WisataAlam') }}">
+                    <a href="{{ url('AtraksiWisata/WisataAlam') }}">
                         <p style="font-size: 20px; font-weight:bold; color:#000000">Wisata Alam</p>
                     </a>
 
@@ -151,11 +151,11 @@
                     @foreach ($list_atraksi_wisata->where('kategori', 'Wisata Alam') as $atraksi_wisata)
                         <div class="card">
 
-                            <div class="img"><img src="{{ url("public/$atraksi_wisata->foto") }}"
-                                    alt="Foto Wisata Alam"></div>
+                            <div class="img"><a href="{{ url('AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}"><img src="{{ url("public/$atraksi_wisata->foto") }}"
+                                    alt="Foto Wisata Alam" style="width:100%; "></a></div>
                             <div class="content">
                                 <div class="text-center"><a
-                                        href="{{ url('front-view/AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}">{{ $atraksi_wisata->nama }}</a>
+                                        href="{{ url('AtraksiWisata/WisataAlam', $atraksi_wisata->id) }}">{{ $atraksi_wisata->nama }}</a>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                 <br>
 
                 <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="{{ url('front-view/AtraksiWisata/WisataBudaya') }}">
+                    <a href="{{ url('AtraksiWisata/WisataBudaya') }}">
                         <p style="font-size: 20px; font-weight:bold; color:#000000">Wisata Budaya</p>
                     </a>
 
@@ -184,11 +184,11 @@
                     @foreach ($list_atraksi_wisata->where('kategori', 'Wisata Budaya') as $atraksi_wisata)
                         <div class="card">
 
-                            <div class="img"><img src="{{ url("public/$atraksi_wisata->foto") }}"
-                                    alt="Foto Wisata Alam"></div>
+                            <div class="img"><a href="{{ url('AtraksiWisata/WisataBudaya', $atraksi_wisata->id) }}"><img src="{{ url("public/$atraksi_wisata->foto") }}"
+                                    alt="Foto Wisata Alam"></a></div>
                             <div class="content">
                                 <div class="text-center"><a
-                                        href="{{ url('front-view/AtraksiWisata/WisataBudaya', $atraksi_wisata->id) }}">{{ $atraksi_wisata->nama }}</a>
+                                        href="{{ url('AtraksiWisata/WisataBudaya', $atraksi_wisata->id) }}">{{ $atraksi_wisata->nama }}</a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +208,7 @@
                 <br>
 
                 <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="{{ url('front-view/AtraksiWisata/WisataBuatan') }}">
+                    <a href="{{ url('AtraksiWisata/WisataBuatan') }}">
                         <p style="font-size: 20px; font-weight:bold; color:#000000">Wisata Buatan</p>
                     </a>
 
@@ -217,11 +217,11 @@
                     @foreach ($list_atraksi_wisata->where('kategori', 'Wisata Buatan') as $atraksi_wisata)
                         <div class="card">
 
-                            <div class="img"><img src="{{ url("public/$atraksi_wisata->foto") }}"
-                                    alt="Foto Wisata Buatan"></div>
+                            <div class="img"><a href="{{ url('AtraksiWisata/WisataBuatan', $atraksi_wisata->id) }}"><img src="{{ url("public/$atraksi_wisata->foto") }}"
+                                    alt="Foto Wisata Buatan"></a></div>
                             <div class="content">
                                 <div class="text-center"><a
-                                        href="{{ url('front-view/AtraksiWisata/WisataBuatan', $atraksi_wisata->id) }}">{{ $atraksi_wisata->nama }}</a>
+                                        href="{{ url('AtraksiWisata/WisataBuatan', $atraksi_wisata->id) }}">{{ $atraksi_wisata->nama }}</a>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +249,7 @@
                     <div class="row wow fadeInUp" data-wow-delay="0.1s">
                         <div class="col-md-8 centerize-col text-center">
                             <div class="footer-logo">
-                                <a href="index.html"><img
+                                <a href=""><img
                                         src="{{ url('public') }}/assets-web/images/logo-white-footer.png"
                                         class="img-responsive centerize-col" alt="Footer Logo" /></a>
                             </div>
@@ -257,11 +257,6 @@
                                     @if (date('Y') > '2022')
                                         -{{ date('Y') }}
                                     @endif.</span> All rights reserved</div>
-                            <ul class="social-media mt-30 float-none">
-                                <li><a href="" class="icofont icofont-email"></a></li>
-                                <li><a href="" target="_blank" class="icofont icofont-instagram"></a></li>
-                                <li><a href="" target="_blank" class="icofont icofont-github "></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,8 @@ class AdminKalenderWisataController extends Controller
 {
     function index()
     {
-        $data['list_kalender_wisata'] = KalenderWisata::all();
+        $admin = request()->user();
+        $data['list_kalender_wisata'] = $admin->kalender_wisata;
         return view('backend.KalenderWisata.index', $data);
     }
     function create()
@@ -18,10 +19,12 @@ class AdminKalenderWisataController extends Controller
     function store()
     {
         $kalender_wisata = new KalenderWisata();
+        $kalender_wisata->id_user = request()->user()->id;
         $kalender_wisata->nama = request('nama');
         $kalender_wisata->isi = request('isi');
         $kalender_wisata->tempat = request('tempat');
         $kalender_wisata->tanggal = request('tanggal');
+        $kalender_wisata->bulan = request('bulan');
         $kalender_wisata->foto = request('foto');
         $kalender_wisata->save();
 
@@ -47,6 +50,7 @@ class AdminKalenderWisataController extends Controller
         if (request('isi')) $kalender_wisata->isi = (request('isi'));
         $kalender_wisata->tempat = request('tempat');
         if (request('tanggal')) $kalender_wisata->tanggal = (request('tanggal'));
+        $kalender_wisata->bulan = request('bulan');
         if (request('foto')) $kalender_wisata->handleUploadFoto();
         $kalender_wisata->save();
         return redirect('backend/KalenderWisata')->with('success', 'Data Berhasil Diedit');

@@ -7,8 +7,9 @@ use App\Models\DesaWisata;
 class AdminDesaWisataController extends Controller
 {
     function index()
-    {   
-        $data['list_desa_wisata']= DesaWisata::all();
+    {
+        $admin = request()->user();
+        $data['list_desa_wisata'] = $admin->desa_wisata;
         return view('backend.DesaWisata.index', $data);
     }
     function create()
@@ -18,6 +19,7 @@ class AdminDesaWisataController extends Controller
     function store()
     {
         $desa_wisata = new DesaWisata();
+        $desa_wisata->id_user = request()->user()->id;
         $desa_wisata->nama_desa_wisata = request('nama_desa_wisata');
         $desa_wisata->deskripsi = request('deskripsi');
         $desa_wisata->link_jadesta = request('link_jadesta');

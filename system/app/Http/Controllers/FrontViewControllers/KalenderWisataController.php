@@ -9,7 +9,6 @@ class KalenderWisataController extends Controller
     function index()
     {
         $data['list_kalender_wisata'] = KalenderWisata::all();
-        $data['list_kalender_wisata'] = KalenderWisata::paginate(6);
         return view('front-view.KalenderWisata.index', $data);
     }
 

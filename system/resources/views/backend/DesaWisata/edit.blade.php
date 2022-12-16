@@ -83,7 +83,7 @@
                                             <label for="" class="control-label">Latitude</label>
                                             <span style="color: grey"><span style="color: red"> *</span>(click pada peta
                                                 kemudian drag marker)</span>
-                                            <input type="float" readonly="readonly" class="form-control" name="lat"
+                                            <input type="float"  class="form-control" name="lat"
                                                 id="latitude" value="{{ $desa_wisata->lat }}">
                                             <br>
                                         </div>
@@ -93,7 +93,7 @@
                                             <label for="" class="control-label">Longitude</label>
                                             <span style="color: grey"><span style="color: red"> *</span>(click pada peta
                                                 kemudian drag marker)</span>
-                                            <input type="float" readonly="readonly" class="form-control" name="lng"
+                                            <input type="float"  class="form-control" name="lng"
                                                 id="longitude" value="{{ $desa_wisata->lng }}">
                                             <br>
                                         </div>

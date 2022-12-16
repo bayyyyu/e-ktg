@@ -30,8 +30,10 @@
                             <thead class="bg-dark">
                                 <th>No</th>
                                 <th>Aksi</th>
-                                <th>Kategori Atraksi Wisata</th>
-                                <th>Nama Atraksi Wisata</th>
+                                <th>Kategori</th>
+                                <th>Nama Destinasi</th>
+                                <th>Alamat</th>
+                                <th>Foto</th>
                             </thead>
                             <tbody>
                                @foreach($list_atraksi_wisata as $atraksi_wisata)
@@ -46,6 +48,8 @@
                                     </td>
                                     <td>{{$atraksi_wisata->kategori}}</td>
                                     <td>{{$atraksi_wisata->nama}}</td>
+                                    <td>{{$atraksi_wisata->alamat}}</td>
+                                    <td><a href="{{url('backend/AtraksiWisata', $atraksi_wisata->id)}}"><img src="{{url("public/$atraksi_wisata->foto")}}" alt="" style="width:100%; height:80px; object-fit:cover"></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>

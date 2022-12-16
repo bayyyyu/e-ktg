@@ -34,6 +34,7 @@
                                 <th>Nama Lengkap</th>
                                 <th>Username</th>
                                 <th>Email</th>
+                                <th>foto</th>
                             </thead>
                             <tbody>
                                @foreach($list_admin as $admin)
@@ -49,6 +50,7 @@
                                     <td>{{$admin->nama_lengkap}}</td>
                                     <td>{{$admin->username}}</td>
                                     <td>{{$admin->email}}</td>
+                                     <td><img src="{{url("public/$admin->foto")}}" alt="" style="width:70px; height:80px; object-fit:cover;  margin-right:auto; margin-left:auto; display:block"></td>
                                 </tr>
                                 @endforeach
                             </tbody>

@@ -109,23 +109,23 @@ Route::get('auth/logout', [AuthController::class, 'logout']);
 
 //Front View Desa Wisata
 Route::get('/', [DesaWisataController::class, 'index']);
-Route::get('front-view/DesaWisata', [DesaWisataController::class, 'index']);
+Route::get('DesaWisata', [DesaWisataController::class, 'index']);
 
 //Front View Atraksi Wisata
-Route::get('front-view/AtraksiWisata', [AtraksiWisataController::class, 'index']);
-Route::get('front-view/AtraksiWisata/WisataAlam', [AtraksiWisataController::class, 'index2']);
-Route::get('front-view/AtraksiWisata/WisataBudaya', [AtraksiWisataController::class, 'index3']);
-Route::get('front-view/AtraksiWisata/WisataBuatan', [AtraksiWisataController::class, 'index4']);
-Route::get('front-view/AtraksiWisata/WisataAlam/{atraksi_wisata}', [AtraksiWisataController::class, 'show']);
-Route::get('front-view/AtraksiWisata/WisataBudaya/{atraksi_wisata}', [AtraksiWisataController::class, 'show2']);
-Route::get('front-view/AtraksiWisata/WisataBuatan/{atraksi_wisata}', [AtraksiWisataController::class, 'show3']);
+Route::get('AtraksiWisata', [AtraksiWisataController::class, 'index']);
+Route::get('AtraksiWisata/WisataAlam', [AtraksiWisataController::class, 'index2']);
+Route::get('AtraksiWisata/WisataBudaya', [AtraksiWisataController::class, 'index3']);
+Route::get('AtraksiWisata/WisataBuatan', [AtraksiWisataController::class, 'index4']);
+Route::get('AtraksiWisata/WisataAlam/{atraksi_wisata}', [AtraksiWisataController::class, 'show']);
+Route::get('AtraksiWisata/WisataBudaya/{atraksi_wisata}', [AtraksiWisataController::class, 'show2']);
+Route::get('AtraksiWisata/WisataBuatan/{atraksi_wisata}', [AtraksiWisataController::class, 'show3']);
 
 //kalender Wisata
-Route::get('front-view/KalenderWisata', [KalenderWisataController::class, 'index']);
-Route::get('front-view/KalenderWisata/{kalender_wisata}', [KalenderWisataController::class, 'show']);
+Route::get('KalenderWisata', [KalenderWisataController::class, 'index']);
+Route::get('KalenderWisata/{kalender_wisata}', [KalenderWisataController::class, 'show']);
 
 //PetaWisata
-Route::get('front-view/PetaWisata', [PetaWisataController::class, 'index']);
+Route::get('PetaWisata', [PetaWisataController::class, 'index']);
 
 //Kontak
-Route::get('front-view/Kontak', [KontakController::class, 'index']);
+Route::get('Kontak', [KontakController::class, 'index']);
