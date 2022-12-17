@@ -26,13 +26,13 @@
                                 <input type="text" class="form-control" name="tempat">
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="" class="control-label">Tanggal</label>
                                         <input type="date" class="form-control" name="tanggal">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-control-label" for="status_member">Bulan</label>
                                         <select class="form-control" id="bulan" name="bulan" required="required">
@@ -51,44 +51,19 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="control-label">Isi</label>
-                                <textarea name="isi" id="deskripsi" class="form-control"></textarea>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="" class="control-label">Foto</label>
                                         <input type="file" class="form-control" name="foto" accept=".jpg">
                                     </div>
                                 </div>
                             </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="" class="control-label">Latitude</label>
-                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta
-                                            kemudian drag marker)</span>
-                                        <input type="float" readonly="readonly" class="form-control" name="foto"
-                                            id="latitude">
-                                        <br>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="" class="control-label">Longitude</label>
-                                        <span style="color: grey"><span style="color: red"> *</span>(click pada peta
-                                            kemudian drag marker)</span>
-                                        <input type="float" readonly="readonly" class="form-control" name="foto"
-                                            id="longitude">
-                                        <br>
-                                    </div>
-                                </div>
-                                <div id="map" style="width: 80%; height: 300px;margin-left:auto;margin-right:auto">
-                                </div>
+                            <div class="form-group">
+                                <label for="" class="control-label">Isi</label>
+                                <textarea name="isi" id="deskripsi" class="form-control"></textarea>
                             </div>
+                            
+                            <br>
                             <br>
                             <button class="btn btn-dark float-right"><i class="fa fa-save "></i> Simpan</button>
                         </form>

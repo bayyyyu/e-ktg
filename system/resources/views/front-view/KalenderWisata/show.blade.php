@@ -64,9 +64,10 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                             class="tr-icon ion-android-menu"></i> </button>
                     <div class="logo"> <a href="{{ url('DesaWisata') }}"><img class="logo logo-display"
-                                src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png" alt="" style="width: 100%; object-fit:contain"> <img
-                                class="logo logo-scrolled"
-                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt="" style="width: 100%; object-fit:contain"> </a>
+                                src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png" alt=""
+                                style="width: 100%; object-fit:contain"> <img class="logo logo-scrolled"
+                                src="{{ url('public') }}/assets-web/images/logo/maskot-itam.png" alt=""
+                                style="width: 100%; object-fit:contain"> </a>
                     </div>
                 </div>
                 <!--== End Header Navigation ==-->
@@ -186,10 +187,7 @@
 
                 </div>
             </div>
-
-           
         </section>
-
         <!--== Footer Start ==-->
         <footer class="footer">
             <div class="footer-copyright">
@@ -204,7 +202,8 @@
                             <div class="copy-right">Copyright &copy; <span class="default-color">E-KTG 2022
                                     @if (date('Y') > '2022')
                                         -{{ date('Y') }}
-                                    @endif.</span> All rights reserved</div>
+                                    @endif.
+                                </span> All rights reserved</div>
                         </div>
                     </div>
                 </div>

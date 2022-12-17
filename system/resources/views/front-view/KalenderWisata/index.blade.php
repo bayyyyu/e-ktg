@@ -64,8 +64,7 @@
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                                     data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-                                <div class="logo"> <a href="{{ url('DesaWisata') }}"><img
-                                            class="logo logo-display"
+                                <div class="logo"> <a href="{{ url('DesaWisata') }}"><img class="logo logo-display"
                                             src="{{ url('public') }}/assets-web/images/logo/MASKOT PUTIH1.png"
                                             alt="" style="width: 100%; object-fit:contain"> <img
                                             class="logo logo-scrolled"
@@ -82,8 +81,7 @@
                                     </li>
                                     <li><a class="page-scroll" href="{{ url('AtraksiWisata') }}">Atraksi
                                             Wisata</a></li>
-                                    <li><a class="page-scroll "
-                                            href="{{ url('KalenderWisata') }}">Kalender
+                                    <li><a class="page-scroll " href="{{ url('KalenderWisata') }}">Kalender
                                             Wisata</a></li>
                                     <li><a class="page-scroll" href="{{ url('PetaWisata') }}">Peta
                                             Wisata</a></li>
@@ -179,10 +177,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Januari') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -211,10 +207,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Februari') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -243,10 +237,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Maret') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -276,10 +268,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'April') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -309,10 +299,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Mei') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -342,10 +330,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Juni') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -375,10 +361,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Juli') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -408,10 +392,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Agustus') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -441,10 +423,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'September') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -474,10 +454,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Oktober') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -507,10 +485,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'November') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -540,10 +516,8 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Desember') as $kalender_wisata)
                                                     <li class="option">
-                                                        <i class="bx bxl-github" style="color: #171515;"></i>
-                                                        <a
-                                                            href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><span>
-                                                                {{ $kalender_wisata->nama }}</span></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
