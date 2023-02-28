@@ -28,8 +28,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="" class="control-label">Tanggal</label>
-                                        <input type="date" class="form-control" name="tanggal">
+                                        <label for="" class="control-label">Tahun</label>
+                                        <input type="text" class="form-control" name="tahun">
                                     </div>
                                 </div>
                                 <div class="col-md-4">

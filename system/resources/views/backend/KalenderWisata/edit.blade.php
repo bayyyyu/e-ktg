@@ -47,9 +47,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="" class="control-label">Tanggal</label>
-                                        <input type="date" class="form-control" name="tanggal"
-                                            value="{{ $kalender_wisata->tanggal }}">
+                                        <label for="" class="control-label">Tahun</label>
+                                        <input type="text" class="form-control" name="tahun"
+                                            value="{{ $kalender_wisata->tahun }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">

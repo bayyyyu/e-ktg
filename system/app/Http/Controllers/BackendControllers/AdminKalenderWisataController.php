@@ -23,7 +23,7 @@ class AdminKalenderWisataController extends Controller
         $kalender_wisata->nama = request('nama');
         $kalender_wisata->isi = request('isi');
         $kalender_wisata->tempat = request('tempat');
-        $kalender_wisata->tanggal = request('tanggal');
+        $kalender_wisata->tahun = request('tahun');
         $kalender_wisata->bulan = request('bulan');
         $kalender_wisata->foto = request('foto');
         $kalender_wisata->save();
@@ -49,7 +49,7 @@ class AdminKalenderWisataController extends Controller
         $kalender_wisata->nama = request('nama');
         if (request('isi')) $kalender_wisata->isi = (request('isi'));
         $kalender_wisata->tempat = request('tempat');
-        if (request('tanggal')) $kalender_wisata->tanggal = (request('tanggal'));
+        if (request('tahun')) $kalender_wisata->tahun = (request('tahun'));
         $kalender_wisata->bulan = request('bulan');
         if (request('foto')) $kalender_wisata->handleUploadFoto();
         $kalender_wisata->save();

@@ -105,9 +105,10 @@
                     data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                     data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="{{ url('public') }}/assets-web/images/post/kalender.jpg" data-bgcolor="#7F00FF"
-                        alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        data-bgparallax="off" class="rev-slidebg" data-no-retina />
+                    <img src="{{ url('public') }}/assets-web/images/post/a.jpg" alt=""
+                                            data-bgposition="center center" data-bgfit="cover"
+                                            data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg"
+                                            data-no-retina>
                     <!-- LAYERS -->
 
                     <!-- LAYER NR. 1 -->
@@ -165,7 +166,7 @@
                                         <div class="post-wrap">
                                             <div class="post-img">
                                                 <div class="date-box dark-bg">
-                                                    <span class="day">{!! date('d, M Y', strtotime($kalender_wisata->tanggal)) !!}</span>
+                                                    <span class="day">{{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }}</span>
                                                 </div>
                                                 <div class="item"><img class="img-responsive"
                                                         style="width:100%; height:100%; object-fit: cover"

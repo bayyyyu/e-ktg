@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 16 Des 2022 pada 17.59
+-- Waktu pembuatan: 28 Feb 2023 pada 08.20
 -- Versi server: 8.0.30
 -- Versi PHP: 8.1.10
 
@@ -84,7 +84,7 @@ INSERT INTO `atraksi_wisata` (`id`, `id_user`, `kategori`, `nama`, `alamat`, `at
 (35, 22, 'Wisata Budaya', 'Hutan Desa Jelayan', 'Desa Jelayan, Kec. Tumbang Titi', '-', 'Desa Sungai Jelayan merupakan salah satu Desa yang ada di Kecamatan Kendawangan Kabupaten Ketapang yang masih mempunyai potensi untuk dilakukan pengelolaan berkelanjutan. Evaluasi Kemampuan lahan merupakan salah satu upaya untuk mengatasi penurunan degradasi lahan. Kemampuan lahan adalah penilaian atas satuan lahan untuk penggunaan tertentu yang dinilai dari masing-masing faktor penghambat. Penelitian ini bertujuan untuk mengetahui karakteristik lahan sesuai parameter kemampuan lahan, menilai sub kelas kemampuan lahan dan memberikan saran penggunaan lahan berdasarkan sub kelas kemampuan lahan di Desa Sungai Jelayan. Tahapan penelitian dimulai dari persiapan, survei pendahuluan, penentuan lokasi penelitian berdasarkan satuan lahan yang terdiri dari jenis tanah, kelas lereng, penggunaan lahan dan terdapat 9 satuan lahan, dan  penentuan titik pengamatan, serta pengamatan dilapangan dan pengambilan sampel tanah, analisis laboratorium, pengolahan data dan penyajian hasil. Hasil penelitian diperoleh 2 ordo tanah yaitu Entisols dan Inceptisols. Hasil evaluasi kemampuan lahan terbagi menjadi lima kelas kemampuan lahan dan sub kelas yaitu kelas II-s, III-s, IV-w, V-w dan VIII-es. Usaha perbaikan atau upaya penggunaan lahan secara lestari dapat dilakukan dengan 5 upaya yaitu garapan intensif, garapan sedang, garapan terbatas, cagar alam/hutan lindung, dan pengembalaan intensif.', '-', '-', 'senin - minggu', '07:00:00', '17:00:00', 'app/images/atraksi wisata/35-1671181157-S1P0k.webp', 'The Palm Scribe', '-1.809247930310821', '110.62470621834788', '2022-12-16 01:59:17', '2022-12-16 01:59:17'),
 (36, 22, 'Wisata Alam', 'Pantai Kinjil Pesisir', 'Desa Kinjil Pesisir, Kec. Benua Kayong', '-', 'Pantai Sungai Kinjil Desa Kinjil Pesisir Kecamatan Benua Kayong Ketapang. Jarak ke lokasi ini sekitar puluhan kilometer dari Ibu Kota Ketapang dengan waktu tempuh ½ atau 1  jam menggunakan sepeda motor atau mobil.\r\n\r\nPantai ini menjadi salah satu objek wisata untuk weekend, karena tempatnya yang strategis tidak jauh dari kota Ketapang. Membawa keluarga, kerabat, pacar dan teman-teman berakhir pekan sangat cocok sekali ditempat ini. Matahari terbenam yang menawarkan panorama alam yang indah serta deburan ombaknya membuat pengunjung betah berlama-lama menikmatinya. Pantai ini juga sangat cocok untuk berpoto.', '-', '-', 'senin - minggu', '07:00:00', '17:00:00', 'app/images/atraksi wisata/36-1671181390-kXuYc.jpg', 'Masata', '-1.8744193685663437', '109.96228017428729', '2022-12-16 02:03:10', '2022-12-16 02:05:35'),
 (37, 22, 'Wisata Alam', 'Sawah Kinjil', 'Desa Kinjil Pesisir, Kec. Benua Kayong', '-', 'Pantai Sungai Kinjil Desa Kinjil Pesisir Kecamatan Benua Kayong Ketapang. Jarak ke lokasi ini sekitar puluhan kilometer dari Ibu Kota Ketapang dengan waktu tempuh ½ atau 1  jam menggunakan sepeda motor atau mobil.\r\n\r\nPantai ini menjadi salah satu objek wisata untuk weekend, karena tempatnya yang strategis tidak jauh dari kota Ketapang. Membawa keluarga, kerabat, pacar dan teman-teman berakhir pekan sangat cocok sekali ditempat ini. Matahari terbenam yang menawarkan panorama alam yang indah serta deburan ombaknya membuat pengunjung betah berlama-lama menikmatinya. Pantai ini juga sangat cocok untuk berpoto.', '-', '-', 'senin - minggu', '06:00:00', '17:00:00', 'app/images/atraksi wisata/37-1671182031-NHyiX.jpg', 'Masata', '-1.8733437268630242', '109.96284853699393', '2022-12-16 02:13:51', '2022-12-16 02:13:51'),
-(38, 22, 'Wisata Alam', 'Laman Besolek', 'Desa Laman Satong, Kec. MHU', 'Hiking, jungle tracking, tubing', 'Berwisata di dalam taman nasional Gunung Palung, menikmati beragam tantangan alam mulai dari hiking, camping, tubie rafting (tubing) dan pengamatan satwa liar', '-', '-', 'senin - minggu', '06:00:00', '17:15:00', 'app/images/atraksi wisata/38-1671182174-ARL9Q.jpg', 'Masata', '-1.3712731565827647', '110.22614651023154', '2022-12-16 02:16:14', '2022-12-16 02:16:14'),
+(38, 22, 'Wisata Alam', 'Laman Besolek', 'Desa Laman Satong, Kec. MHU', 'Hiking, jungle tracking, tubing,Rafting,Hiking, jungle tracking, tubing,Rafting', 'Berwisata di dalam taman nasional Gunung Palung, menikmati beragam tantangan alam mulai dari hiking, camping, tubie rafting (tubing) dan pengamatan satwa liar', '-', '-', 'senin - minggu', '06:00:00', '17:15:00', 'app/images/atraksi wisata/38-1671182174-ARL9Q.jpg', 'Masata', '-1.3712731565827647', '110.22614651023154', '2022-12-16 02:16:14', '2023-01-03 20:35:30'),
 (39, 22, 'Wisata Alam', 'Kalas Kumpang', 'Desa Laman Satong, Kec. MHU', 'Jungle tracking, camping', NULL, '-', '-', 'senin - minggu', '07:01:00', '17:00:00', 'app/images/atraksi wisata/39-1671184373-lFcXY.jpg', 'Masata', '-1.3969213340349593', '110.17723864241378', '2022-12-16 02:52:53', '2022-12-16 02:52:53'),
 (40, 22, 'Wisata Alam', 'Tanjung Sekunting', 'Desa Laman Satong, Kec. MHU', 'Pengamatan orang utan, jungle tracking', 'Ilustrasi!!!!!!', '-', '-', 'senin - minggu', '07:00:00', '17:00:00', 'app/images/atraksi wisata/40-1671184674-T01r0.jpg', 'Web Girinesia', '-1.4101678166891038', '110.17288152997058', '2022-12-16 02:57:54', '2022-12-16 02:57:54'),
 (41, 22, 'Wisata Budaya', 'Laman Randu', 'Desa Laman Satong, Kec. MHU', '-', 'Desa Wisata Laman Satong adalah kawasan wisata perdesaan yang berada di Kecamatan Matan Hilir Utara, Kab. Ketapang - Kalimantan Barat, yang memiliki lebih dari 7 destinasi wisata alam-budaya yang dikelola bersama oleh masyarakat desa, taman nasional, sektor swasta dan pemerintah daerah.\r\nDengan jarak relatif dekat dari kota dan mengangkat tema wisata rimba dan budaya, desa Laman Satong menawarkan petualangan penuh pengalaman baru di Kabupaten Ketapang.', '-', '-', 'senin - minggu', '08:00:00', '18:00:00', 'app/images/atraksi wisata/41-1671184904-vnknO.jpg', 'Jadesta', '-1.423812938709199', '110.24775793844907', '2022-12-16 03:01:44', '2022-12-16 03:01:44'),
@@ -147,12 +147,19 @@ CREATE TABLE `kalender_wisata` (
   `nama` varchar(255) DEFAULT NULL,
   `isi` text,
   `tempat` varchar(255) DEFAULT NULL,
-  `tanggal` timestamp NULL DEFAULT NULL,
+  `tahun` int DEFAULT NULL,
   `bulan` set('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `foto` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `kalender_wisata`
+--
+
+INSERT INTO `kalender_wisata` (`id`, `id_user`, `nama`, `isi`, `tempat`, `tahun`, `bulan`, `foto`, `created_at`, `updated_at`) VALUES
+(15, 22, 'test', 'ini cuma test', 'ketapang', 2023, 'Januari', 'app/images/kalender wisata/15-1677572283-ZUiIE.jpg', '2023-02-28 01:11:43', '2023-02-28 01:18:03');
 
 -- --------------------------------------------------------
 
@@ -222,13 +229,13 @@ ALTER TABLE `atraksi_wisata`
 -- AUTO_INCREMENT untuk tabel `desa_wisata`
 --
 ALTER TABLE `desa_wisata`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT untuk tabel `kalender_wisata`
 --
 ALTER TABLE `kalender_wisata`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori`

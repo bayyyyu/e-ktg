@@ -59,8 +59,8 @@
                 <div class="col-12 col-sm-3">
                   <div class="info-box bg-light">
                     <div class="info-box-content">
-                        <p class="text-center">Tanggal</p>
-                     <strong class="text-center">{!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!}</strong>
+                        <p class="text-center">Waktu Event</p>
+                     <strong class="text-center">{{$kalender_wisata->bulan}}, {{$kalender_wisata->tahun}}</strong>
                     </div>
                   </div>
                 </div>

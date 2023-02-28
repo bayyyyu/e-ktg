@@ -34,7 +34,8 @@
                                 <th width="50">Aksi</th>
                                 <th>Nama Event</th>
                                 <th>Tempat</th>
-                                <th>Tanggal Event</th>
+                                <th>Waktu Event</th>
+                                <th>foto</th>
                             </thead>
                             <tbody>
                                @foreach($list_kalender_wisata as $kalender_wisata)
@@ -49,7 +50,8 @@
                                     </td>
                                     <td>{{$kalender_wisata->nama}}</td>
                                     <td>{{$kalender_wisata->tempat}}</td>
-                                    <td>{!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!}</td>
+                                    <td>{{$kalender_wisata->bulan}}, {{$kalender_wisata->tahun}}</td>
+                                    <td><a href="{{url('backend/KalenderWisata', $kalender_wisata->id)}}"><img src="{{url("public/$kalender_wisata->foto")}}" alt="" style="width:100%; height:80px; object-fit:cover"></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>

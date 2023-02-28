@@ -177,8 +177,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Januari') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -207,8 +211,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Februari') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -237,8 +245,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Maret') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -268,8 +280,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'April') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -299,8 +315,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Mei') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -330,8 +350,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Juni') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -361,8 +385,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Juli') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -392,8 +420,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Agustus') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -423,8 +455,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'September') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -454,8 +490,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Oktober') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -485,8 +525,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'November') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -516,8 +560,12 @@
                                             <ul class="options">
                                                 @foreach ($list_kalender_wisata->where('bulan', 'Desember') as $kalender_wisata)
                                                     <li class="option">
-                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}"><h6 style="font-weight:500">
-                                                                {{ $kalender_wisata->nama }} <span style="color: rgb(136, 136, 136)"> ( {!!date('d, M Y', strtotime($kalender_wisata->tanggal)) !!} )</span></h6></a>
+                                                        <a href="{{ url('KalenderWisata', $kalender_wisata->id) }}">
+                                                            <h6 style="font-weight:500">
+                                                                {{ $kalender_wisata->nama }} <span
+                                                                    style="color: rgb(136, 136, 136)"> (
+                                                                    {{ $kalender_wisata->bulan }}, {{ $kalender_wisata->tahun }} )</span></h6>
+                                                        </a>
                                                     </li>
                                                     <hr class="grey-bg">
                                                 @endforeach
@@ -560,6 +608,59 @@
 
                 </div>
                 <!--== Wrapper End ==-->
+
+                <script>
+                    const optionMenu = document.querySelector(".select-menu"),
+                        optionMenu2 = document.querySelector(".select-menu2"),
+                        optionMenu3 = document.querySelector(".select-menu3"),
+                        optionMenu4 = document.querySelector(".select-menu4"),
+                        optionMenu5 = document.querySelector(".select-menu5"),
+                        optionMenu6 = document.querySelector(".select-menu6"),
+                        optionMenu7 = document.querySelector(".select-menu7"),
+                        optionMenu8 = document.querySelector(".select-menu8"),
+                        optionMenu9 = document.querySelector(".select-menu9"),
+                        optionMenu10 = document.querySelector(".select-menu10"),
+                        optionMenu11 = document.querySelector(".select-menu11"),
+                        optionMenu12 = document.querySelector(".select-menu12"),
+
+                        selectBtn = optionMenu.querySelector(".select-btn"),
+                        selectBtn2 = optionMenu2.querySelector(".select-btn2"),
+                        selectBtn3 = optionMenu3.querySelector(".select-btn3"),
+                        selectBtn4 = optionMenu4.querySelector(".select-btn4"),
+                        selectBtn5 = optionMenu5.querySelector(".select-btn5"),
+                        selectBtn6 = optionMenu6.querySelector(".select-btn6"),
+                        selectBtn7 = optionMenu7.querySelector(".select-btn7"),
+                        selectBtn8 = optionMenu8.querySelector(".select-btn8"),
+                        selectBtn9 = optionMenu9.querySelector(".select-btn9"),
+                        selectBtn10 = optionMenu10.querySelector(".select-btn10"),
+                        selectBtn11 = optionMenu11.querySelector(".select-btn11"),
+                        selectBtn12 = optionMenu12.querySelector(".select-btn12"),
+
+                        options = optionMenu.querySelectorAll(".option"),
+                        sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+                    selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+                    selectBtn2.addEventListener("click", () => optionMenu2.classList.toggle("active"));
+                    selectBtn3.addEventListener("click", () => optionMenu3.classList.toggle("active"));
+                    selectBtn4.addEventListener("click", () => optionMenu4.classList.toggle("active"));
+                    selectBtn5.addEventListener("click", () => optionMenu5.classList.toggle("active"));
+                    selectBtn6.addEventListener("click", () => optionMenu6.classList.toggle("active"));
+                    selectBtn7.addEventListener("click", () => optionMenu7.classList.toggle("active"));
+                    selectBtn8.addEventListener("click", () => optionMenu8.classList.toggle("active"));
+                    selectBtn9.addEventListener("click", () => optionMenu9.classList.toggle("active"));
+                    selectBtn10.addEventListener("click", () => optionMenu10.classList.toggle("active"));
+                    selectBtn11.addEventListener("click", () => optionMenu11.classList.toggle("active"));
+                    selectBtn12.addEventListener("click", () => optionMenu12.classList.toggle("active"));
+
+                    options.forEach(option => {
+                        option.addEventListener("click", () => {
+                            let selectedOption = option.querySelector(".option-text").innerText;
+                            sBtn_text.innerText = selectedOption;
+                            optionMenu.classList.remove("active");
+                        });
+
+                    });
+                </script>
 
                 <!--== Javascript Plugins ==-->
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1eO-IAC9PhPE5APzZDSs8W40ewuxnsu8"></script>

@@ -257,7 +257,6 @@
         <!--== Footer End ==-->
 
         <!--== Go to Top  ==-->
-        <a href=""><i class="icofont-download-alt"></i></a>
         <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
         <!--== Go to Top End ==-->
     </div>
@@ -346,7 +345,7 @@
 
 
 
-            //control search
+            // //control search
             // var markersLayer = new L.LayerGroup(); //layer contain searched elements
             // map.addLayer(markersLayer);
             // var controlSearch = new L.Control.Search({
